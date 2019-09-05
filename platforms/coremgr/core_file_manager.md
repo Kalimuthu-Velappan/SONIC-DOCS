@@ -66,7 +66,7 @@ This document describes new mechanisms to manage the core files that are generat
 1. Add the systemd-coredump service to the SONiC build, along with the coredumpctl management tool. This manages core dump generation and disk utilization.
   2. Add a new SONiC service to manage these core dumps as follows: -
           a.  Support per-process core file rotation and archiving to optimize disk space    
-  3. Strip  Core files of sensitive information
+  3. Strip  Core files sensitive information
   4. Collect tech-support data when a new core dump is discovered, and manage/export it with the core dump
   5. Periodically collect/export tech-support data
 
@@ -251,5 +251,5 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzMTMzNTIzLDE5MTA2NDU4MDFdfQ==
+eyJoaXN0b3J5IjpbLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
 -->
