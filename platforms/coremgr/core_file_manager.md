@@ -101,6 +101,7 @@ There should be a limit on the size of core file generated and the space occupie
 
 ```mermaid
 graph RL
+
 TS[Tech support]
 CF[Core Files]
 LF[Log Files]
@@ -302,7 +303,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MTQxMzQ2NSwtMTk3NTY3OTY1NywtMT
-I4OTI4NTM4NCwtMjAxODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEw
-NjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbNjA3MTA3NzA1LC05ODE0MTM0NjUsLTE5Nz
+U2Nzk2NTcsLTEyODkyODUzODQsLTIwMTg5MzUzMTgsLTE2ODc2
+NjcwNTgsMTkxMDY0NTgwMV19
 -->
