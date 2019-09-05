@@ -94,9 +94,11 @@ There should be a limit on the size of core file generated and the space occupie
 ### 1.4 Warmboot Requirements
 > NA
 
-## 2 Functional Description
+# 2 Functional Description
 
 ## Design
+
+
 
 ## Core Dump Generation
 
@@ -265,6 +267,6 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDAyNDQ2NzEsLTE2ODc2NjcwNTgsMT
+eyJoaXN0b3J5IjpbLTIwMTg5MzUzMTgsLTE2ODc2NjcwNTgsMT
 kxMDY0NTgwMV19
 -->
