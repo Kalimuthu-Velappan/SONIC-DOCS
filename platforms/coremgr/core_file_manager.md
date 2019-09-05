@@ -77,7 +77,7 @@ This document describes new mechanisms to manage the core files that are generat
 
 ### 1.2 Configuration and Management Requirements
 
-- To configure the core dump and tech-support data, export to an external server and to view the core details the following following config and show commands shall be supported. It is to be noted that the tech-support data always includes the core dumps generated on the system.
+To configure the core dump and tech-support data, export to an external server and to view the core details the following following config and show commands shall be supported. It is to be noted that the tech-support data always includes the core dumps generated on the system.
 
 ### Config commands
 >1. Config command to save the details of exporting tech-support data to an external server which includes remote server name, path, transfer protocol type and the user credentials.
@@ -303,7 +303,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3MTA3NzA1LC05ODE0MTM0NjUsLTE5Nz
-U2Nzk2NTcsLTEyODkyODUzODQsLTIwMTg5MzUzMTgsLTE2ODc2
-NjcwNTgsMTkxMDY0NTgwMV19
+eyJoaXN0b3J5IjpbLTE0NjY0NTAxOCw2MDcxMDc3MDUsLTk4MT
+QxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkz
+NTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
 -->
