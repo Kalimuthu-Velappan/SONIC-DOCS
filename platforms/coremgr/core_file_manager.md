@@ -101,11 +101,11 @@ There should be a limit on the size of core file generated and the space occupie
 ## Design
 
 The corefile management functionality is divided into two main services. 
-	1. Coredump generation service.
+	1. Core-dump generation service.
 	2.  Tech-support data export service.
 
 
-## 2.1 Core Dump Generation ser
+## 2.1 Core-dump generation service
 
 1.  Core files are usually generated when process terminates unexpectedly. Typical conditions are access violations, termination signals (except SIGKILL), etc.,
 2.  ulimit configuration might prevent generation of core due to size configurations. We need to ensure this is not the case.
@@ -227,7 +227,8 @@ Examples:
 	core.orchagent.0.8bc64adf67544e9e8b897cc5c1c9fde7.5952.1479889193000000000000.lz4
   
 # 2.2 Tech-support export service 
-Periodic Export of Core files
+
+Its important to save the Periodic Export of Core files
 
 Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials. The core manager shall scan for newly generated core files periodically and export the new core files to the configured location.
 
@@ -271,7 +272,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MTgzNDAwNSw2MDcxMDc3MDUsLTk4MT
-QxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkz
-NTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbLTE1NjYxNjczMjMsNjA3MTA3NzA1LC05OD
+E0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQsLTIwMTg5
+MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
 -->
