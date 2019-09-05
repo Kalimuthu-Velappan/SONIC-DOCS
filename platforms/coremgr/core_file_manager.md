@@ -265,10 +265,10 @@ To enable export feature:
 
 >##### sudo config export server username destdir protocol <server_ip> <username> <destination-directory> <scp|sftp>
 > where: 
->>  server    => Name of the remote server to upload the tech-support data
->> username => remote server username
->> destdir      => destination server upload directory  path
->> protocol => transfer protocol either SCP/SFTP
+>>  server    => Name of the remote server to upload the tech-support data.
+>>  username => remote server username.
+>>  destdir      => destination server upload directory  path.
+>>  protocol => transfer protocol either SCP/SFTP
 
 Upon entering the config command, user is prompted for getting the remote server password. 
 
@@ -298,7 +298,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTMxMDkxMiwxMDI3MjI5OTQ0LC0xNT
+eyJoaXN0b3J5IjpbMTM5NDMxNzAwNiwxMDI3MjI5OTQ0LC0xNT
 AyNzA0MDksNDYwOTE4OTg0LC00OTUxOTI1MjksMjA5NzU0ODQx
 NiwtMTQxMzMxODM0NSwxNzAzODU4NjAyLC0xNTY2MTY3MzIzLD
 YwNzEwNzcwNSwtOTgxNDEzNDY1LC0xOTc1Njc5NjU3LC0xMjg5
