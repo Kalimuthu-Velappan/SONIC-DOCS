@@ -243,8 +243,8 @@ The tech-support data is a vital information for debugging of a system and is ca
 
 The export service is configured to monitors the coredump path for any new core file creation. Upon detection of new core file, it triggers the tech-support data collection and export it to a remote server.   In addition, export service can be configured to capture and upload the tech-support data periodically. 
 
-Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials. 
-
+Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials and transport protocol. These  
+,
 
 The core manager shall scan for newly generated core files periodically and export the new core files to the configured location.
 
@@ -288,9 +288,9 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MDQ3NDkwOSwyMDk3NTQ4NDE2LC0xND
-EzMzE4MzQ1LDE3MDM4NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3
-NzA1LC05ODE0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzOD
-QsLTIwMTg5MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
-
+eyJoaXN0b3J5IjpbLTE2NTA1NzI4MjYsMjA5NzU0ODQxNiwtMT
+QxMzMxODM0NSwxNzAzODU4NjAyLC0xNTY2MTY3MzIzLDYwNzEw
+NzcwNSwtOTgxNDEzNDY1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mz
+g0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2NDU4MDFd
+fQ==
 -->
