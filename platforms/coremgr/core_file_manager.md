@@ -101,8 +101,8 @@ There should be a limit on the size of core file generated and the space occupie
 ## Design
 
 The corefile management functionality is divided into two main services. 
-	1. Coredump generation service
-	2. Core file export service.
+	1. Coredump generation service.
+	2.  Tech-support data export service.
 
 
 ## Core Dump Generation
@@ -272,7 +272,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTI5NTc1NTYsNjA3MTA3NzA1LC05OD
-E0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQsLTIwMTg5
-MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
+eyJoaXN0b3J5IjpbMTAwNDIwNjg1NSw2MDcxMDc3MDUsLTk4MT
+QxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkz
+NTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
 -->
