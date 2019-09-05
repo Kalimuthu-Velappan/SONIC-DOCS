@@ -228,7 +228,7 @@ Examples:
   
 # 2.2 Tech-support export service 
 
-The tech-support data is a vital information for debugging of a system and is captured by collecting the  device configuration, system information, log files  and core files. The tech-support export service generates the tech-support data and export it to an remote server for better offline debugging.  The tech-support data is captured and exported on the following conditions 
+The tech-support data is a vital information for debugging of a system and is captured by collecting the  device configuration, system information, log files  and core files. The tech-support export service generates the tech-support data and export it to an remote server for better offline debugging.  The tech-support data is captured and exported under the following conditions 
 
   1.  On detection of a new core file
   2.  On a periodical interval
@@ -285,8 +285,8 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTMzMTgzNDUsMTcwMzg1ODYwMiwtMT
-U2NjE2NzMyMyw2MDcxMDc3MDUsLTk4MTQxMzQ2NSwtMTk3NTY3
-OTY1NywtMTI4OTI4NTM4NCwtMjAxODkzNTMxOCwtMTY4NzY2Nz
-A1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbLTE5NDI0OTI5MDgsLTE0MTMzMTgzNDUsMT
+cwMzg1ODYwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MDUsLTk4MTQx
+MzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkzNT
+MxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
 -->
