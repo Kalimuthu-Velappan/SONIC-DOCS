@@ -228,7 +228,7 @@ Examples:
   
 # 2.2 Tech-support export service 
 
-Its important to save the Periodic Export of Core files
+The tech-support data contains the system vital information for debugging which 
 
 Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials. The core manager shall scan for newly generated core files periodically and export the new core files to the configured location.
 
@@ -272,7 +272,8 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjYxNjczMjMsNjA3MTA3NzA1LC05OD
-E0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQsLTIwMTg5
-MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
+eyJoaXN0b3J5IjpbMTYwMjA4MTExMCwtMTU2NjE2NzMyMyw2MD
+cxMDc3MDUsLTk4MTQxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4
+NTM4NCwtMjAxODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1OD
+AxXX0=
 -->
