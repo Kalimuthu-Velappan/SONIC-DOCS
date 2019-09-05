@@ -105,7 +105,7 @@ The corefile management functionality is divided into two main services.
 	2.  Tech-support data export service.
 
 
-## Core Dump Generation
+## 2.1 Core Dump Generation
 
 1.  Core files are usually generated when process terminates unexpectedly. Typical conditions are access violations, termination signals (except SIGKILL), etc.,
 
@@ -137,7 +137,7 @@ The [systemd-coredump](https://www.freedesktop.org/software/systemd/man/systemd-
     
 10.  When too many core files are generated and take up more space than allocated disk space, oldest core files are automatically deleted to make way for the newly created ones.
   
-# SONiC Code Changes
+## SONiC Code Changes
 
 Current SONiC code has some basic support for generation and compression of core files. Once systemd-coredump package is included in SONiC image, current functionality is removed. Following are the changes proposed:
 
@@ -147,7 +147,7 @@ Current SONiC code has some basic support for generation and compression of core
 >-   A symlink /var/core is created to point to the systemd-coredump standard core file destination “var/lib/systemd/coredump”
 >-   “show techsupport” command is modified to capture the core files from the symlink “/var/core”. It is also modified to consider that core files are lz4 compressed instead of gz files.
  
-# Configuration commands:
+## Configuration commands:
 
 For SONiC switches following CLI commands will be provided to manage core files
 
@@ -165,7 +165,7 @@ Enable or disable coredump functionality. This configuration entry will be part 
 
 When disabled, this command will set ProcessSizeMax=0 in the /etc/systemd/coredump.conf file. The configuration variable ProcessSizeMax sepcifies maximum size in bytes of a core which will be processed. By setting it to 0 core dump generation can be disabled. When enabled this command will set ProcessSizeMax to be the same value as ExternalSizeMax. The configuration variable ExternalSizeMax indicates The maximum (uncompressed) size in bytes of a core to be saved.
  
-# Core Dump Event Logging
+## Core Dump Event Logging
    
 Report of available core files can be obtained using the coredumpctl utility.
 		
@@ -210,7 +210,7 @@ It is also possible to view detailed information along with backtrace of a parti
 	Refusing to dump core to tty (use shell redirection or specify --output).
 
   
-# Core File Rotation and Archive
+## Core File Rotation and Archive
 
 When core file is generated for the same process multiple times, the framework should keep the generated core file in compressed form for the last N-1 number of core files. The number and the maximum size of the core files can be configured. The latest core file shall be kept in uncompressed format.
 
@@ -272,7 +272,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDIwNjg1NSw2MDcxMDc3MDUsLTk4MT
-QxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkz
-NTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbLTE2NTYxOTM5NzQsNjA3MTA3NzA1LC05OD
+E0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQsLTIwMTg5
+MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
 -->
