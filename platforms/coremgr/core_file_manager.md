@@ -110,7 +110,8 @@ CC[Coredump Control]
 CS[Core File Manager Service]
 CR[Core File rotation ] 
 DS[Disk space Management ]
-PT[
+PT((Priodic export))
+
 CR -->CC
 DS -->CC
 CC --> CS
@@ -122,7 +123,8 @@ CC --> CF
 
 ES --> RS
 TS --> ES
-
+PT -->ES
+CM
 
 
 CC[Coredump Control] --> CORE[Core File Manager]
@@ -301,7 +303,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkxNzIwMTc2LC0xOTc1Njc5NjU3LC0xMj
-g5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2
-NDU4MDFdfQ==
+eyJoaXN0b3J5IjpbLTY5MjExNzg1MywtMTk3NTY3OTY1NywtMT
+I4OTI4NTM4NCwtMjAxODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEw
+NjQ1ODAxXX0=
 -->
