@@ -104,14 +104,22 @@ graph RL
 TS[Tech support]
 CF[Core Files]
 LF[Log Files]
+ES[ Tech Support Export Service]
+RS[Remote Server]
+CC[Coredump Control] 
+CORE[Core File Manager]
+CR[Core File rotation ] 
+DS[Disk space Management ]
+
 
 CF --> TS
 LF --> TS
+CC --> CF
 
 
-ES[ Tech Support Export Service] --> RS[Remote Server]
+ES --> RS
 
-ES --> TS[Tech support]
+ES --> TS
 CORE --> ES
 
 
@@ -298,7 +306,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ5MDc1MzY5LC0xOTc1Njc5NjU3LC0xMj
+eyJoaXN0b3J5IjpbNzg1MzQ0NTg4LC0xOTc1Njc5NjU3LC0xMj
 g5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2
 NDU4MDFdfQ==
 -->
