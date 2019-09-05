@@ -257,7 +257,7 @@ In order to export the tech support data, remote server details have to be confi
         }
     },
 
-While configuring the export service, the remote server password is encrypted with device universally unique identifier (UUID) and stored into the config DB, so that the password can be decrypted only on the device. The protocol fields specifies the one of the file transfer protocol either SCP or SFTP.  The interval field specifies the duration in it captures the tech-support data and export it.
+While configuring the export service, the remote server password is encrypted with device universally unique identifier (UUID) and stored into the config DB, so that the password can be decrypted only on the device. The protocol fields specifies the one of the file transfer protocol either SCP or SFTP.  The interval field specifies the duration in which it captures the tech-support data and export it.
 
     
 To enable export feature:
@@ -298,10 +298,10 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTU2NzE0LC0xNzc4Mjc1MDkxLDE2Mj
-c0MDYwNDcsMTAyNzIyOTk0NCwtMTUwMjcwNDA5LDQ2MDkxODk4
-NCwtNDk1MTkyNTI5LDIwOTc1NDg0MTYsLTE0MTMzMTgzNDUsMT
-cwMzg1ODYwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MDUsLTk4MTQx
-MzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkzNT
-MxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbLTIxMTU4NTgwNzMsLTE3NzgyNzUwOTEsMT
+YyNzQwNjA0NywxMDI3MjI5OTQ0LC0xNTAyNzA0MDksNDYwOTE4
+OTg0LC00OTUxOTI1MjksMjA5NzU0ODQxNiwtMTQxMzMxODM0NS
+wxNzAzODU4NjAyLC0xNTY2MTY3MzIzLDYwNzEwNzcwNSwtOTgx
+NDEzNDY1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0yMDE4OT
+M1MzE4LC0xNjg3NjY3MDU4LDE5MTA2NDU4MDFdfQ==
 -->
