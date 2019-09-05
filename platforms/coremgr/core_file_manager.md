@@ -81,10 +81,10 @@ To configure the core dump and tech-support data, export to an external server a
 
 ### Config commands
 
->1. Config command to enable/disable of dumping  core of a process.
+>1. Config command to enable/disable the coredump generation of processes.
 >2.  Config command to store the details of exporting tech-support data to an external server which includes remote server name, path, transfer protocol type and the user credentials.
 >2. Config command to enable/disable the tech-support export
->3. Config command  configure the tech-support export periodic interval.
+>3. Config command  to configure the tech-support export periodic interval.
 
 ### Show commands
 > 1. Show commands to display the core file information
@@ -298,10 +298,10 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNzQwNjA0NywxMDI3MjI5OTQ0LC0xNT
-AyNzA0MDksNDYwOTE4OTg0LC00OTUxOTI1MjksMjA5NzU0ODQx
-NiwtMTQxMzMxODM0NSwxNzAzODU4NjAyLC0xNTY2MTY3MzIzLD
-YwNzEwNzcwNSwtOTgxNDEzNDY1LC0xOTc1Njc5NjU3LC0xMjg5
-Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2ND
-U4MDFdfQ==
+eyJoaXN0b3J5IjpbLTE3NzgyNzUwOTEsMTYyNzQwNjA0NywxMD
+I3MjI5OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC00OTUxOTI1
+MjksMjA5NzU0ODQxNiwtMTQxMzMxODM0NSwxNzAzODU4NjAyLC
+0xNTY2MTY3MzIzLDYwNzEwNzcwNSwtOTgxNDEzNDY1LC0xOTc1
+Njc5NjU3LC0xMjg5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3Nj
+Y3MDU4LDE5MTA2NDU4MDFdfQ==
 -->
