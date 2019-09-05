@@ -100,9 +100,9 @@ There should be a limit on the size of core file generated and the space occupie
 
 ## Design
 
-The corefile management is divided into two main services. 
-	1. Coredump generation
-	2. Core file export to an remote server.
+The corefile management functionality is divided into two main services. 
+	1. Coredump generation service
+	2. Core file export service.
 
 
 ```mermaid
@@ -309,7 +309,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI3MjQ5NjgwLDYwNzEwNzcwNSwtOTgxND
+eyJoaXN0b3J5IjpbMjY2MTYyNjk4LDYwNzEwNzcwNSwtOTgxND
 EzNDY1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0yMDE4OTM1
 MzE4LC0xNjg3NjY3MDU4LDE5MTA2NDU4MDFdfQ==
 -->
