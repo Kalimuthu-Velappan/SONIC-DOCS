@@ -257,10 +257,10 @@ In order to export the tech support data, remote server details have to be confi
         }
     },
 
-While configuring the export service, the remote server password is encrypted with device universally unique identifier (UUID) and stored into the config DB, so that the password can be decrypted only on the device. The protocol fields configures the one of the file transfer protocol either SCP or SFTP.  The interval field specifies the duration in which export service  captures the tech-support data and export it.
+While configuring the export service, the remote server password is encrypted with device universally unique identifier (UUID) and stored into the config DB, so that the password can be decrypted only on the device. The protocol fields specifies the one of the file transfer protocol either SCP or SFTP.  The interval field specifies the duration in it captures the tech-support data and export it.
 
 
-The core manager shall scan for newly generated core files periodically and export the new core files to the configured location.
+By default, The core manager shall scan for newly generated core files periodically and export the new core files to the configured location.
 
 When an external server is configured, it may use either scp/sftp protocol to export core files to the remote server. This framework is  extended to create a “show tech support” information on detecting a core file, and export it.
 
@@ -302,9 +302,9 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MTY2Nzc4NSwtMTUwMjcwNDA5LDQ2MD
-kxODk4NCwtNDk1MTkyNTI5LDIwOTc1NDg0MTYsLTE0MTMzMTgz
-NDUsMTcwMzg1ODYwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MDUsLT
-k4MTQxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAx
-ODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbMzY3MjIzODgwLC0xNTAyNzA0MDksNDYwOT
+E4OTg0LC00OTUxOTI1MjksMjA5NzU0ODQxNiwtMTQxMzMxODM0
+NSwxNzAzODU4NjAyLC0xNTY2MTY3MzIzLDYwNzEwNzcwNSwtOT
+gxNDEzNDY1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0yMDE4
+OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2NDU4MDFdfQ==
 -->
