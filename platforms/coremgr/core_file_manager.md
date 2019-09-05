@@ -113,7 +113,7 @@ The corefile management functionality is divided into two main services.
 
 3.  Service restart functions - will not generate the core dump as it handle the graceful stop and start. This includes docker service restart as well.
 
-# systemd-coredump
+## systemd-coredump
 
 The [systemd-coredump](https://www.freedesktop.org/software/systemd/man/systemd-coredump.html) is a native systemd tool that is available in Debian o/s version 9 (stretch) and above. This tool provides an array of features to manage application core files. When it is installed, as part of base configuration it provides following functionality:
 
@@ -272,7 +272,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2Mjc5MzA5OSw2MDcxMDc3MDUsLTk4MT
-QxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkz
-NTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbLTE1OTI5NTc1NTYsNjA3MTA3NzA1LC05OD
+E0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQsLTIwMTg5
+MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
 -->
