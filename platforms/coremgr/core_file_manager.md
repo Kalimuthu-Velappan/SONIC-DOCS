@@ -107,6 +107,8 @@ TS[Tech support] --> CORE
 SS --> CC[Coredump Control]
 CC --> CR[Core File rotation ]
 CC --> DS[Disk space Management ]
+ES[ Tech Support Export Service] --> TS
+TS <-->ES
 A[Hard edge] -->B(Round edge)
     B --> C{Decision}
     C -->|One| D[Result one]
@@ -283,6 +285,6 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzY4MDgxNiwtMjAxODkzNTMxOCwtMT
-Y4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbLTExMDY3OTAxMzIsLTIwMTg5MzUzMTgsLT
+E2ODc2NjcwNTgsMTkxMDY0NTgwMV19
 -->
