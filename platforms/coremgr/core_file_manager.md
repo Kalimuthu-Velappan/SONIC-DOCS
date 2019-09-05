@@ -114,9 +114,7 @@ PT((Priodic export))
 CM[systemd-coredumpctl]
 
 
-
 CM --> CS
-
 LF --> TS
 CF --> TS
 
@@ -127,9 +125,8 @@ ES --> RS
 TS --> ES
 PT -->ES
 CM -->|core dump notify| ES
-
+CC --> CM
 CR -->CM
-
 DS -->CM
 
     
@@ -305,7 +302,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjY2MzM2MDcsLTE5NzU2Nzk2NTcsLT
-EyODkyODUzODQsLTIwMTg5MzUzMTgsLTE2ODc2NjcwNTgsMTkx
-MDY0NTgwMV19
+eyJoaXN0b3J5IjpbLTk4MTQxMzQ2NSwtMTk3NTY3OTY1NywtMT
+I4OTI4NTM4NCwtMjAxODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEw
+NjQ1ODAxXX0=
 -->
