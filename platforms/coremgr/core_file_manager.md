@@ -249,14 +249,14 @@ In order to export the tech support data, remote server details have to be confi
             "config": "<enable/disable>",
             "destdir": "<destination directory>",
             "interval": "<priodic interval>",
-            "password": "<remoted password>",
+            "password": "<remote password>",
             "protocol": "<scp/sftp>",
             "servername": "<remove server address>",
-            "username": "<remoted username>"
+            "username": "<remote username>"
         }
     },
 
-While configuring the export service, the remote u 
+While configuring the export service, the remote server password is encrypted with device UUID
 
 
 The core manager shall scan for newly generated core files periodically and export the new core files to the configured location.
@@ -301,7 +301,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzc1MzkzMTQsLTE1MDI3MDQwOSw0Nj
+eyJoaXN0b3J5IjpbLTEyMzcyNzY5NzYsLTE1MDI3MDQwOSw0Nj
 A5MTg5ODQsLTQ5NTE5MjUyOSwyMDk3NTQ4NDE2LC0xNDEzMzE4
 MzQ1LDE3MDM4NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3NzA1LC
 05ODE0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQsLTIw
