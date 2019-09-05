@@ -100,7 +100,10 @@ There should be a limit on the size of core file generated and the space occupie
 
 ## Design
 
-The corefile export is 
+The corefile management is divided into two main services. 
+	1. Coredump generation
+	2. Core file export to an remote server.
+
 
 ```mermaid
 graph RL
@@ -306,7 +309,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MTk5ODExLDYwNzEwNzcwNSwtOTgxND
+eyJoaXN0b3J5IjpbOTI3MjQ5NjgwLDYwNzEwNzcwNSwtOTgxND
 EzNDY1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0yMDE4OTM1
 MzE4LC0xNjg3NjY3MDU4LDE5MTA2NDU4MDFdfQ==
 -->
