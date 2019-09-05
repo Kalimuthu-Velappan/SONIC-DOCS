@@ -81,7 +81,9 @@ To configure the core dump and tech-support data, export to an external server a
 
 ### Config commands
 
->1. Config command to enable/disable coredump of  Config command to save the details of exporting tech-support data to an external server which includes remote server name, path, transfer protocol type and the user credentials.
+>1. Config command to enable/disable of dumping  core of a process.
+>2. 
+>2.  Config command to save the details of exporting tech-support data to an external server which includes remote server name, path, transfer protocol type and the user credentials.
 >2. Config command to enable/disable the tech-support export
 >3. Config command  configure the tech-support export periodic interval.
 
@@ -304,7 +306,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NjgyNTMyMiw2MDcxMDc3MDUsLTk4MT
+eyJoaXN0b3J5IjpbLTE5MTg3Mzg3Nyw2MDcxMDc3MDUsLTk4MT
 QxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkz
 NTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
 -->
