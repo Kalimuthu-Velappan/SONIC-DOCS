@@ -105,43 +105,6 @@ The corefile management functionality is divided into two main services.
 	2. Core file export service.
 
 
-```mermaid
-graph RL
-
-TS[Tech support]
-CF[Core Files]
-LF[Log Files]
-ES[ Tech Support Export Service]
-RS[Remote Server]
-CC[coredumpctl ] 
-CS[Core File Manager Service]
-CR[Core File rotation ] 
-DS[Disk space Management ]
-PT((Priodic export))
-CM[systemd-coredumpctl]
-
-
-CM --> CS
-LF --> TS
-CF --> TS
-
-CC --> CF
-CM --> CF
-
-ES --> RS
-TS --> ES
-PT -->ES
-CM -->|core dump notify| ES
-CC --> CM
-CR -->CM
-DS -->CM
-
-    
-​```
-```
-
-
-
 ## Core Dump Generation
 
 1.  Core files are usually generated when process terminates unexpectedly. Typical conditions are access violations, termination signals (except SIGKILL), etc.,
@@ -309,7 +272,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY2MTYyNjk4LDYwNzEwNzcwNSwtOTgxND
-EzNDY1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0yMDE4OTM1
-MzE4LC0xNjg3NjY3MDU4LDE5MTA2NDU4MDFdfQ==
+eyJoaXN0b3J5IjpbMTk2Mjc5MzA5OSw2MDcxMDc3MDUsLTk4MT
+QxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkz
+NTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
 -->
