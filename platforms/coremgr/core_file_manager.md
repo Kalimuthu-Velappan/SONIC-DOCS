@@ -256,7 +256,7 @@ In order to export the tech support data, remote server details have to be confi
         }
     },
 
-
+While configuring the export service, the remote u 
 
 
 The core manager shall scan for newly generated core files periodically and export the new core files to the configured location.
@@ -301,9 +301,9 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3Mjk3MjkzMCwtMTUwMjcwNDA5LDQ2MD
-kxODk4NCwtNDk1MTkyNTI5LDIwOTc1NDg0MTYsLTE0MTMzMTgz
-NDUsMTcwMzg1ODYwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MDUsLT
-k4MTQxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAx
-ODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbLTE3Nzc1MzkzMTQsLTE1MDI3MDQwOSw0Nj
+A5MTg5ODQsLTQ5NTE5MjUyOSwyMDk3NTQ4NDE2LC0xNDEzMzE4
+MzQ1LDE3MDM4NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3NzA1LC
+05ODE0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQsLTIw
+MTg5MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
 -->
