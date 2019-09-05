@@ -96,6 +96,8 @@ There should be a limit on the size of core file generated and the space occupie
 
 ## 2 Functional Description
 
+## Design
+
 ## Core Dump Generation
 
 1.  Core files are usually generated when process terminates unexpectedly. Typical conditions are access violations, termination signals (except SIGKILL), etc.,
@@ -263,5 +265,6 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
+eyJoaXN0b3J5IjpbLTEzNDAyNDQ2NzEsLTE2ODc2NjcwNTgsMT
+kxMDY0NTgwMV19
 -->
