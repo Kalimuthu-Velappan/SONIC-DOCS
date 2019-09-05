@@ -107,7 +107,7 @@ LF[Log Files]
 ES[ Tech Support Export Service]
 RS[Remote Server]
 CC[Coredump Control] 
-CORE[Core File Manager]
+CORE[Core File Manager Service]
 CR[Core File rotation ] 
 DS[Disk space Management ]
 
@@ -119,8 +119,8 @@ CC --> CF
 
 ES --> RS
 
-ES --> TS
-CORE --> ES
+TS --> ES
+
 
 
 CC[Coredump Control] --> CORE[Core File Manager]
@@ -306,7 +306,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1MzQ0NTg4LC0xOTc1Njc5NjU3LC0xMj
-g5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2
-NDU4MDFdfQ==
+eyJoaXN0b3J5IjpbLTM0NjU4NjM1NiwtMTk3NTY3OTY1NywtMT
+I4OTI4NTM4NCwtMjAxODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEw
+NjQ1ODAxXX0=
 -->
