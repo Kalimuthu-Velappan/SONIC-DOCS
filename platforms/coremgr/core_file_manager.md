@@ -113,13 +113,13 @@ DS[Disk space Management ]
 PT((Priodic export))
 CM[systemd-coredumpctl]
 
-CR -->CM
-DS -->CM
+
+
 CM --> CS
 
-
-CF --> TS
 LF --> TS
+CF --> TS
+
 CC --> CF
 CM --> CF
 
@@ -128,9 +128,9 @@ TS --> ES
 PT -->ES
 CM -->|core dump notify| ES
 
+CR -->CM
 
-CC --> CM
-
+DS -->CM
 
     
 ​```
@@ -305,7 +305,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQ0Njc4OTcsLTE5NzU2Nzk2NTcsLT
+eyJoaXN0b3J5IjpbLTE5MjY2MzM2MDcsLTE5NzU2Nzk2NTcsLT
 EyODkyODUzODQsLTIwMTg5MzUzMTgsLTE2ODc2NjcwNTgsMTkx
 MDY0NTgwMV19
 -->
