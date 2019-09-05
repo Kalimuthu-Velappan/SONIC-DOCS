@@ -106,12 +106,12 @@ CF[Core Files]
 LF[Log Files]
 ES[ Tech Support Export Service]
 RS[Remote Server]
-CC[Coredump Control] 
+CC[Coredump Manager] 
 CS[Core File Manager Service]
 CR[Core File rotation ] 
 DS[Disk space Management ]
 PT((Priodic export))
-CM[Core File Manager - systemd-coredumpctl]
+CM[systemd-coredumpctl]
 
 CR -->CM
 DS -->CM
@@ -304,7 +304,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NDAxNjM1NywtMTk3NTY3OTY1NywtMT
+eyJoaXN0b3J5IjpbMTQ1OTY3MDQxMiwtMTk3NTY3OTY1NywtMT
 I4OTI4NTM4NCwtMjAxODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEw
 NjQ1ODAxXX0=
 -->
