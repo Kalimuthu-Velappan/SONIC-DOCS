@@ -246,13 +246,13 @@ In order to export the tech support data, remote server details have to be confi
 >>
     "EXPORT": {
         "export": {
-            "config": "\<enable/disable\>",
-            "destdir": "\<destination directory\>",
-            "interval": "\<priodic interval\>",
-            "password": "\<remoted password\>",
-            "protocol": "\<scp/sftp>",
-            "servername": "\<remove server address\>",
-            "username": "\<remoted password\>"
+            "config": "<enable/disable>",
+            "destdir": "<destination directory>",
+            "interval": "<priodic interval>",
+            "password": "<remoted password>",
+            "protocol": "<scp/sftp>",
+            "servername": "<remove server address>",
+            "username": "<remoted username>"
         }
     },
 
@@ -301,9 +301,9 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI1NTA2NSwtMTUwMjcwNDA5LDQ2MDkxOD
-k4NCwtNDk1MTkyNTI5LDIwOTc1NDg0MTYsLTE0MTMzMTgzNDUs
-MTcwMzg1ODYwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MDUsLTk4MT
-QxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkz
-NTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbLTM3Mjk3MjkzMCwtMTUwMjcwNDA5LDQ2MD
+kxODk4NCwtNDk1MTkyNTI5LDIwOTc1NDg0MTYsLTE0MTMzMTgz
+NDUsMTcwMzg1ODYwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MDUsLT
+k4MTQxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAx
+ODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
 -->
