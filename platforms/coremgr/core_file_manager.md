@@ -110,10 +110,10 @@ CC[Coredump Control]
 CS[Core File Manager Service]
 CR[Core File rotation ] 
 DS[Disk space Management ]
-
+PT[
 CR -->CC
 DS -->CC
-
+CC --> CS
 
 CF --> TS
 LF --> TS
@@ -301,7 +301,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMzc5MzA3LC0xOTc1Njc5NjU3LC0xMj
+eyJoaXN0b3J5IjpbNzkxNzIwMTc2LC0xOTc1Njc5NjU3LC0xMj
 g5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2
 NDU4MDFdfQ==
 -->
