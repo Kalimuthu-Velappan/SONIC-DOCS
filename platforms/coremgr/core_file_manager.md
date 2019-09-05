@@ -100,7 +100,8 @@ There should be a limit on the size of core file generated and the space occupie
 
 
 ```mermaid
-graph LR
+graph RL
+remote[Remote Server] --> 
 A[Hard edge] -->B(Round edge)
     B --> C{Decision}
     C -->|One| D[Result one]
@@ -277,6 +278,6 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUwNjE3MTcsLTIwMTg5MzUzMTgsLTE2OD
-c2NjcwNTgsMTkxMDY0NTgwMV19
+eyJoaXN0b3J5IjpbMTc2MjY0OTA2NCwtMjAxODkzNTMxOCwtMT
+Y4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
 -->
