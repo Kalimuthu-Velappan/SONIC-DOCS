@@ -233,7 +233,7 @@ The tech-support data is a vital information for debugging of a system and is ca
   1.  On detection of a new core file
   2.  On a periodical interval
 
-
+![Tech Support export Service](images/corefilemgr.png)
 
 
 
@@ -290,9 +290,9 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NTE5MjUyOSwyMDk3NTQ4NDE2LC0xND
-EzMzE4MzQ1LDE3MDM4NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3
-NzA1LC05ODE0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzOD
-QsLTIwMTg5MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
-
+eyJoaXN0b3J5IjpbMjg3MjQzMDQyLC00OTUxOTI1MjksMjA5Nz
+U0ODQxNiwtMTQxMzMxODM0NSwxNzAzODU4NjAyLC0xNTY2MTY3
+MzIzLDYwNzEwNzcwNSwtOTgxNDEzNDY1LC0xOTc1Njc5NjU3LC
+0xMjg5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5
+MTA2NDU4MDFdfQ==
 -->
