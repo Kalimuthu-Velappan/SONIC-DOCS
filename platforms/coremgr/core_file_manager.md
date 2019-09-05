@@ -103,10 +103,10 @@ There should be a limit on the size of core file generated and the space occupie
 graph RL
 SS[System Service] --> RS[Remote Server]
 SS --> CORE[Core File Manager]
-
 TS[Tech support] --> CORE
 SS --> CC[Coredump Control]
-
+CC --> CR[Core File rotation ]
+CC --> DS[Disk space Management ]
 A[Hard edge] -->B(Round edge)
     B --> C{Decision}
     C -->|One| D[Result one]
@@ -283,6 +283,6 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY5MTkwOTQ3LC0yMDE4OTM1MzE4LC0xNj
-g3NjY3MDU4LDE5MTA2NDU4MDFdfQ==
+eyJoaXN0b3J5IjpbLTE1NzY4MDgxNiwtMjAxODkzNTMxOCwtMT
+Y4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
 -->
