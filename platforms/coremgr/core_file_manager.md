@@ -101,18 +101,26 @@ There should be a limit on the size of core file generated and the space occupie
 
 ```mermaid
 graph RL
+TS[Tech support]
+CF[Core Files]
+LF[Log Files]
+
+CF --> TS
+LF --> TS
+
+
 ES[ Tech Support Export Service] --> RS[Remote Server]
-CORE[Core File Manager] 
+
 ES --> TS[Tech support]
 CORE --> ES
-CC[Coredump Control] --> CORE
+
+
+CC[Coredump Control] --> CORE[Core File Manager]
 CR[Core File rotation ] -->CC
 DS[Disk space Management ] -->CC
 
 
 
-CF[Core Files] --> TS
-LF[Log Files] --> TS
 
 A[Hard edge] -->B(Round edge)
     B --> C{Decision}
@@ -290,7 +298,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NDMzMjE4MywtMTk3NTY3OTY1NywtMT
-I4OTI4NTM4NCwtMjAxODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEw
-NjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbODQ5MDc1MzY5LC0xOTc1Njc5NjU3LC0xMj
+g5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2
+NDU4MDFdfQ==
 -->
