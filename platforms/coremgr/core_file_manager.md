@@ -101,9 +101,9 @@ There should be a limit on the size of core file generated and the space occupie
 
 ```mermaid
 graph RL
-target[Target Device] --> remote[Remote Server]
-target --> core[Core File Manager]
-TS[Tech support] --> core
+SS[System Service] --> RS[Remote Server]
+SS --> CORE[Core File Manager]
+TS[Tech support] --> CORE
 
 
 A[Hard edge] -->B(Round edge)
@@ -282,6 +282,6 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMTg5ODQ0NSwtMjAxODkzNTMxOCwtMT
-Y4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbLTE1NDUwNzU0NDEsLTIwMTg5MzUzMTgsLT
+E2ODc2NjcwNTgsMTkxMDY0NTgwMV19
 -->
