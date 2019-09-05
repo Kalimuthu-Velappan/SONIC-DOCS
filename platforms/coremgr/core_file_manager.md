@@ -228,7 +228,7 @@ Examples:
   
 # 2.2 Tech-support export service 
 
-The tech-support data contains the system vital information for debugging which 
+The tech-support data contains the system vital information for debugging which includes running syst, log files  
 
 Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials. The core manager shall scan for newly generated core files periodically and export the new core files to the configured location.
 
@@ -272,8 +272,8 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMjA4MTExMCwtMTU2NjE2NzMyMyw2MD
-cxMDc3MDUsLTk4MTQxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4
-NTM4NCwtMjAxODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1OD
-AxXX0=
+eyJoaXN0b3J5IjpbLTIwMDQzMTQxMDAsLTE1NjYxNjczMjMsNj
+A3MTA3NzA1LC05ODE0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODky
+ODUzODQsLTIwMTg5MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NT
+gwMV19
 -->
