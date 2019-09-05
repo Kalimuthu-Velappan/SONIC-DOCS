@@ -1,5 +1,4 @@
 
-
 # Core file manager
 
 ## High Level Design Document
