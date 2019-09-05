@@ -241,9 +241,12 @@ The tech-support data is a vital information for debugging of a system and is ca
 
 
 
-The export service is configured to monitors the coredump path for any new core file creation. Upon detection of new core file, it triggers the tech-support data collection and export it to a remote server.   In addition, export service is configured to capture and upload the tech-support data periodically. 
+The export service is configured to monitors the coredump path for any new core file creation. Upon detection of new core file, it triggers the tech-support data collection and export it to a remote server.   In addition, export service can be configured to capture and upload the tech-support data periodically. 
 
-Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials. The core manager shall scan for newly generated core files periodically and export the new core files to the configured location.
+Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials. 
+
+
+The core manager shall scan for newly generated core files periodically and export the new core files to the configured location.
 
 When an external server is configured, it may use either scp/sftp protocol to export core files to the remote server. This framework is  extended to create a “show tech support” information on detecting a core file, and export it.
 
@@ -285,9 +288,9 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDU2MDgxNTgsMjA5NzU0ODQxNiwtMT
-QxMzMxODM0NSwxNzAzODU4NjAyLC0xNTY2MTY3MzIzLDYwNzEw
-NzcwNSwtOTgxNDEzNDY1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mz
-g0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2NDU4MDFd
-fQ==
+eyJoaXN0b3J5IjpbLTc5MDQ3NDkwOSwyMDk3NTQ4NDE2LC0xND
+EzMzE4MzQ1LDE3MDM4NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3
+NzA1LC05ODE0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzOD
+QsLTIwMTg5MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgwMV19
+
 -->
