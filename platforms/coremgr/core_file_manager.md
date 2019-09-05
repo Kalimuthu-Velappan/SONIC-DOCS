@@ -61,7 +61,7 @@ This document describes the high level design details of core file manager frame
 
 This document describes new mechanisms to manage the core files that are generated in a SONiC environment. When a process is terminated unexpectedly, the System generates the core dump of that process in most cases. The core files are stored on the persistent storage like SSDs. These core files need to be managed on the SONiC devices to optimize disk space usage, exported to remote server for offline analysis, etc., In addition, existing "tech-support" information is associated with the core dumps and managed similarly.
 
-Core Manager Requirements
+### Core Manager Requirements
 
 1. Add the systemd-coredump service to the SONiC build, along with the coredumpctl management tool. This manages core dump generation and disk utilization.
   2. Add a new SONiC service to manage these core dumps as follows: -
@@ -251,5 +251,5 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMDY0NTgwMV19
+eyJoaXN0b3J5IjpbMTg3OTMxMjEwMiwxOTEwNjQ1ODAxXX0=
 -->
