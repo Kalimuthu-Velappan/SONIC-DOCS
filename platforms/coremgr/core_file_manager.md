@@ -98,6 +98,15 @@ There should be a limit on the size of core file generated and the space occupie
 
 ## Design
 
+```gfm
+```mermaid
+graph LR
+A[Hard edge] -->B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+​```
+```
 
 
 ## Core Dump Generation
@@ -267,6 +276,6 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTg5MzUzMTgsLTE2ODc2NjcwNTgsMT
-kxMDY0NTgwMV19
+eyJoaXN0b3J5IjpbLTEzNjM0MjcwODMsLTIwMTg5MzUzMTgsLT
+E2ODc2NjcwNTgsMTkxMDY0NTgwMV19
 -->
