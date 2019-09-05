@@ -107,9 +107,12 @@ LF[Log Files]
 ES[ Tech Support Export Service]
 RS[Remote Server]
 CC[Coredump Control] 
-CORE[Core File Manager Service]
+CS[Core File Manager Service]
 CR[Core File rotation ] 
 DS[Disk space Management ]
+
+CR -->CC
+DS -->CC
 
 
 CF --> TS
@@ -118,22 +121,14 @@ CC --> CF
 
 
 ES --> RS
-
 TS --> ES
 
 
 
 CC[Coredump Control] --> CORE[Core File Manager]
-CR[Core File rotation ] -->CC
-DS[Disk space Management ] -->CC
 
 
-
-
-A[Hard edge] -->B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+    
 ​```
 ```
 
@@ -306,7 +301,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NjU4NjM1NiwtMTk3NTY3OTY1NywtMT
-I4OTI4NTM4NCwtMjAxODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEw
-NjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbMTYzMzc5MzA3LC0xOTc1Njc5NjU3LC0xMj
+g5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2
+NDU4MDFdfQ==
 -->
