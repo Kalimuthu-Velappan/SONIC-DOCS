@@ -270,6 +270,8 @@ To enable export feature:
 >> destdir      => destination server upload directory  path
 >> protocol => transfer protocol either SCP/SFTP
 
+Upon entering the config command, user is prompted for remote user password. 
+
 >##### sudo config export <enable|disable>
 
 This will export show tech-support data, on detection of a new core file. In addition, the data is also exported periodically.
@@ -296,9 +298,10 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNzIyOTk0NCwtMTUwMjcwNDA5LDQ2MD
-kxODk4NCwtNDk1MTkyNTI5LDIwOTc1NDg0MTYsLTE0MTMzMTgz
-NDUsMTcwMzg1ODYwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MDUsLT
-k4MTQxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAx
-ODkzNTMxOCwtMTY4NzY2NzA1OCwxOTEwNjQ1ODAxXX0=
+eyJoaXN0b3J5IjpbLTc3MjEwMTU0OSwxMDI3MjI5OTQ0LC0xNT
+AyNzA0MDksNDYwOTE4OTg0LC00OTUxOTI1MjksMjA5NzU0ODQx
+NiwtMTQxMzMxODM0NSwxNzAzODU4NjAyLC0xNTY2MTY3MzIzLD
+YwNzEwNzcwNSwtOTgxNDEzNDY1LC0xOTc1Njc5NjU3LC0xMjg5
+Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2ND
+U4MDFdfQ==
 -->
