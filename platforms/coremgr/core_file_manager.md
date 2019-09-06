@@ -18,7 +18,7 @@
   * [Configuration and Management Requirements](#configuration-and-management-requirements)
 * [Functional Description](#functional-description)
   * [Design](#design)
-  * [Coredump generation service ](#overview)
+  *   [ Core-dump generation service](#Core-dumpgeneration service)
 * [CLI](#cli)
 * [Serviceability and DEBUG](#serviceability-and-debug)
 * [Warm Boot Support](#warm-boot-support)
@@ -300,11 +300,11 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTMwMTgsMzE2MzAyNTM1LDExOTgyNT
-kxNDIsLTIxMTU4NTgwNzMsLTE3NzgyNzUwOTEsMTYyNzQwNjA0
-NywxMDI3MjI5OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC00OT
-UxOTI1MjksMjA5NzU0ODQxNiwtMTQxMzMxODM0NSwxNzAzODU4
-NjAyLC0xNTY2MTY3MzIzLDYwNzEwNzcwNSwtOTgxNDEzNDY1LC
-0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0x
-Njg3NjY3MDU4XX0=
+eyJoaXN0b3J5IjpbLTEwNDM5MTM4NTksMzE2MzAyNTM1LDExOT
+gyNTkxNDIsLTIxMTU4NTgwNzMsLTE3NzgyNzUwOTEsMTYyNzQw
+NjA0NywxMDI3MjI5OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC
+00OTUxOTI1MjksMjA5NzU0ODQxNiwtMTQxMzMxODM0NSwxNzAz
+ODU4NjAyLC0xNTY2MTY3MzIzLDYwNzEwNzcwNSwtOTgxNDEzND
+Y1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0yMDE4OTM1MzE4
+LC0xNjg3NjY3MDU4XX0=
 -->
