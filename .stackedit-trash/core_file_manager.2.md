@@ -62,7 +62,7 @@ This document describes the high level design details of core file manager frame
 | SFTP         | Secure File Transfer Protocol |
 
 
-## 1 Requirements Overview
+## Requirements Overview
 
 This document describes new mechanisms to manage the core files that are generated in a SONiC environment. When a process is terminated unexpectedly, the System generates the core dump of that process in most cases. The core files are stored on the persistent storage like SSDs. These core files need to be managed on the SONiC devices to optimize disk space usage, exported to remote server for offline analysis and recorded to maintain a history of occurances. In addition, existing "tech-support" information is associated with the core dumps and managed similarly.
 
@@ -96,7 +96,7 @@ There should be a limit on the size of core file generated and the space occupie
 ### 1.4 Warmboot Requirements
 > NA
 
-# 2 Functional Description
+# Functional Description
 
 ## Design
 
@@ -105,7 +105,7 @@ The corefile management functionality is divided into two main services.
 	2.  Tech-support data export service.
 
 
-## 2.1 Core-dump generation service
+## Core-dump generation service
 
 1.  Core files are usually generated when process terminates unexpectedly. Typical conditions are access violations, termination signals (except SIGKILL), etc.,
 2.  ulimit configuration might prevent generation of core due to size configurations. We need to ensure this is not the case.
@@ -226,7 +226,7 @@ Examples:
 	core.orchagent.0.8bc64adf67544e9e8b897cc5c1c9fde7.31104.1479891410000000000000.lz4  
 	core.orchagent.0.8bc64adf67544e9e8b897cc5c1c9fde7.5952.1479889193000000000000.lz4
   
-# 2.2 Tech-support export service 
+# Tech-support export service 
 
 The tech-support data is a vital information for debugging of a system and is captured by collecting the  device configuration, system information, log files  and core files. The export service captures the tech-support data and export it to a remote server for better offline debugging.  The tech-support data is captured and exported under the following conditions 
 
@@ -298,5 +298,5 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTU4NTgwNzMsMTkxMDY0NTgwMV19
+eyJoaXN0b3J5IjpbLTE2MzcyNjMxNjMsMTkxMDY0NTgwMV19
 -->
