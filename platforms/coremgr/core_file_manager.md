@@ -240,12 +240,12 @@ The tech-support data is a vital information for debugging of a system and is ca
 ![Tech Support export Service](images/corefilemgr.png)
 
 
-The export service is configured to monitors the coredump path for any new core file creation. Upon detection of new core file, it triggers the tech-support data collection and export it to a remote server.   In addition, export service can be configured to capture and upload the tech-support data periodically. 
+The export service is configured to monitors the coredump path for any new core file creation. Upon detection of a new core file, it triggers the tech-support data collection and export it to a remote server.   In addition, export service can be configured to capture and upload the tech-support data periodically. 
 
 
 ### Config DB Schema
 
-In order to export the tech support data, remote server details have to be configured on the device. Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials and transport protocol. These information are stored as part of config DB.
+In order to export the tech support data, remote server details have to be configured on the device. Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials and transport protocol. This information is stored as part of config DB.
 ,
 >>
     "EXPORT": {
@@ -265,7 +265,8 @@ While configuring the export service, the remote server password is encrypted wi
 
 ## CLI commands
     
-To enable export feature:
+To enable the export feature:
+
 ### Config CLI commands
 
 >##### sudo config export server username destdir protocol <server_ip> <username> <destination-directory> <scp|sftp>
@@ -313,11 +314,11 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjYzMzM2ODIsLTc3NDk4NTI2NywzMT
-YzMDI1MzUsMTE5ODI1OTE0MiwtMjExNTg1ODA3MywtMTc3ODI3
-NTA5MSwxNjI3NDA2MDQ3LDEwMjcyMjk5NDQsLTE1MDI3MDQwOS
-w0NjA5MTg5ODQsLTQ5NTE5MjUyOSwyMDk3NTQ4NDE2LC0xNDEz
-MzE4MzQ1LDE3MDM4NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3Nz
-A1LC05ODE0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQs
-LTIwMTg5MzUzMThdfQ==
+eyJoaXN0b3J5IjpbOTI3MTU1MzQ3LC03NzQ5ODUyNjcsMzE2Mz
+AyNTM1LDExOTgyNTkxNDIsLTIxMTU4NTgwNzMsLTE3NzgyNzUw
+OTEsMTYyNzQwNjA0NywxMDI3MjI5OTQ0LC0xNTAyNzA0MDksND
+YwOTE4OTg0LC00OTUxOTI1MjksMjA5NzU0ODQxNiwtMTQxMzMx
+ODM0NSwxNzAzODU4NjAyLC0xNTY2MTY3MzIzLDYwNzEwNzcwNS
+wtOTgxNDEzNDY1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0y
+MDE4OTM1MzE4XX0=
 -->
