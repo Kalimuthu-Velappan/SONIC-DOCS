@@ -18,7 +18,8 @@
   * [Configuration and Management Requirements](#configuration-and-management-requirements)
 * [Functional Description](#functional-description)
   * [Design](#design)
-  *   [ Core-dump generation service](#Core-dump-generation-service)
+  *   [ Core-dump generation service](#core-dump-generation-service)
+  *   [ Tech-support export service](#tech-support-export-service)
 * [CLI](#cli)
 * [Serviceability and DEBUG](#serviceability-and-debug)
 * [Warm Boot Support](#warm-boot-support)
@@ -301,11 +302,11 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzc5NTc1MTMsMzE2MzAyNTM1LDExOT
-gyNTkxNDIsLTIxMTU4NTgwNzMsLTE3NzgyNzUwOTEsMTYyNzQw
-NjA0NywxMDI3MjI5OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC
-00OTUxOTI1MjksMjA5NzU0ODQxNiwtMTQxMzMxODM0NSwxNzAz
-ODU4NjAyLC0xNTY2MTY3MzIzLDYwNzEwNzcwNSwtOTgxNDEzND
-Y1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0yMDE4OTM1MzE4
-LC0xNjg3NjY3MDU4XX0=
+eyJoaXN0b3J5IjpbMjA3MTU1ODY2NywzMTYzMDI1MzUsMTE5OD
+I1OTE0MiwtMjExNTg1ODA3MywtMTc3ODI3NTA5MSwxNjI3NDA2
+MDQ3LDEwMjcyMjk5NDQsLTE1MDI3MDQwOSw0NjA5MTg5ODQsLT
+Q5NTE5MjUyOSwyMDk3NTQ4NDE2LC0xNDEzMzE4MzQ1LDE3MDM4
+NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3NzA1LC05ODE0MTM0Nj
+UsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQsLTIwMTg5MzUzMTgs
+LTE2ODc2NjcwNThdfQ==
 -->
