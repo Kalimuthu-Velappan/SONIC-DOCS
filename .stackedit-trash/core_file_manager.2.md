@@ -75,7 +75,7 @@ This document describes new mechanisms to manage the core files that are generat
   4. Collect tech-support data when a new core dump is discovered, and manage/export it with the core dump
   5. Periodically collect/export tech-support data
 
-### 1.2 Configuration and Management Requirements
+### Configuration and Management Requirements
 
 To configure the core dump and tech-support data, export to an external server and to view the core details the following config and show commands shall be supported. It is to be noted that the tech-support data always includes the core dumps generated on the system.
 
@@ -90,10 +90,10 @@ To configure the core dump and tech-support data, export to an external server a
 > 1. Show commands to display the core file information
 > 2. show commands to display the tech-support export information.
  
-### 1.3 Scalability Requirements
+### Scalability Requirements
 There should be a limit on the size of core file generated and the space occupied on the disk.
 
-### 1.4 Warmboot Requirements
+### Warmboot Requirements
 > NA
 
 # Functional Description
@@ -298,5 +298,5 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzcyNjMxNjMsMTkxMDY0NTgwMV19
+eyJoaXN0b3J5IjpbMzE2MzAyNTM1LDE5MTA2NDU4MDFdfQ==
 -->
