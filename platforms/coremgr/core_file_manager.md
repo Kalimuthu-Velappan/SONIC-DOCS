@@ -105,7 +105,7 @@ The corefile management functionality is divided into two main services.
 	2.  Tech-support data export service.
 
 
-## 2.1 Core-dump generation service
+## Core-dump generation service
 
 1.  Core files are usually generated when process terminates unexpectedly. Typical conditions are access violations, termination signals (except SIGKILL), etc.,
 2.  ulimit configuration might prevent generation of core due to size configurations. We need to ensure this is not the case.
@@ -226,7 +226,7 @@ Examples:
 	core.orchagent.0.8bc64adf67544e9e8b897cc5c1c9fde7.31104.1479891410000000000000.lz4  
 	core.orchagent.0.8bc64adf67544e9e8b897cc5c1c9fde7.5952.1479889193000000000000.lz4
   
-# 2.2 Tech-support export service 
+# Tech-support export service 
 
 The tech-support data is a vital information for debugging of a system and is captured by collecting the  device configuration, system information, log files  and core files. The export service captures the tech-support data and export it to a remote server for better offline debugging.  The tech-support data is captured and exported under the following conditions 
 
@@ -298,11 +298,11 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5ODI1OTE0MiwtMjExNTg1ODA3MywtMT
-c3ODI3NTA5MSwxNjI3NDA2MDQ3LDEwMjcyMjk5NDQsLTE1MDI3
-MDQwOSw0NjA5MTg5ODQsLTQ5NTE5MjUyOSwyMDk3NTQ4NDE2LC
-0xNDEzMzE4MzQ1LDE3MDM4NTg2MDIsLTE1NjYxNjczMjMsNjA3
-MTA3NzA1LC05ODE0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyOD
-UzODQsLTIwMTg5MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgw
-MV19
+eyJoaXN0b3J5IjpbMzE2MzAyNTM1LDExOTgyNTkxNDIsLTIxMT
+U4NTgwNzMsLTE3NzgyNzUwOTEsMTYyNzQwNjA0NywxMDI3MjI5
+OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC00OTUxOTI1MjksMj
+A5NzU0ODQxNiwtMTQxMzMxODM0NSwxNzAzODU4NjAyLC0xNTY2
+MTY3MzIzLDYwNzEwNzcwNSwtOTgxNDEzNDY1LC0xOTc1Njc5Nj
+U3LC0xMjg5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4
+LDE5MTA2NDU4MDFdfQ==
 -->
