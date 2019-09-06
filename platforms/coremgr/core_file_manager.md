@@ -75,7 +75,7 @@ This document describes new mechanisms to manage the core files that are generat
   4. Collect tech-support data when a new core dump is discovered, and manage/export it with the core dump
   5. Periodically collect/export tech-support data
 
-### 1.2 Configuration and Management Requirements
+### Configuration and Management Requirements
 
 To configure the core dump and tech-support data, export to an external server and to view the core details the following config and show commands shall be supported. It is to be noted that the tech-support data always includes the core dumps generated on the system.
 
@@ -90,10 +90,10 @@ To configure the core dump and tech-support data, export to an external server a
 > 1. Show commands to display the core file information
 > 2. show commands to display the tech-support export information.
  
-### 1.3 Scalability Requirements
+### Scalability Requirements
 There should be a limit on the size of core file generated and the space occupied on the disk.
 
-### 1.4 Warmboot Requirements
+### Warmboot Requirements
 > NA
 
 # Functional Description
@@ -105,7 +105,7 @@ The corefile management functionality is divided into two main services.
 	2.  Tech-support data export service.
 
 
-## Core-dump generation service
+## 2.1 Core-dump generation service
 
 1.  Core files are usually generated when process terminates unexpectedly. Typical conditions are access violations, termination signals (except SIGKILL), etc.,
 2.  ulimit configuration might prevent generation of core due to size configurations. We need to ensure this is not the case.
@@ -226,7 +226,7 @@ Examples:
 	core.orchagent.0.8bc64adf67544e9e8b897cc5c1c9fde7.31104.1479891410000000000000.lz4  
 	core.orchagent.0.8bc64adf67544e9e8b897cc5c1c9fde7.5952.1479889193000000000000.lz4
   
-# Tech-support export service 
+# 2.2 Tech-support export service 
 
 The tech-support data is a vital information for debugging of a system and is captured by collecting the  device configuration, system information, log files  and core files. The export service captures the tech-support data and export it to a remote server for better offline debugging.  The tech-support data is captured and exported under the following conditions 
 
@@ -298,11 +298,11 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzcyNjMxNjMsLTIxMTU4NTgwNzMsLT
-E3NzgyNzUwOTEsMTYyNzQwNjA0NywxMDI3MjI5OTQ0LC0xNTAy
-NzA0MDksNDYwOTE4OTg0LC00OTUxOTI1MjksMjA5NzU0ODQxNi
-wtMTQxMzMxODM0NSwxNzAzODU4NjAyLC0xNTY2MTY3MzIzLDYw
-NzEwNzcwNSwtOTgxNDEzNDY1LC0xOTc1Njc5NjU3LC0xMjg5Mj
-g1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4LDE5MTA2NDU4
-MDFdfQ==
+eyJoaXN0b3J5IjpbMTE5ODI1OTE0MiwtMjExNTg1ODA3MywtMT
+c3ODI3NTA5MSwxNjI3NDA2MDQ3LDEwMjcyMjk5NDQsLTE1MDI3
+MDQwOSw0NjA5MTg5ODQsLTQ5NTE5MjUyOSwyMDk3NTQ4NDE2LC
+0xNDEzMzE4MzQ1LDE3MDM4NTg2MDIsLTE1NjYxNjczMjMsNjA3
+MTA3NzA1LC05ODE0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyOD
+UzODQsLTIwMTg5MzUzMTgsLTE2ODc2NjcwNTgsMTkxMDY0NTgw
+MV19
 -->
