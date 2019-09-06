@@ -275,7 +275,7 @@ To enable export feature:
 >>  destdir      => destination server upload directory  path.
 >>  protocol => transfer protocol either SCP/SFTP
 
-Upon entering the config command, user is prompted for getting the remote server password. 
+Upon entering the config command, the user is prompted for getting the remote server password. 
 
 >##### sudo config export <enable|disable>
 
@@ -297,7 +297,7 @@ By default, the export service is disabled.
 
 ### Show CLI commands
 
-  To display the tech-suport export configuration
+  To display the tech-support export configuration
     >> show export
     Dumps the export configurations.
 
@@ -313,11 +313,11 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NDk4NTI2NywzMTYzMDI1MzUsMTE5OD
-I1OTE0MiwtMjExNTg1ODA3MywtMTc3ODI3NTA5MSwxNjI3NDA2
-MDQ3LDEwMjcyMjk5NDQsLTE1MDI3MDQwOSw0NjA5MTg5ODQsLT
-Q5NTE5MjUyOSwyMDk3NTQ4NDE2LC0xNDEzMzE4MzQ1LDE3MDM4
-NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3NzA1LC05ODE0MTM0Nj
-UsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQsLTIwMTg5MzUzMTgs
-LTE2ODc2NjcwNThdfQ==
+eyJoaXN0b3J5IjpbLTExMjYzMzM2ODIsLTc3NDk4NTI2NywzMT
+YzMDI1MzUsMTE5ODI1OTE0MiwtMjExNTg1ODA3MywtMTc3ODI3
+NTA5MSwxNjI3NDA2MDQ3LDEwMjcyMjk5NDQsLTE1MDI3MDQwOS
+w0NjA5MTg5ODQsLTQ5NTE5MjUyOSwyMDk3NTQ4NDE2LC0xNDEz
+MzE4MzQ1LDE3MDM4NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3Nz
+A1LC05ODE0MTM0NjUsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQs
+LTIwMTg5MzUzMThdfQ==
 -->
