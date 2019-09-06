@@ -18,7 +18,7 @@
   * [Configuration and Management Requirements](#configuration-and-management-requirements)
 * [Functional Description](#functional-description)
   * [Design](#design)
-  *   [ Core-dump generation service](#Core-dumpgeneration service)
+  *   [ Core-dump generation service](#Core-dump-generation-service)
 * [CLI](#cli)
 * [Serviceability and DEBUG](#serviceability-and-debug)
 * [Warm Boot Support](#warm-boot-support)
@@ -103,6 +103,7 @@ There should be a limit on the size of core file generated and the space occupie
 ## Design
 
 The corefile management functionality is divided into two main services. 
+
 	1. Core-dump generation service.
 	2.  Tech-support data export service.
 
@@ -300,7 +301,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDM5MTM4NTksMzE2MzAyNTM1LDExOT
+eyJoaXN0b3J5IjpbLTE1Mzc5NTc1MTMsMzE2MzAyNTM1LDExOT
 gyNTkxNDIsLTIxMTU4NTgwNzMsLTE3NzgyNzUwOTEsMTYyNzQw
 NjA0NywxMDI3MjI5OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC
 00OTUxOTI1MjksMjA5NzU0ODQxNiwtMTQxMzMxODM0NSwxNzAz
