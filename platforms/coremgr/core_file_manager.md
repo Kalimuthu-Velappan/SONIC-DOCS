@@ -2,7 +2,7 @@
 # Core file manager
 
 ## High Level Design Document
-**Rev 0.1**
+**Rev 2.0**
 
 ## Table of Contents
 
@@ -313,7 +313,7 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NzYxMDU0MiwzMTYzMDI1MzUsMTE5OD
+eyJoaXN0b3J5IjpbLTc3NDk4NTI2NywzMTYzMDI1MzUsMTE5OD
 I1OTE0MiwtMjExNTg1ODA3MywtMTc3ODI3NTA5MSwxNjI3NDA2
 MDQ3LDEwMjcyMjk5NDQsLTE1MDI3MDQwOSw0NjA5MTg5ODQsLT
 Q5NTE5MjUyOSwyMDk3NTQ4NDE2LC0xNDEzMzE4MzQ1LDE3MDM4
