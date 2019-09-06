@@ -18,7 +18,7 @@
   * [Configuration and Management Requirements](#configuration-and-management-requirements)
 * [Functional Description](#functional-description)
   * [Design](#design)
-  * [Overview](#overview)
+  * [Coredump generation service ](#overview)
 * [CLI](#cli)
 * [Serviceability and DEBUG](#serviceability-and-debug)
 * [Warm Boot Support](#warm-boot-support)
@@ -63,6 +63,8 @@ This document describes the high level design details of core file manager frame
 
 
 ## Requirements Overview
+
+### Functional Requirements
 
 This document describes new mechanisms to manage the core files that are generated in a SONiC environment. When a process is terminated unexpectedly, the System generates the core dump of that process in most cases. The core files are stored on the persistent storage like SSDs. These core files need to be managed on the SONiC devices to optimize disk space usage, exported to remote server for offline analysis and recorded to maintain a history of occurances. In addition, existing "tech-support" information is associated with the core dumps and managed similarly.
 
@@ -298,11 +300,11 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE2MzAyNTM1LDExOTgyNTkxNDIsLTIxMT
-U4NTgwNzMsLTE3NzgyNzUwOTEsMTYyNzQwNjA0NywxMDI3MjI5
-OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC00OTUxOTI1MjksMj
-A5NzU0ODQxNiwtMTQxMzMxODM0NSwxNzAzODU4NjAyLC0xNTY2
-MTY3MzIzLDYwNzEwNzcwNSwtOTgxNDEzNDY1LC0xOTc1Njc5Nj
-U3LC0xMjg5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0xNjg3NjY3MDU4
-LDE5MTA2NDU4MDFdfQ==
+eyJoaXN0b3J5IjpbLTM2NTMwMTgsMzE2MzAyNTM1LDExOTgyNT
+kxNDIsLTIxMTU4NTgwNzMsLTE3NzgyNzUwOTEsMTYyNzQwNjA0
+NywxMDI3MjI5OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC00OT
+UxOTI1MjksMjA5NzU0ODQxNiwtMTQxMzMxODM0NSwxNzAzODU4
+NjAyLC0xNTY2MTY3MzIzLDYwNzEwNzcwNSwtOTgxNDEzNDY1LC
+0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0yMDE4OTM1MzE4LC0x
+Njg3NjY3MDU4XX0=
 -->
