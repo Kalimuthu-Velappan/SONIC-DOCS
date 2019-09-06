@@ -298,6 +298,7 @@ By default, the export service is disabled.
 
   To display the tech-suport export configuration
     >> show export
+    Dumps the export configurations.
 
 ## Serviceability and DEBUG
 NA
@@ -311,11 +312,11 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzODcyOTE5MCwzMTYzMDI1MzUsMTE5OD
-I1OTE0MiwtMjExNTg1ODA3MywtMTc3ODI3NTA5MSwxNjI3NDA2
-MDQ3LDEwMjcyMjk5NDQsLTE1MDI3MDQwOSw0NjA5MTg5ODQsLT
-Q5NTE5MjUyOSwyMDk3NTQ4NDE2LC0xNDEzMzE4MzQ1LDE3MDM4
-NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3NzA1LC05ODE0MTM0Nj
-UsLTE5NzU2Nzk2NTcsLTEyODkyODUzODQsLTIwMTg5MzUzMTgs
-LTE2ODc2NjcwNThdfQ==
+eyJoaXN0b3J5IjpbODE0NDM3MzQzLDMxNjMwMjUzNSwxMTk4Mj
+U5MTQyLC0yMTE1ODU4MDczLC0xNzc4Mjc1MDkxLDE2Mjc0MDYw
+NDcsMTAyNzIyOTk0NCwtMTUwMjcwNDA5LDQ2MDkxODk4NCwtND
+k1MTkyNTI5LDIwOTc1NDg0MTYsLTE0MTMzMTgzNDUsMTcwMzg1
+ODYwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MDUsLTk4MTQxMzQ2NS
+wtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwtMjAxODkzNTMxOCwt
+MTY4NzY2NzA1OF19
 -->
