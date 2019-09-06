@@ -94,7 +94,7 @@ To configure the core dump and tech-support data, export to an external server a
 > 2. show commands to display the tech-support export information.
  
 ### Scalability Requirements
-There should be a limit on the size of core file generated and the space occupied on the disk.
+There should be a limit on the size of the core file generated and the space occupied on the disk.
 
 ### Warmboot Requirements
 > NA
@@ -314,11 +314,11 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI3MTU1MzQ3LC03NzQ5ODUyNjcsMzE2Mz
-AyNTM1LDExOTgyNTkxNDIsLTIxMTU4NTgwNzMsLTE3NzgyNzUw
-OTEsMTYyNzQwNjA0NywxMDI3MjI5OTQ0LC0xNTAyNzA0MDksND
-YwOTE4OTg0LC00OTUxOTI1MjksMjA5NzU0ODQxNiwtMTQxMzMx
-ODM0NSwxNzAzODU4NjAyLC0xNTY2MTY3MzIzLDYwNzEwNzcwNS
-wtOTgxNDEzNDY1LC0xOTc1Njc5NjU3LC0xMjg5Mjg1Mzg0LC0y
-MDE4OTM1MzE4XX0=
+eyJoaXN0b3J5IjpbMTA5NjM1ODc1NCwtNzc0OTg1MjY3LDMxNj
+MwMjUzNSwxMTk4MjU5MTQyLC0yMTE1ODU4MDczLC0xNzc4Mjc1
+MDkxLDE2Mjc0MDYwNDcsMTAyNzIyOTk0NCwtMTUwMjcwNDA5LD
+Q2MDkxODk4NCwtNDk1MTkyNTI5LDIwOTc1NDg0MTYsLTE0MTMz
+MTgzNDUsMTcwMzg1ODYwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MD
+UsLTk4MTQxMzQ2NSwtMTk3NTY3OTY1NywtMTI4OTI4NTM4NCwt
+MjAxODkzNTMxOF19
 -->
