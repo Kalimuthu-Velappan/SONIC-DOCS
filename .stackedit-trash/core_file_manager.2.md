@@ -2,7 +2,7 @@
 # Core file manager
 
 ## High Level Design Document
-**Rev 0.1**
+**Rev 2.0**
 
 ## Table of Contents
 
@@ -18,8 +18,9 @@
   * [Configuration and Management Requirements](#configuration-and-management-requirements)
 * [Functional Description](#functional-description)
   * [Design](#design)
-  * [Overview](#overview)
-* [CLI](#cli)
+  *   [ Core-dump generation service](#core-dump-generation-service)
+  *   [ Tech-support export service](#tech-support-export-service)
+* [CLI commands](#cli-commands)
 * [Serviceability and DEBUG](#serviceability-and-debug)
 * [Warm Boot Support](#warm-boot-support)
 * [Unit Test](#unit-test)
@@ -33,7 +34,7 @@
 Rev   |   Date   |  Author   | Change Description
 :---: | :-----:  | :------:  | :---------
 1.0   | 05/07/19 | Kalimuthu | Initial version
-2.0   |          |           |  
+2.0   | 03/08/19 | Rajendra  | Review Comments 
 
 
 # About this Manual
@@ -64,6 +65,8 @@ This document describes the high level design details of core file manager frame
 
 ## Requirements Overview
 
+### Functional Requirements
+
 This document describes new mechanisms to manage the core files that are generated in a SONiC environment. When a process is terminated unexpectedly, the System generates the core dump of that process in most cases. The core files are stored on the persistent storage like SSDs. These core files need to be managed on the SONiC devices to optimize disk space usage, exported to remote server for offline analysis and recorded to maintain a history of occurances. In addition, existing "tech-support" information is associated with the core dumps and managed similarly.
 
 ### Core Manager Requirements
@@ -91,7 +94,7 @@ To configure the core dump and tech-support data, export to an external server a
 > 2. show commands to display the tech-support export information.
  
 ### Scalability Requirements
-There should be a limit on the size of core file generated and the space occupied on the disk.
+There should be a limit on the size of the core file generated and the space occupied on the disk.
 
 ### Warmboot Requirements
 > NA
@@ -101,6 +104,7 @@ There should be a limit on the size of core file generated and the space occupie
 ## Design
 
 The corefile management functionality is divided into two main services. 
+
 	1. Core-dump generation service.
 	2.  Tech-support data export service.
 
@@ -236,12 +240,12 @@ The tech-support data is a vital information for debugging of a system and is ca
 ![Tech Support export Service](images/corefilemgr.png)
 
 
-The export service is configured to monitors the coredump path for any new core file creation. Upon detection of new core file, it triggers the tech-support data collection and export it to a remote server.   In addition, export service can be configured to capture and upload the tech-support data periodically. 
+The export service is configured to monitors the coredump path for any new core file creation. Upon detection of a new core file, it triggers the tech-support data collection and export it to a remote server.   In addition, export service can be configured to capture and upload the tech-support data periodically. 
 
 
 ### Config DB Schema
 
-In order to export the tech support data, remote server details have to be configured on the device. Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials and transport protocol. These information are stored as part of config DB.
+In order to export the tech support data, remote server details have to be configured on the device. Through CLI interface, external storage server can be configured which includes server IP, path and access information like user credentials and transport protocol. This information is stored as part of config DB.
 ,
 >>
     "EXPORT": {
@@ -259,9 +263,11 @@ In order to export the tech support data, remote server details have to be confi
 
 While configuring the export service, the remote server password is encrypted with device universally unique identifier (UUID) and stored into the config DB, so that the password can be decrypted only on the device. The protocol fields specifies the one of the file transfer protocol either SCP or SFTP.  The interval field specifies the duration in which it captures the tech-support data and export it.
 
+## CLI commands
     
-To enable export feature:
-### CLI commands
+To enable the export feature:
+
+### Config CLI commands
 
 >##### sudo config export server username destdir protocol <server_ip> <username> <destination-directory> <scp|sftp>
 > where: 
@@ -270,7 +276,7 @@ To enable export feature:
 >>  destdir      => destination server upload directory  path.
 >>  protocol => transfer protocol either SCP/SFTP
 
-Upon entering the config command, user is prompted for getting the remote server password. 
+Upon entering the config command, the user is prompted for getting the remote server password. 
 
 >##### sudo config export <enable|disable>
 
@@ -278,7 +284,7 @@ This will export show tech-support data, on detection of a new core file. In add
 
 By default, the export service is disabled. 
 
-### CLI commands
+### Config CLI commands - Interval
 >##### sudo config export interval <interval in minutes>
 >where  interval can be 
 >> 0   =>  disable the periodic export of tech-support data
@@ -286,17 +292,28 @@ By default, the export service is disabled.
 
 1.  To disable or change the periodic export interval, use the following command:
    
-### CLI commands
+### Disable Mode
 >##### sudo config export interval 0 (To disable)
 >##### sudo config export interval 60 (To change it to one hour)
-  
 
+### Show CLI commands
 
-# UT report
+  To display the tech-support export configuration
+    >> show export
+    Dumps the export configurations.
+
+## Serviceability and DEBUG
+NA
+
+## Warm Boot Support
+NA
+
+## Unit Test
 
 https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths=true
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE2MzAyNTM1LDE5MTA2NDU4MDFdfQ==
+eyJoaXN0b3J5IjpbMTA5NjM1ODc1NCwzMTYzMDI1MzUsMTkxMD
+Y0NTgwMV19
 -->
