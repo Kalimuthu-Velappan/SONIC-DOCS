@@ -322,18 +322,18 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 SNO|   Testcase|  Description   | Result
 :---: | :-----:  | :------  | :---------:|:-----:
 1| Service Startup| 1. Check the coredump service on startup <br>2. Check the export service on startup  | Pass
-2| coredumpctl | 1. List the core files <br> 2. show the details (backtrace) of a core file <br> -- coredumpctl list <br> -- coredumpctl info| Pass
-3| show export service | 1. List the export servic info <br> -- show export <br> 2. Verify the coonfig db by show running config <br> -- show runningconfiguration all | Pass
+2| coredumpctl | 1. List the core files <br> 2. Verifty the contents (backtrace) of the core file <br> -- coredumpctl list <br> -- coredumpctl info| Pass
+3| show export service | 1. List the export service info <br> -- show export <br> 2. Verify the coonfig db by show running config <br> -- show runningconfiguration all | Pass
 4| config export service | 1. Verify the config export with different CLI options <br> 2. Verify the export service enable/disable | Pass
 5|  tech-support exporrt | 1. Verify the techsupport export when <br> -- New core is generated <br> -- Periodic interval | Pass
 6| Invalid arguments| Verify the various arguments with invalid combination | Pass
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTcwODAxNzEsLTE1NTYxNzQ2MDYsMT
-A5NjM1ODc1NCwtNzc0OTg1MjY3LDMxNjMwMjUzNSwxMTk4MjU5
-MTQyLC0yMTE1ODU4MDczLC0xNzc4Mjc1MDkxLDE2Mjc0MDYwND
-csMTAyNzIyOTk0NCwtMTUwMjcwNDA5LDQ2MDkxODk4NCwtNDk1
-MTkyNTI5LDIwOTc1NDg0MTYsLTE0MTMzMTgzNDUsMTcwMzg1OD
-YwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MDUsLTk4MTQxMzQ2NSwt
-MTk3NTY3OTY1N119
+eyJoaXN0b3J5IjpbLTg1NDg3ODg5OCwtMTU1NjE3NDYwNiwxMD
+k2MzU4NzU0LC03NzQ5ODUyNjcsMzE2MzAyNTM1LDExOTgyNTkx
+NDIsLTIxMTU4NTgwNzMsLTE3NzgyNzUwOTEsMTYyNzQwNjA0Ny
+wxMDI3MjI5OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC00OTUx
+OTI1MjksMjA5NzU0ODQxNiwtMTQxMzMxODM0NSwxNzAzODU4Nj
+AyLC0xNTY2MTY3MzIzLDYwNzEwNzcwNSwtOTgxNDEzNDY1LC0x
+OTc1Njc5NjU3XX0=
 -->
