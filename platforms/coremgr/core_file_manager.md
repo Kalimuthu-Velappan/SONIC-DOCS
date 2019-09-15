@@ -322,10 +322,11 @@ https://drive.google.com/drive/u/0/folders/1jzVr93Kf9lY-eYmxjmUO86ugQzFLVp0J?ths
 SNO|   Testcase|  Description   | Result
 :---: | :-----:  | :------  | :---------:|:-----:
 1| Service Startup| 1. Check the coredump service on startup <br>2. Check the export service on startup  | Pass
-2| coredumpctl | 1. List the core files <br> core<br> 2. show the details of | Review Comments 
+2| coredumpctl | 1. List the core files <br> 2. show the details of the core <br> -- coredumpctl list <br> -- coredumpctl info| Pass
+3
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTgwMzM3OCwtMTU1NjE3NDYwNiwxMD
+eyJoaXN0b3J5IjpbMTIyNTIwMzczMSwtMTU1NjE3NDYwNiwxMD
 k2MzU4NzU0LC03NzQ5ODUyNjcsMzE2MzAyNTM1LDExOTgyNTkx
 NDIsLTIxMTU4NTgwNzMsLTE3NzgyNzUwOTEsMTYyNzQwNjA0Ny
 wxMDI3MjI5OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC00OTUx
