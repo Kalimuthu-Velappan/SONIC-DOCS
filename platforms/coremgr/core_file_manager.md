@@ -323,10 +323,11 @@ SNO|   Testcase|  Description   | Result
 :---: | :-----:  | :------  | :---------:|:-----:
 1| Service Startup| 1. Check the coredump service on startup <br>2. Check the export service on startup  | Pass
 2| coredumpctl | 1. List the core files <br> 2. show the details of the core <br> -- coredumpctl list <br> -- coredumpctl info| Pass
-3| export service | 1. List the export servic info <br> -- show export <br>
+3| export service | 1. List the export servic info <br> -- show export <br> 2. Verify the coonfig db by show running config <br> -- show runningconfiguration all | Pass
+4| 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjY3NDYxNDcsLTE1NTYxNzQ2MDYsMT
+eyJoaXN0b3J5IjpbLTExMjUyODMyOTksLTE1NTYxNzQ2MDYsMT
 A5NjM1ODc1NCwtNzc0OTg1MjY3LDMxNjMwMjUzNSwxMTk4MjU5
 MTQyLC0yMTE1ODU4MDczLC0xNzc4Mjc1MDkxLDE2Mjc0MDYwND
 csMTAyNzIyOTk0NCwtMTUwMjcwNDA5LDQ2MDkxODk4NCwtNDk1
