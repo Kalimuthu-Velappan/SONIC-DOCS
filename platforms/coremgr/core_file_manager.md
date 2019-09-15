@@ -325,15 +325,15 @@ SNO|   Testcase|  Description   | Result
 2| coredumpctl | 1. List the core files <br> 2. Verify the contents (backtrace) of the core file <br> -- coredumpctl list <br> -- coredumpctl info| Pass
 3| show export service | 1. List the export service info <br> -- show export <br> 2. Verify the coonfig db by show running config <br> -- show runningconfiguration all | Pass
 4| config export service | 1. Verify the config export with different CLI options <br> 2. Verify the export service enable/disable | Pass
-5|  tech-support exporrt | 1. Verify the tech-support export when <br> -- New core is generated <br> -- Periodic interval | Pass
-6| Invalid arguments| Verify the various arguments with invalid combination | Pass
+5|  tech-support export | 1. Verify the tech-support export <br> -- When a new core is generated <br> -- On a periodic interval | Pass
+6| Invalid arguments| Verify the various arguments with an invalid combination | Pass
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MjgxNTY2NSwtODU0ODc4ODk4LC0xNT
-U2MTc0NjA2LDEwOTYzNTg3NTQsLTc3NDk4NTI2NywzMTYzMDI1
-MzUsMTE5ODI1OTE0MiwtMjExNTg1ODA3MywtMTc3ODI3NTA5MS
-wxNjI3NDA2MDQ3LDEwMjcyMjk5NDQsLTE1MDI3MDQwOSw0NjA5
-MTg5ODQsLTQ5NTE5MjUyOSwyMDk3NTQ4NDE2LC0xNDEzMzE4Mz
-Q1LDE3MDM4NTg2MDIsLTE1NjYxNjczMjMsNjA3MTA3NzA1LC05
-ODE0MTM0NjVdfQ==
+eyJoaXN0b3J5IjpbMTA3NjIxODIyOSwtNTcyODE1NjY1LC04NT
+Q4Nzg4OTgsLTE1NTYxNzQ2MDYsMTA5NjM1ODc1NCwtNzc0OTg1
+MjY3LDMxNjMwMjUzNSwxMTk4MjU5MTQyLC0yMTE1ODU4MDczLC
+0xNzc4Mjc1MDkxLDE2Mjc0MDYwNDcsMTAyNzIyOTk0NCwtMTUw
+MjcwNDA5LDQ2MDkxODk4NCwtNDk1MTkyNTI5LDIwOTc1NDg0MT
+YsLTE0MTMzMTgzNDUsMTcwMzg1ODYwMiwtMTU2NjE2NzMyMyw2
+MDcxMDc3MDVdfQ==
 -->
