@@ -323,14 +323,14 @@ SNO|   Testcase|  Description   | Result
 :---: | :-----:  | :------  | :---------:|:-----:
 1| Service Startup| 1. Check the coredump service on startup <br>2. Check the export service on startup  | Pass
 2| coredumpctl | 1. List the core files <br> 2. show the details of the core <br> -- coredumpctl list <br> -- coredumpctl info| Pass
-3
+3| export service | 1. List the export servic info <br> -- show export <br>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNTIwMzczMSwtMTU1NjE3NDYwNiwxMD
-k2MzU4NzU0LC03NzQ5ODUyNjcsMzE2MzAyNTM1LDExOTgyNTkx
-NDIsLTIxMTU4NTgwNzMsLTE3NzgyNzUwOTEsMTYyNzQwNjA0Ny
-wxMDI3MjI5OTQ0LC0xNTAyNzA0MDksNDYwOTE4OTg0LC00OTUx
-OTI1MjksMjA5NzU0ODQxNiwtMTQxMzMxODM0NSwxNzAzODU4Nj
-AyLC0xNTY2MTY3MzIzLDYwNzEwNzcwNSwtOTgxNDEzNDY1LC0x
-OTc1Njc5NjU3XX0=
+eyJoaXN0b3J5IjpbLTE5NjY3NDYxNDcsLTE1NTYxNzQ2MDYsMT
+A5NjM1ODc1NCwtNzc0OTg1MjY3LDMxNjMwMjUzNSwxMTk4MjU5
+MTQyLC0yMTE1ODU4MDczLC0xNzc4Mjc1MDkxLDE2Mjc0MDYwND
+csMTAyNzIyOTk0NCwtMTUwMjcwNDA5LDQ2MDkxODk4NCwtNDk1
+MTkyNTI5LDIwOTc1NDg0MTYsLTE0MTMzMTgzNDUsMTcwMzg1OD
+YwMiwtMTU2NjE2NzMyMyw2MDcxMDc3MDUsLTk4MTQxMzQ2NSwt
+MTk3NTY3OTY1N119
 -->
