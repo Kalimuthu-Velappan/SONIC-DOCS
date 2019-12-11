@@ -52,7 +52,7 @@ The monitoring framework should monitor both hardware and software resouces in t
 Resouce Monitoring
  - CPU Monitoring
 	 - Generate the syslog alert with process stats when its usage crosses threshold value
-	 - 
+	 - Threshold is predefined with  80%, 90%, 100%
 
 ### 1.1.2 Configuration and Management Requirements
 Which UI's will be provided for the feature?
@@ -167,7 +167,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMDIyNzU4NCwtMTgyNTAyMzMxMyw4OD
-ExNTg3LDE3Nzc1NjI3NTksMzU3MjE4NjIsLTIwNjQ4MDAyMzks
-MTE5NzU5Mzg0MiwyMDkxNjQ5MzJdfQ==
+eyJoaXN0b3J5IjpbLTEwNTMyNDY2MTIsLTE4MjUwMjMzMTMsOD
+gxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0yMDY0ODAwMjM5
+LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
 -->
