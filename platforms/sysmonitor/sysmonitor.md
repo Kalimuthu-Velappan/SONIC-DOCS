@@ -43,7 +43,7 @@ If smaller features can get to the second pass within 1 to 2 weeks of starting, 
 
 ## 1.1 Requirements
 
-![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/test1.png)
+![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
 
 ### 1.1.1 Functional Requirements
 
@@ -166,5 +166,5 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTY0OTMyXX0=
+eyJoaXN0b3J5IjpbMTE5NzU5Mzg0MiwyMDkxNjQ5MzJdfQ==
 -->
