@@ -39,12 +39,10 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
 
 ## 1.1 Requirements
 
-![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
-
-  Sonic system consists of multiple system process forwarded 
-  
+![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)  
 ### 1.1.1 Functional Requirements
 
+The sonic system consists of two 
 Requirement guidance: -
 - Sonic system conFirst Pass: Fill out with top-level requirements that put the big picture in place
 - Second Pass: Fill out with detailed, immutably numbered requirements from which test cases can be generated
@@ -164,6 +162,6 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyODUwNDA2LDM1NzIxODYyLC0yMDY0OD
-AwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
+eyJoaXN0b3J5IjpbMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2ND
+gwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
 -->
