@@ -87,7 +87,8 @@ Resouce Monitoring
 
 ![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
 
-Monitor the resource usage and generate the  message  
+Monitor the resource usage and generate the  message  when its usage crosses the threshold level.
+One Syslog message is generated for each threshold level crossing
 
 
 ## 3.2 DB Changes
@@ -162,8 +163,9 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg4NDU0NDgwLC03NDI1NzAzOTIsMTMzMj
-Q4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIz
-MzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2ND
-gwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
+eyJoaXN0b3J5IjpbMTEwNjE3MDMwMSw5ODg0NTQ0ODAsLTc0Mj
+U3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMz
+NzQsLTE4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1Nz
+IxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMy
+XX0=
 -->
