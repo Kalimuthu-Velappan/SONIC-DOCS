@@ -34,7 +34,7 @@ This document describes the high level design of System Resource Monitoring Enha
 
 # 1 Feature Overview
 
-A workflow discussion is underway that proposes a 2-stage review process for this document: -
+System monitoring service provides the A workflow discussion is underway that proposes a 2-stage review process for this document: -
 1) First Pass: Within ~1 week of feature start. Fills out section 1, including top-level requirements.
 2) Second Pass: Document complete, including all sections. Requirements are detailed enough for test case generation, and are immutably numbered.
 
@@ -166,5 +166,6 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NzU5Mzg0MiwyMDkxNjQ5MzJdfQ==
+eyJoaXN0b3J5IjpbLTIwNjQ4MDAyMzksMTE5NzU5Mzg0MiwyMD
+kxNjQ5MzJdfQ==
 -->
