@@ -72,6 +72,10 @@ Resouce Monitoring
  
 ### 1.1.2 Configuration and Management Requirements
 
+ - Threshold values are predefined.
+ - Network values are predfined.
+ - 
+
 ### 1.1.3 Scalability Requirements
 key scaling factors
 ### 1.1.4 Warm Boot Requirements
@@ -169,7 +173,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4MzM5OTA5LDEzOTIwNTMzNzQsLTE4Mj
-UwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0y
-MDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
+eyJoaXN0b3J5IjpbLTIwNjM0Mzc5MTIsMTM5MjA1MzM3NCwtMT
+gyNTAyMzMxMyw4ODExNTg3LDE3Nzc1NjI3NTksMzU3MjE4NjIs
+LTIwNjQ4MDAyMzksMTE5NzU5Mzg0MiwyMDkxNjQ5MzJdfQ==
 -->
