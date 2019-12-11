@@ -18,12 +18,12 @@ System Resource Monitoring Enhancements.
 # Revision
 | Rev |     Date    |       Author       | Change Description                |
 |:---:|:-----------:|:------------------:|-----------------------------------|
-| 0.1 | 04/11/2019  |   Kalimuthu        | Initial version                   |
+| 0.1 | 04/12/2019  |   Kalimuthu        | Initial version                   |
 
 # About this Manual
 This document provides general information about the Layer 2 Forwarding Enhancements feature implementation in SONiC.
 # Scope
-This document describes the high level design of Layer 2 Forwarding Enhancements feature. Call out any related design that is not covered by this document
+This document describes the high level design of System Resource Monitoring Enhancements feature. Call out any related design that is not covered by this document
 
 # Definition/Abbreviation
 
@@ -166,5 +166,5 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTU4ODQwNjNdfQ==
+eyJoaXN0b3J5IjpbMTg2NTU4MTg0M119
 -->
