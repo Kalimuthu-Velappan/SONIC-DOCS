@@ -93,7 +93,7 @@ One Syslog message is generated for each threshold level crossing.
 ### Memory Monitoring :
 
 #### System Service Monitoring:
-
+   Monitor 
 #### System Memory Usage:
    Memory usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
    
@@ -188,9 +188,9 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjI1NzM5MDYsLTM0MjQ4NjYzNywzNz
-QxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3MDM5
-MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMzNzQsLT
-E4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYy
-LC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
+eyJoaXN0b3J5IjpbLTg5NjI1NDY3NiwtMzQyNDg2NjM3LDM3ND
+E2NTI5MSwxMTMxNDcxMDE2LDk4ODQ1NDQ4MCwtNzQyNTcwMzky
+LDEzMzI0ODQ5MDUsLTIwNjM0Mzc5MTIsMTM5MjA1MzM3NCwtMT
+gyNTAyMzMxMyw4ODExNTg3LDE3Nzc1NjI3NTksMzU3MjE4NjIs
+LTIwNjQ4MDAyMzksMTE5NzU5Mzg0MiwyMDkxNjQ5MzJdfQ==
 -->
