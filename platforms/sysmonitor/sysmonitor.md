@@ -45,6 +45,8 @@ If smaller features can get to the second pass within 1 to 2 weeks of starting, 
 
 ![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
 
+  Sonic system consists of multiple system process forwared 
+  
 ### 1.1.1 Functional Requirements
 
 Requirement guidance: -
@@ -166,6 +168,6 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjQ4MDAyMzksMTE5NzU5Mzg0MiwyMD
-kxNjQ5MzJdfQ==
+eyJoaXN0b3J5IjpbLTgzNDc2MTMxNSwtMjA2NDgwMDIzOSwxMT
+k3NTkzODQyLDIwOTE2NDkzMl19
 -->
