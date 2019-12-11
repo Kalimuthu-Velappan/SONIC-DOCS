@@ -45,7 +45,7 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
 The monitoring framework should monitor both hardware and software resouces in the  Sonic system
 The hardware resource monitoring should include CPU, Physical Memory and Disk usage.
 The software resource monitoring should include the process and services in the system 
-It should monitor
+It should monitor 
 Requirement guidance: -
 - Sonic system conFirst Pass: Fill out with top-level requirements that put the big picture in place
 - Second Pass: Fill out with detailed, immutably numbered requirements from which test cases can be generated
@@ -165,7 +165,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyODA1OTE3LDg4MTE1ODcsMTc3NzU2Mj
-c1OSwzNTcyMTg2MiwtMjA2NDgwMDIzOSwxMTk3NTkzODQyLDIw
-OTE2NDkzMl19
+eyJoaXN0b3J5IjpbLTE4MjUwMjMzMTMsODgxMTU4NywxNzc3NT
+YyNzU5LDM1NzIxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIs
+MjA5MTY0OTMyXX0=
 -->
