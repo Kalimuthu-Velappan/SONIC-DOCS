@@ -51,8 +51,7 @@ The monitoring framework should monitor both hardware and software resouces in t
    Services in the system
  - It should monitor and report the usage through Syslog Message
  - Add new resource monitoring service  named 'sysmonitor.service'  to systemd service list. 
- - All the alert message should be sent to syslog
- - 
+ - All the alert message should be sent to syslog 
 
 Resouce Monitoring
  - CPU Monitoring
@@ -73,6 +72,7 @@ Resouce Monitoring
 	 - Generate the system ready syslog message when the core services are up and port initailation is done.
 	 - Generate system not ready message when only the service goes down. 
  
+ -  Generate sys
  
 ### 1.1.2 Configuration and Management Requirements
 
@@ -87,7 +87,7 @@ Resouce Monitoring
 
 ![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
 
-Monitor the process message  
+Monitor the resource usage and generate the  message  
 
 
 ## 3.2 DB Changes
@@ -162,8 +162,8 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NDE0ODM4LC03NDI1NzAzOTIsMTMzMj
-Q4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIz
-MzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2ND
-gwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
+eyJoaXN0b3J5IjpbLTE3OTIzNDI4MjcsLTc0MjU3MDM5MiwxMz
+MyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMzNzQsLTE4MjUw
+MjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0yMD
+Y0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
 -->
