@@ -57,6 +57,8 @@ Resouce Monitoring
  - Memory Monitoring
 	 - Generate the syslog alert with proceess memory stats when its usages crosses the threshold limit.
 	 - Memory threshold shall be predefined as 80%, 90%, 95%
+	 - Per process memory monitoring
+	 - 
  - Disk Monitoring
 	 - Generate the syslog alert with root partition stats when its usages crosses the threshold limit.
 	 - Disk threshold shall be predefined as 70%, 80%, 90%
@@ -64,24 +66,9 @@ Resouce Monitoring
 	 - Monitor the System core services   which includes  'swss',  'bgp',  'teamd',  'pmon',  'syncd' and  'database'.
 	 - Generate the system ready syslog message when the core services are up and port initailation is done.
 	 - Generate system not ready message when only the service goes down. 
-
-
-
+ 
+ 
 ### 1.1.2 Configuration and Management Requirements
-Which UI's will be provided for the feature?
-How will those UI's be implemented. Options might be:
-- "Old" SONiC CLI (as of 201904 release)
-- New SONiC Management Framework (Broadcom-provided in 201908 and beyond). CLI commands should be implemented in the SONiC IS-CLI within the KLISH framework. Any exceptions to this should be highlighted for discussion.
-- Commands should be added in the appropriate manner, including:
---  Command modes
--- Authorization
--- Following IS-CLI syntax (incl "no" form)
--- Usage / Help string
--- Command line completion options
--- Error messages
--- Proper show output formats
-
-- [Use/extend] existing non-SONiC UI ([e.g.] FRR)
 
 ### 1.1.3 Scalability Requirements
 key scaling factors
@@ -180,7 +167,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MzM4MjIwNCwxMzkyMDUzMzc0LC0xOD
+eyJoaXN0b3J5IjpbLTMzOTAxMDczMSwxMzkyMDUzMzc0LC0xOD
 I1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2Miwt
 MjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
 -->
