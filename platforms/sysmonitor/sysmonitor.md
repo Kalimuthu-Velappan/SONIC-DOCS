@@ -45,12 +45,12 @@ If smaller features can get to the second pass within 1 to 2 weeks of starting, 
 
 ![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
 
-  Sonic system consists of multiple system process forwared 
+  Sonic system consists of multiple system process forwarded 
   
 ### 1.1.1 Functional Requirements
 
 Requirement guidance: -
-- First Pass: Fill out with top-level requirements that put the big picture in place
+- Sonic system conFirst Pass: Fill out with top-level requirements that put the big picture in place
 - Second Pass: Fill out with detailed, immutably numbered requirements from which test cases can be generated
 
 See example file in template folder
@@ -168,6 +168,6 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNDc2MTMxNSwtMjA2NDgwMDIzOSwxMT
-k3NTkzODQyLDIwOTE2NDkzMl19
+eyJoaXN0b3J5IjpbMzU3MjE4NjIsLTIwNjQ4MDAyMzksMTE5Nz
+U5Mzg0MiwyMDkxNjQ5MzJdfQ==
 -->
