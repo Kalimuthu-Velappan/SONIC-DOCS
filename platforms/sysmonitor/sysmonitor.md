@@ -77,25 +77,7 @@ Resouce Monitoring
 ### 1.1.3 Scalability Requirements
    NA
 ### 1.1.4 Warm Boot Requirements
-
-## 1.2 Design Overview
-### 1.2.1 Basic Approach
-Where is the code coming from? Existing Open-source project? Internal Broadcom codebase? New development? Somewhere else? Mixture?
-
-### 1.2.2 Container
-Which container(s) will the code go into? Will there be new container(s)?
-
-### 1.2.3 SAI Overview
-Do we expect to need a new SAI API specification? If so, provide rough semantics (information flow across the API)?
-If using existing SAI APIs, then which area?
-For non-hardware features this section will be N/A
-
-# 2 Functionality
-## 2.1 Target Deployment Use Cases
-Wordy description, with diagrams if possible
-## 2.2 Functional Description
-Wordy description
-
+  NA
 # 3 Design
 ## 3.1 Overview
 big picture view of the actors involved.
@@ -171,8 +153,8 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwOTE2Nzc1MywxMzMyNDg0OTA1LC0yMD
-YzNDM3OTEyLDEzOTIwNTMzNzQsLTE4MjUwMjMzMTMsODgxMTU4
-NywxNzc3NTYyNzU5LDM1NzIxODYyLC0yMDY0ODAwMjM5LDExOT
-c1OTM4NDIsMjA5MTY0OTMyXX0=
+eyJoaXN0b3J5IjpbNjAwOTA1NTU1LDEzMzI0ODQ5MDUsLTIwNj
+M0Mzc5MTIsMTM5MjA1MzM3NCwtMTgyNTAyMzMxMyw4ODExNTg3
+LDE3Nzc1NjI3NTksMzU3MjE4NjIsLTIwNjQ4MDAyMzksMTE5Nz
+U5Mzg0MiwyMDkxNjQ5MzJdfQ==
 -->
