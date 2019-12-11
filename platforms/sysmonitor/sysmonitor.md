@@ -62,7 +62,8 @@ Resouce Monitoring
 	 - Disk threshold shall be predefined as 70%, 80%, 90%
  - Service Monitoring
 	 - Monitor the System core services   which includes  'swss',  'bgp',  'teamd',  'pmon',  'syncd' and  'database'.
-	 - Generate the system rea
+	 - Generate the system ready syslog message when the core services are up and port initailation is done.
+	 - Generate system not ready message when only the service goes down. 
 
 
 
@@ -179,7 +180,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyODI5NzUzLDEzOTIwNTMzNzQsLTE4Mj
-UwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0y
-MDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
+eyJoaXN0b3J5IjpbMTY5MzM4MjIwNCwxMzkyMDUzMzc0LC0xOD
+I1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2Miwt
+MjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
 -->
