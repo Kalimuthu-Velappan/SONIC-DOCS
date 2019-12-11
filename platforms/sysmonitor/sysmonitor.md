@@ -107,7 +107,7 @@ One Syslog message is generated for each threshold level crossing.
 	- Dec 11 13:06:19.478060 sonic INFO system#state: MEM :: Name: zebra, Pid:9625, Rss:11.3M
 	   
 #### System Memory Usage:
-  Per process memory usage goes beyond th
+  Per process memory usage goes beyond threshold limit, should also 
 
 ## 3.2 DB Changes
 Describe changes to existing DBs or any new DB being added.
@@ -181,9 +181,9 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTUxOTI3OTUsMzc0MTY1MjkxLDExMz
-E0NzEwMTYsOTg4NDU0NDgwLC03NDI1NzAzOTIsMTMzMjQ4NDkw
-NSwtMjA2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIzMzEzLD
-g4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2NDgwMDIz
-OSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
+eyJoaXN0b3J5IjpbLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMT
+Q3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyNDg0OTA1
+LC0yMDYzNDM3OTEyLDEzOTIwNTMzNzQsLTE4MjUwMjMzMTMsOD
+gxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0yMDY0ODAwMjM5
+LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
 -->
