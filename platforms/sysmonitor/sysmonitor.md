@@ -35,7 +35,7 @@ This document describes the high level design of System Resource Monitoring Enha
 # 1 Feature Overview
 
 
-As SONiC expands its footprint of being able to run on different ODM platforms configurations, it becomes necessary to have a monitoring framework that is native to SONiC to monitor the system resouces usage and services status to generate  the syslog alert on the platform it runs. However, it should be noted that the scope of this framework is limited to monitoring and generating the syslog alert, the corrective measures that can be done in the context of the SONiC OS. 
+As SONiC runs on different ODM platform hardware configurations, it becomes necessary to have a monitoring framework that is native to SONiC to monitor the system resouces usage and service status of the system and generate  the syslog alert for corrective actions. However, it should be noted that the scope of this framework is limited to monitoring and generating the syslog alert, the corrective measures that can be done in the context of the SONiC OS. 
 
 ## 1.1 Requirements
 
@@ -164,6 +164,6 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMDYxNDk1NCwzNTcyMTg2MiwtMjA2ND
+eyJoaXN0b3J5IjpbMTE2NjQwODM2MywzNTcyMTg2MiwtMjA2ND
 gwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
 -->
