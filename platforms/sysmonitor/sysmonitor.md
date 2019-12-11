@@ -72,7 +72,7 @@ Resouce Monitoring
  
 ### 1.1.2 Configuration and Management Requirements
 
- - Threshold levels .
+ - Threshold levels are dervied from the system confi.
  - Network values are predfined.
  - 
 
@@ -173,8 +173,8 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMjQ4NDkwNSwtMjA2MzQzNzkxMiwxMz
-kyMDUzMzc0LC0xODI1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1
-OSwzNTcyMTg2MiwtMjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOT
-E2NDkzMl19
+eyJoaXN0b3J5IjpbLTIwNzkzMzg3MjMsMTMzMjQ4NDkwNSwtMj
+A2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIzMzEzLDg4MTE1
+ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2NDgwMDIzOSwxMT
+k3NTkzODQyLDIwOTE2NDkzMl19
 -->
