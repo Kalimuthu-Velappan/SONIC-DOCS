@@ -51,7 +51,8 @@ The monitoring framework should monitor both hardware and software resouces in t
  - It should monitor and report the usage through Syslog Message
 Resouce Monitoring
  - CPU Monitoring
-	 - Generate the syslog alert with p
+	 - Generate the syslog alert with process stats when its usage crosses threshold value
+	 - 
 
 ### 1.1.2 Configuration and Management Requirements
 Which UI's will be provided for the feature?
@@ -166,7 +167,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQyMTY4MjgyLC0xODI1MDIzMzEzLDg4MT
-E1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2NDgwMDIzOSwx
-MTk3NTkzODQyLDIwOTE2NDkzMl19
+eyJoaXN0b3J5IjpbMTgwMDIyNzU4NCwtMTgyNTAyMzMxMyw4OD
+ExNTg3LDE3Nzc1NjI3NTksMzU3MjE4NjIsLTIwNjQ4MDAyMzks
+MTE5NzU5Mzg0MiwyMDkxNjQ5MzJdfQ==
 -->
