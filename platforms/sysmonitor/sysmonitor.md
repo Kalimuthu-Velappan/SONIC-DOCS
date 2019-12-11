@@ -39,7 +39,8 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
 
 ## 1.1 Requirements
 
-![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)  
+![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
+  
 ### 1.1.1 Functional Requirements
 
 The monitoring framework should monitor both hardware and software resouces in the  Sonic system
@@ -51,6 +52,7 @@ The monitoring framework should monitor both hardware and software resouces in t
  - It should monitor and report the usage through Syslog Message
  - Resource monitoring shall be added as new systemd service. 
  - All the alert message should be sent to syslog
+ - 
 
 Resouce Monitoring
  - CPU Monitoring
@@ -82,6 +84,10 @@ Resouce Monitoring
   NA
 # 3 Design
 ## 3.1 Overview
+
+![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
+  
+
 big picture view of the actors involved.
 ## 3.2 DB Changes
 Describe changes to existing DBs or any new DB being added.
@@ -155,8 +161,8 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc2MTcyNjQyLDEzMzI0ODQ5MDUsLTIwNj
-M0Mzc5MTIsMTM5MjA1MzM3NCwtMTgyNTAyMzMxMyw4ODExNTg3
-LDE3Nzc1NjI3NTksMzU3MjE4NjIsLTIwNjQ4MDAyMzksMTE5Nz
-U5Mzg0MiwyMDkxNjQ5MzJdfQ==
+eyJoaXN0b3J5IjpbLTE2NzcyMDIzMDIsMTMzMjQ4NDkwNSwtMj
+A2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIzMzEzLDg4MTE1
+ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2NDgwMDIzOSwxMT
+k3NTkzODQyLDIwOTE2NDkzMl19
 -->
