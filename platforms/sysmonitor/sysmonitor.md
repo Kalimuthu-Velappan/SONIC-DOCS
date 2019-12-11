@@ -93,7 +93,7 @@ One Syslog message is generated for each threshold level crossing.
 ### Memory Monitoring :
 
 #### System Service Monitoring:
-   It monitor the system core services and port initializatin state and generate the system ready message. Anytime core service goes down, it monitr
+   It monitor the system core services and port initializatin state and generate the system ready message. If one of the system core service goes down, it monitor and print the system not ready message. 
    
 #### System Memory Usage:
    Memory usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
@@ -189,10 +189,10 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0ODgzOTUzMywtNjIyNDA1ODQ4LC0zND
-I0ODY2MzcsMzc0MTY1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgw
-LC03NDI1NzAzOTIsMTMzMjQ4NDkwNSwtMjA2MzQzNzkxMiwxMz
-kyMDUzMzc0LC0xODI1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1
-OSwzNTcyMTg2MiwtMjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOT
-E2NDkzMl19
+eyJoaXN0b3J5IjpbNTA0MjYxMTU4LC02MjI0MDU4NDgsLTM0Mj
+Q4NjYzNywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAs
+LTc0MjU3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOT
+IwNTMzNzQsLTE4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5
+LDM1NzIxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MT
+Y0OTMyXX0=
 -->
