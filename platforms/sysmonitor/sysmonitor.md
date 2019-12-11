@@ -49,12 +49,9 @@ The monitoring framework should monitor both hardware and software resouces in t
  - The software resource monitoring should include     Process and
    Services in the system
  - It should monitor and report the usage through Syslog Message
-
-Requirement guidance: -
-- Sonic system conFirst Pass: Fill out with top-level requirements that put the big picture in place
-- Second Pass: Fill out with detailed, immutably numbered requirements from which test cases can be generated
-
-See example file in template folder
+Resouce Monitoring
+ - CPU Monitoring
+	 - Generate the syslog alert with p
 
 ### 1.1.2 Configuration and Management Requirements
 Which UI's will be provided for the feature?
@@ -169,7 +166,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTQ5OTg0NjMsLTE4MjUwMjMzMTMsOD
-gxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0yMDY0ODAwMjM5
-LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
+eyJoaXN0b3J5IjpbNTQyMTY4MjgyLC0xODI1MDIzMzEzLDg4MT
+E1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2NDgwMDIzOSwx
+MTk3NTkzODQyLDIwOTE2NDkzMl19
 -->
