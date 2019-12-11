@@ -42,8 +42,8 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
 ![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)  
 ### 1.1.1 Functional Requirements
 
-The monitoring framework should monitor bo resouces that are being used in the  Sonic system
-The 
+The monitoring framework should monitor both hardware and software resouces in the  Sonic system
+The hardware resource should include CPU, Physical Memory and Disk usage.
 The sonic system consists of  
 Requirement guidance: -
 - Sonic system conFirst Pass: Fill out with top-level requirements that put the big picture in place
@@ -164,7 +164,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTMwMzMyMzAsMTc3NzU2Mjc1OSwzNT
-cyMTg2MiwtMjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkz
-Ml19
+eyJoaXN0b3J5IjpbODgxMTU4NywxNzc3NTYyNzU5LDM1NzIxOD
+YyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
+
 -->
