@@ -93,7 +93,7 @@ One Syslog message is generated for each threshold level crossing.
 ### Memory Monitoring :
 
 #### System Memory Usage:
-Monitors the 
+   Monitors the 
 
 ## 3.2 DB Changes
 Describe changes to existing DBs or any new DB being added.
@@ -167,7 +167,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2Njc4OTExOCw5ODg0NTQ0ODAsLTc0Mj
+eyJoaXN0b3J5IjpbMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0Mj
 U3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMz
 NzQsLTE4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1Nz
 IxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMy
