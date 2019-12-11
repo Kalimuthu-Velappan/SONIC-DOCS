@@ -92,6 +92,8 @@ One Syslog message is generated for each threshold level crossing.
 
 ### Memory Monitoring :
 
+#### System Service Monitoring:
+
 #### System Memory Usage:
    Memory usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
    
@@ -99,7 +101,7 @@ One Syslog message is generated for each threshold level crossing.
 	 - Overall system memory usage information
 	 - Memory usage information of all the runnings processes 
 	 
- - ### Example :
+ - #### Example :
 	- Dec 11 13:06:19.397949 sonic INFO system#state: System memory usage is above 60%, Total: 15.6G, Free: 1.8G, Used: 2.8G, Buffers: 314.8M, Cached: 10.7G
 	- Dec 11 13:06:19.477884 sonic INFO system#state: MEM :: Name: orchagent, Pid:6269, Rss:10.5M
 	- Dec 11 13:06:19.477951 sonic INFO system#state: MEM :: Name: ospfd, Pid:11029, Rss:10.5M
@@ -108,6 +110,8 @@ One Syslog message is generated for each threshold level crossing.
 	   
 #### System Memory Usage:
   Per process memory usage goes beyond threshold limit, should also generate the process memory usage info on the system log message
+
+- #### Example
 	 - Dec 11 13:03:19.209233 sonic INFO system#state: Per process memory threshold exceeded for process rest_server[3781], threshold 3% of system memory 478.6M, current usage 538.2M
 	 - Dec 11 13:03:19.242928 sonic INFO system#state: Per process memory threshold exceeded for process syncd[14083], threshold 3% of system memory 478.6M, current usage 515.3M
 
@@ -184,9 +188,9 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyODE0Mzg4LC0zNDI0ODY2MzcsMzc0MT
-Y1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgwLC03NDI1NzAzOTIs
-MTMzMjQ4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUzMzc0LC0xOD
-I1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2Miwt
-MjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
+eyJoaXN0b3J5IjpbLTE1NjI1NzM5MDYsLTM0MjQ4NjYzNywzNz
+QxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3MDM5
+MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMzNzQsLT
+E4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYy
+LC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
 -->
