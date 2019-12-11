@@ -50,7 +50,7 @@ The monitoring framework should monitor both hardware and software resouces in t
  - The software resource monitoring should include     Process and
    Services in the system
  - It should monitor and report the usage through Syslog Message
- - Resource monitoring shall be added as new systemd service. 
+ - Add new resource monitoring service  named 'sysmonitor.service' shall be added to systemd service. 
  - All the alert message should be sent to syslog
  - 
 
@@ -86,9 +86,10 @@ Resouce Monitoring
 ## 3.1 Overview
 
 ![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
-  
 
-big picture view of the actors involved.
+System  
+
+
 ## 3.2 DB Changes
 Describe changes to existing DBs or any new DB being added.
 ### 3.2.1 CONFIG DB
@@ -161,7 +162,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzcyMDIzMDIsMTMzMjQ4NDkwNSwtMj
+eyJoaXN0b3J5IjpbLTIwNjQzMDU2NzksMTMzMjQ4NDkwNSwtMj
 A2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIzMzEzLDg4MTE1
 ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2NDgwMDIzOSwxMT
 k3NTkzODQyLDIwOTE2NDkzMl19
