@@ -87,7 +87,7 @@ Resouce Monitoring
 
 ![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
 
-SSystem  
+Monitor the process message  
 
 
 ## 3.2 DB Changes
@@ -162,7 +162,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI2MTk3NzM5LC03NDI1NzAzOTIsMTMzMj
+eyJoaXN0b3J5IjpbLTY0NDE0ODM4LC03NDI1NzAzOTIsMTMzMj
 Q4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIz
 MzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2ND
 gwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
