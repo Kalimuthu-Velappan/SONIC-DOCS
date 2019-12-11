@@ -72,7 +72,7 @@ Resouce Monitoring
 	 - Generate the system ready syslog message when the core services are up and port initailation is done.
 	 - Generate system not ready message when only the service goes down. 
  
- -  Generate syslog message level as INFO, WARNING and CRITIAL for respec
+ -  Generate syslog message level as INFO, WARNING and CRITIAL for respective threshold levels.
  
 ### 1.1.2 Configuration and Management Requirements
 
@@ -162,8 +162,8 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMDY5NDYyMiwtNzQyNTcwMzkyLDEzMz
-I0ODQ5MDUsLTIwNjM0Mzc5MTIsMTM5MjA1MzM3NCwtMTgyNTAy
-MzMxMyw4ODExNTg3LDE3Nzc1NjI3NTksMzU3MjE4NjIsLTIwNj
-Q4MDAyMzksMTE5NzU5Mzg0MiwyMDkxNjQ5MzJdfQ==
+eyJoaXN0b3J5IjpbOTg4NDU0NDgwLC03NDI1NzAzOTIsMTMzMj
+Q4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIz
+MzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2ND
+gwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
 -->
