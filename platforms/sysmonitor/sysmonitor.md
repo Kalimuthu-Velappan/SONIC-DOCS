@@ -72,12 +72,10 @@ Resouce Monitoring
  
 ### 1.1.2 Configuration and Management Requirements
 
- - Threshold levels are dervied from the system confi.
- - Network values are predfined.
- - 
+ - Threshold levels are dervied from the system configurations.
 
 ### 1.1.3 Scalability Requirements
-key scaling factors
+   NA
 ### 1.1.4 Warm Boot Requirements
 
 ## 1.2 Design Overview
@@ -173,8 +171,8 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzkzMzg3MjMsMTMzMjQ4NDkwNSwtMj
-A2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIzMzEzLDg4MTE1
-ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2NDgwMDIzOSwxMT
-k3NTkzODQyLDIwOTE2NDkzMl19
+eyJoaXN0b3J5IjpbMTAwOTE2Nzc1MywxMzMyNDg0OTA1LC0yMD
+YzNDM3OTEyLDEzOTIwNTMzNzQsLTE4MjUwMjMzMTMsODgxMTU4
+NywxNzc3NTYyNzU5LDM1NzIxODYyLC0yMDY0ODAwMjM5LDExOT
+c1OTM4NDIsMjA5MTY0OTMyXX0=
 -->
