@@ -93,7 +93,8 @@ One Syslog message is generated for each threshold level crossing.
 ### Memory Monitoring :
 
 #### System Memory Usage:
-   Monitor the system wide memory usage  which includes the overall system memory usage.
+   Memory usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated,
+   
 
 ## 3.2 DB Changes
 Describe changes to existing DBs or any new DB being added.
@@ -167,9 +168,9 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzEwNjU3NDYsMTEzMTQ3MTAxNiw5OD
-g0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3
-OTEyLDEzOTIwNTMzNzQsLTE4MjUwMjMzMTMsODgxMTU4NywxNz
-c3NTYyNzU5LDM1NzIxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4
-NDIsMjA5MTY0OTMyXX0=
+eyJoaXN0b3J5IjpbMzc0MTY1MjkxLDExMzE0NzEwMTYsOTg4ND
+U0NDgwLC03NDI1NzAzOTIsMTMzMjQ4NDkwNSwtMjA2MzQzNzkx
+MiwxMzkyMDUzMzc0LC0xODI1MDIzMzEzLDg4MTE1ODcsMTc3Nz
+U2Mjc1OSwzNTcyMTg2MiwtMjA2NDgwMDIzOSwxMTk3NTkzODQy
+LDIwOTE2NDkzMl19
 -->
