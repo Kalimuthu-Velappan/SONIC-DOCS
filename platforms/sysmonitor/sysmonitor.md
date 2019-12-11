@@ -23,7 +23,7 @@ System Resource Monitoring Enhancements.
 # About this Manual
 This document provides general information about the System Resource Monitoring Enhancements feature implementation in SONiC.
 # Scope
-This document describes the high level design of System Resource Monitoring Enhancements feature. Call out any related design that is not covered by this document
+This document describes the high level design of System Resource Monitoring Enhancements feature. 
 
 # Definition/Abbreviation
 
@@ -164,6 +164,6 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NzgxODExOSwzNTcyMTg2MiwtMjA2ND
-gwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
+eyJoaXN0b3J5IjpbOTEyODUwNDA2LDM1NzIxODYyLC0yMDY0OD
+AwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
 -->
