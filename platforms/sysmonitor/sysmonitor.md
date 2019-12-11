@@ -58,7 +58,9 @@ Resouce Monitoring
 	 - Generate the syslog alert with proceess memory stats when its usages crosses the threshold limit.
 	 - Memory threshold shall be predefined as 80%, 90%, 95%
 	 - Per process memory monitoring
-	 - 
+		 - Generate the syslog alert with proceess memory stats when its usages crosses the threshold limit.
+		 - Memory threshold shall be predefined as 80%, 90%, 95%
+
  - Disk Monitoring
 	 - Generate the syslog alert with root partition stats when its usages crosses the threshold limit.
 	 - Disk threshold shall be predefined as 70%, 80%, 90%
@@ -167,7 +169,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTAxMDczMSwxMzkyMDUzMzc0LC0xOD
-I1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2Miwt
-MjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
+eyJoaXN0b3J5IjpbNTg4MzM5OTA5LDEzOTIwNTMzNzQsLTE4Mj
+UwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0y
+MDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
 -->
