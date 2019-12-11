@@ -49,6 +49,7 @@ The monitoring framework should monitor both hardware and software resouces in t
  - The software resource monitoring should include     Process and
    Services in the system
  - It should monitor and report the usage through Syslog Message
+ - 
 Resouce Monitoring
  - CPU Monitoring
 	 - Generate the syslog alert with process stats when its usage crosses threshold limit.
@@ -58,7 +59,10 @@ Resouce Monitoring
 	 - Memory threshold shall be predefined as 80%, 90%, 95%
  - Disk Monitoring
 	 - Generate the syslog alert with root partition stats when its usages crosses the threshold limit.
-	 - Disk threshold shall be predefined as 70%, 80%, 95%
+	 - Disk threshold shall be predefined as 70%, 80%, 90%
+ - Service Monitoring
+	 - Monitor the System core services 
+
 
 ### 1.1.2 Configuration and Management Requirements
 Which UI's will be provided for the feature?
@@ -173,7 +177,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU4MTMxMzA0LDEzOTIwNTMzNzQsLTE4Mj
-UwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0y
-MDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
+eyJoaXN0b3J5IjpbMTQ0MzQ4NTYzMCwxMzkyMDUzMzc0LC0xOD
+I1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2Miwt
+MjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
 -->
