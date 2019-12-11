@@ -101,16 +101,14 @@ One Syslog message is generated for each threshold level crossing.
 	 
  - Example :
 	- Dec 11 13:06:19.397949 sonic INFO system#state: System memory usage is above 60%, Total: 15.6G, Free: 1.8G, Used: 2.8G, Buffers: 314.8M, Cached: 10.7G
-	- Dec 11 13:06:19.397949 sonic INFO system#state: System memory usage is above 60%, Total: 15.6G, Free: 1.8G, Used: 2.8G, Buffers: 314.8M, Cached: 10.7G
-	- Dec 11 13:06:19.477884 sonic INFO system#state: MEM :: Name:orchagent, Pid:6269, Rss:10.5M
-	- Dec 11 13:06:19.477884 sonic INFO system#state: MEM :: Name:orchagent, Pid:6269, Rss:10.5M
-	- Dec 11 13:06:19.477951 sonic INFO system#state: MEM :: Name:ospfd, Pid:11029, Rss:10.5M
-	- Dec 11 13:06:19.478011 sonic INFO system#state: MEM :: Name:redis-server, Pid:1006, Rss:10.6M
-	- Dec 11 13:06:19.478060 sonic INFO system#state: MEM :: Name:zebra, Pid:9625, Rss:11.3M
-	- Dec 11 13:06:19.478107 sonic INFO system#state: MEM :: Name:python, Pid:28731, Rss:11.7M
-	- Dec 11 13:06:19.478155 sonic INFO system#state: MEM :: Name:psud, Pid:20323, Rss:12.1M
-	- Dec 11 13:06:19.478203 sonic INFO system#state: MEM :: Name:xcvrd, Pid:21751, Rss:12.2M
-	- Dec 11 13:06:19.478250 sonic INFO system#state: MEM :: Name:python, Pid:5283, Rss:12.9M
+	- Dec 11 13:06:19.477884 sonic INFO system#state: MEM :: Name: orchagent, Pid:6269, Rss:10.5M
+	- Dec 11 13:06:19.477951 sonic INFO system#state: MEM :: Name: ospfd, Pid:11029, Rss:10.5M
+	- Dec 11 13:06:19.478011 sonic INFO system#state: MEM :: Name: redis-server, Pid:1006, Rss:10.6M
+	- Dec 11 13:06:19.478060 sonic INFO system#state: MEM :: Name: zebra, Pid:9625, Rss:11.3M
+	- Dec 11 13:06:19.478107 sonic INFO system#state: MEM :: Name: python, Pid:28731, Rss:11.7M
+	- Dec 11 13:06:19.478155 sonic INFO system#state: MEM :: Name: psud, Pid:20323, Rss:12.1M
+	- Dec 11 13:06:19.478203 sonic INFO system#state: MEM :: Name: xcvrd, Pid:21751, Rss:12.2M
+	- Dec 11 13:06:19.478250 sonic INFO system#state: MEM :: Name: python, Pid:5283, Rss:12.9M
 
 
    
@@ -187,7 +185,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NjI1NjM3NSwzNzQxNjUyOTEsMTEzMT
+eyJoaXN0b3J5IjpbMjE0NTk5NDcyNSwzNzQxNjUyOTEsMTEzMT
 Q3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyNDg0OTA1
 LC0yMDYzNDM3OTEyLDEzOTIwNTMzNzQsLTE4MjUwMjMzMTMsOD
 gxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0yMDY0ODAwMjM5
