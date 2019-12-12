@@ -123,24 +123,7 @@ One Syslog message is generated for each threshold level crossing.
 
 
 ## 3.2 Resource DB
-Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries in the database 
-
-### 3.2.1 CONFIG DB
-### 3.2.2 APP DB
-### 3.2.3 STATE DB
-### 3.2.4 ASIC DB
-### 3.2.5 COUNTER DB
-
-## 3.3 Switch State Service Design
-### 3.3.1 Orchestration Agent
-### 3.3.2 Other Process
-Describe changes to other process within SwSS if applicable.
-
-## 3.4 SyncD
-Describe changes to syncd if applicable.
-
-## 3.5 SAI
-Describe [new/existing] SAI APIs used by this feature.
+Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
 
 ## 3.6 User Interface
 ### 3.6.1 Data Models
@@ -195,7 +178,7 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMTkzMTY1MCw4NDQ2NjUyMzksLTYyMj
+eyJoaXN0b3J5IjpbMTE4NTE3OTE2NCw4NDQ2NjUyMzksLTYyMj
 QwNTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5MSwxMTMxNDcxMDE2
 LDk4ODQ1NDQ4MCwtNzQyNTcwMzkyLDEzMzI0ODQ5MDUsLTIwNj
 M0Mzc5MTIsMTM5MjA1MzM3NCwtMTgyNTAyMzMxMyw4ODExNTg3
