@@ -50,7 +50,8 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
    core systemd services in the system
  - It should monitor and report the resource usage  through system syslog message
  - The system monitoring framework should run as separate service and it should get lanched automatically during bootup.  By default  system monitoring service should get started by default. 
- - It should support three levels of threshold for each 
+ - It should support three levels of threshold limit for each resource type
+ - It should support INFO, WARN
 
 Resouce Monitoring
  - CPU Monitoring
@@ -180,7 +181,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NzU5MjIzMywtMTgzNzc3MTE0NCwxND
+eyJoaXN0b3J5IjpbLTg3NzA5NzU3NiwtMTgzNzc3MTE0NCwxND
 Y1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2
 MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLT
 kxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1
