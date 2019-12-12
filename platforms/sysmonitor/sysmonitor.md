@@ -153,14 +153,8 @@ Disk Parition Usage:
 	 - WARN -  80%  of  partition size 
 	 - CRITICAL -  90%  of partition size
 	 
-## 2.4 SYSLOG alert 
-Whenever the resouce threshold limit is being reached,  alert message and related statistics are forwarded to syslog messaging system. The following three levels of syslog is being generated 
 
-	Level1  - INFO 
-	Level2 -  WARN
-	Level3 - CRITICAL
- 
- 
+
 ## 2.5 Sampling Interval
    By the sampling interval is set as 3 minutes which indicates that every three minutes resource usage being monitored and checked against the threshold.
 
@@ -183,11 +177,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xOD
-M3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYw
-OTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMT
-M3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1
-MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMT
-EzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyNDg0
-OTA1XX0=
+eyJoaXN0b3J5IjpbNjY2NDgyMjI5LC0xNzgyMDc5ODcyLDE3Mj
+QzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUy
+NDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2OCwxND
+ExMjc3Mzc4LDEzNzk3MDMzNjYsLTkxMjEwMjc3MiwxMTg1MTc5
+MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2MzcsMz
+c0MTY1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgwLC03NDI1NzAz
+OTJdfQ==
 -->
