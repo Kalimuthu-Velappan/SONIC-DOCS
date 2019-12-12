@@ -128,25 +128,21 @@ Monitoring framework has self contained python database for maintaining the stat
 
 
 # 3 Tech-Support 
-All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate. During the techsupport data collection all the syslog is also collected as part of the tech-support data 
+All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate. During the techsupport data collection all the syslog is also collected as part of the tech-support data archive.
 
-# 8 Scalability
-Describe key scaling factor and considerations.
 
-# 9 Unit Test
-List unit test cases added for this feature including warm boot.
+# 4 Unit Test
 
-# 10 Internal Design Information
-Internal BRCM information to be removed before sharing with the community.
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NjExNjgwNywtOTEyMTAyNzcyLDExOD
-UxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYz
-NywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0Mj
-U3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMz
-NzQsLTE4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1Nz
-IxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMy
-XX0=
+eyJoaXN0b3J5IjpbLTEzMDg1MjU1NzMsLTkxMjEwMjc3MiwxMT
+g1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2
+MzcsMzc0MTY1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgwLC03ND
+I1NzAzOTIsMTMzMjQ4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUz
+Mzc0LC0xODI1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNT
+cyMTg2MiwtMjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkz
+Ml19
 -->
