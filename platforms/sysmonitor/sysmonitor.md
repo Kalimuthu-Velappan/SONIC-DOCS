@@ -135,18 +135,19 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 | SNO |  Testcase                                     |  Result |
 |-----|-----------------------------------------------| ------- |
-| 1   |  Simulate and verify the overall memory usage when it goes above threshold |         |
-| 2   |  
+| 1   |  Simulate and verify the overall memory usage when it goes above threshold |   |
+| 2   |  Simulate and verify the high CPU condition of a process  | |
+| 3   |  Verify the disk partition usage and syslog alert |  |
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNTM5MzA0OSwtOTEyMTAyNzcyLDExOD
-UxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYz
-NywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0Mj
-U3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMz
-NzQsLTE4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1Nz
-IxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMy
-XX0=
+eyJoaXN0b3J5IjpbLTE3NDkwNTA0ODcsLTkxMjEwMjc3MiwxMT
+g1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2
+MzcsMzc0MTY1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgwLC03ND
+I1NzAzOTIsMTMzMjQ4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUz
+Mzc0LC0xODI1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNT
+cyMTg2MiwtMjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkz
+Ml19
 -->
