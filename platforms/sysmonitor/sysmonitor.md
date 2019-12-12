@@ -126,11 +126,14 @@ One Syslog message is generated for each threshold level crossing.
 Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
 
 ## 2.3 Resource Threshold Limit 
+The resouce limits are automitcally dervied from the system configurations. 
+Memory usage:
+	 - Over
 
 ## 2.4 SYSLOG alert 
 
 
-## 2.4 Tech-Support 
+## 2.5 Tech-Support 
 All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate. During the techsupport data collection all the syslog is also collected as part of the tech-support data archive.
 
 
@@ -149,7 +152,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4OTE5MTM0MSwtOTEyMTAyNzcyLDExOD
+eyJoaXN0b3J5IjpbMTg4MzEyMjAwNiwtOTEyMTAyNzcyLDExOD
 UxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYz
 NywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0Mj
 U3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMz
