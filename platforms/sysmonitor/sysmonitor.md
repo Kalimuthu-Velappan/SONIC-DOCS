@@ -43,7 +43,7 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
   
 ### 1.1.1 Functional Requirements
 
-The monitoring framework should monitor both hardware and software resouces in the  Sonic system
+ - The monitoring framework should monitor both hardware and software resouces in the  Sonic system
 
  - The hardware resource monitoring should include CPU, Physical Memory
    and Disk usage. 
@@ -181,11 +181,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2Mz
-gwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLTkxMjEwMjc3
-MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zND
-I0ODY2MzcsMzc0MTY1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgw
-LC03NDI1NzAzOTIsMTMzMjQ4NDkwNSwtMjA2MzQzNzkxMiwxMz
-kyMDUzMzc0LC0xODI1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1
-OV19
+eyJoaXN0b3J5IjpbMTk0ODQxNzY1MCwyMDg2NTYwOTMxLDQwMT
+g2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2
+NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC02Mj
+I0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3MTAx
+Niw5ODg0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyNDg0OTA1LC0yMD
+YzNDM3OTEyLDEzOTIwNTMzNzQsLTE4MjUwMjMzMTMsODgxMTU4
+N119
 -->
