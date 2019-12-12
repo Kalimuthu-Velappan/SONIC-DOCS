@@ -51,11 +51,11 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
  - It should monitor and report the resource usage  through system syslog message
  - The system monitoring framework should run as separate service and it should get lanched automatically during bootup.  By default  system monitoring service should get started by default. 
  - It should support three levels of threshold limit for each resource type
- - It should support INFO, WARN and CRITICAL log level correcponding to threshold limit.
+ - It should support INFO, WARN and CRITICAL log level correcponding to each threshold limit.
 
 Resouce Monitoring
  - CPU Monitoring
-	 - Generate the syslog alert with process stats when its usage crosses threshold limit.
+	 - Generate the syslog alert with process stats when its usage crosses the threshold limit.
 	 - CPU threshold shall be  predefined as  80%, 90%, 100%.
  - Memory Monitoring
 	 - Generate the syslog alert with proceess memory stats when its usages crosses the threshold limit.
@@ -181,7 +181,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEwNTUzNjEwLC0xODM3NzcxMTQ0LDE0Nj
+eyJoaXN0b3J5IjpbNDI4MDMwNjE0LC0xODM3NzcxMTQ0LDE0Nj
 UxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYw
 NiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2NiwtOT
 EyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4
