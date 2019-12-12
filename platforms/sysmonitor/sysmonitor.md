@@ -152,7 +152,7 @@ Disk Parition Usage:
 	 - CRITICAL -  90%  of partition size
 	 
 ## 2.4 SYSLOG alert 
-
+Whenever the resouce threshold limit is being 
 ## 2.5 Sampling Interval
    By the sampling interval is set as 3 minutes which indicates that every three minutes resource usage being monitored and checked against the threshold.
 
@@ -175,11 +175,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI0MTcyNzIsLTkxMjEwMjc3MiwxMTg1MT
-c5MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2Mzcs
-Mzc0MTY1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgwLC03NDI1Nz
-AzOTIsMTMzMjQ4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUzMzc0
-LC0xODI1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMT
-g2MiwtMjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
-
+eyJoaXN0b3J5IjpbMTM3OTcwMzM2NiwtOTEyMTAyNzcyLDExOD
+UxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYz
+NywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0Mj
+U3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMz
+NzQsLTE4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1Nz
+IxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMy
+XX0=
 -->
