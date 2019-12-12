@@ -136,16 +136,16 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 |SNO|  Testcase                                     |  Result |
 |---|-----------------------------------------------| ------- |
 | 1 | Simulate and verify the overall memory usage when it goes above threshold |   |
-| 2 | Simulate and verify the high CPU condition of a process  | |
+| 2 | Verify the high CPU condition of a process for long and | |
 | 3 | Verify the disk partition usage and syslog alert |  |
 | 4 | Verify the system service status and check for system ready message | |
-| 5 | Simulate the system services. 
+| 5 | Simulate the system services failure and check for the system not read message ||
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ2MzA3MjAxLC05MTIxMDI3NzIsMTE4NT
+eyJoaXN0b3J5IjpbMjU5NTAwNDQ4LC05MTIxMDI3NzIsMTE4NT
 E3OTE2NCw4NDQ2NjUyMzksLTYyMjQwNTg0OCwtMzQyNDg2NjM3
 LDM3NDE2NTI5MSwxMTMxNDcxMDE2LDk4ODQ1NDQ4MCwtNzQyNT
 cwMzkyLDEzMzI0ODQ5MDUsLTIwNjM0Mzc5MTIsMTM5MjA1MzM3
