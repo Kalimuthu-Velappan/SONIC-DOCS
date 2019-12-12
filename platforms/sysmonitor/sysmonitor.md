@@ -128,7 +128,7 @@ Monitoring framework has self contained python database for maintaining the stat
 
 
 # 3 Tech-Support 
-All the resource statististics are forwarded to Describe expected behavior and any limitation.
+All the resource statististics and usage alert are forwarded to syslog. All t
 
 # 8 Scalability
 Describe key scaling factor and considerations.
@@ -142,10 +142,11 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0ND
-Y2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1Mjkx
-LDExMzE0NzEwMTYsOTg4NDU0NDgwLC03NDI1NzAzOTIsMTMzMj
-Q4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIz
-MzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2ND
-gwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
+eyJoaXN0b3J5IjpbMTAzMDc0NDkwLC05MTIxMDI3NzIsMTE4NT
+E3OTE2NCw4NDQ2NjUyMzksLTYyMjQwNTg0OCwtMzQyNDg2NjM3
+LDM3NDE2NTI5MSwxMTMxNDcxMDE2LDk4ODQ1NDQ4MCwtNzQyNT
+cwMzkyLDEzMzI0ODQ5MDUsLTIwNjM0Mzc5MTIsMTM5MjA1MzM3
+NCwtMTgyNTAyMzMxMyw4ODExNTg3LDE3Nzc1NjI3NTksMzU3Mj
+E4NjIsLTIwNjQ4MDAyMzksMTE5NzU5Mzg0MiwyMDkxNjQ5MzJd
+fQ==
 -->
