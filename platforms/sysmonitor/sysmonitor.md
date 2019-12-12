@@ -52,6 +52,7 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
  - The system monitoring framework should run as separate service and it should get lanched automatically during bootup.  By default  system monitoring service should get started by default. 
  - It should support three levels of threshold limit for each resource type
  - It should support INFO, WARN and CRITICAL log level correcponding to each threshold limit.
+ - Resource usage sampling interval should be derived from the 
 
 Resouce Monitoring
  - CPU Monitoring
@@ -181,11 +182,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI4MDMwNjE0LC0xODM3NzcxMTQ0LDE0Nj
-UxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYw
-NiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2NiwtOT
-EyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4
-NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5OD
-g0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3
-OTEyXX0=
+eyJoaXN0b3J5IjpbLTQ2NTA1NjU2NiwtMTgzNzc3MTE0NCwxND
+Y1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2
+MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLT
+kxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1
+ODQ4LC0zNDI0ODY2MzcsMzc0MTY1MjkxLDExMzE0NzEwMTYsOT
+g4NDU0NDgwLC03NDI1NzAzOTIsMTMzMjQ4NDkwNSwtMjA2MzQz
+NzkxMl19
 -->
