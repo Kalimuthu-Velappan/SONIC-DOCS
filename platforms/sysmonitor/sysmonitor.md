@@ -133,21 +133,23 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 # 4 Unit Test
 
-| SNO |  Testcase                                     |  Result |
-|-----|-----------------------------------------------| ------- |
-| 1   |  Simulate and verify the overall memory usage when it goes above threshold |   |
-| 2   |  Simulate and verify the high CPU condition of a process  | |
-| 3   |  Verify the disk partition usage and syslog alert |  |
+|SNO|  Testcase                                     |  Result |
+|---|-----------------------------------------------| ------- |
+| 1 | Simulate and verify the overall memory usage when it goes above threshold |   |
+| 2 | Simulate and verify the high CPU condition of a process  | |
+| 3 | Verify the disk partition usage and syslog alert |  |
+| 4 | Verify the system service status and check for system ready message | |
+| 5 | Simulate the system services. 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDkwNTA0ODcsLTkxMjEwMjc3MiwxMT
-g1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2
-MzcsMzc0MTY1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgwLC03ND
-I1NzAzOTIsMTMzMjQ4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUz
-Mzc0LC0xODI1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNT
-cyMTg2MiwtMjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkz
-Ml19
+eyJoaXN0b3J5IjpbNTQ2MzA3MjAxLC05MTIxMDI3NzIsMTE4NT
+E3OTE2NCw4NDQ2NjUyMzksLTYyMjQwNTg0OCwtMzQyNDg2NjM3
+LDM3NDE2NTI5MSwxMTMxNDcxMDE2LDk4ODQ1NDQ4MCwtNzQyNT
+cwMzkyLDEzMzI0ODQ5MDUsLTIwNjM0Mzc5MTIsMTM5MjA1MzM3
+NCwtMTgyNTAyMzMxMyw4ODExNTg3LDE3Nzc1NjI3NTksMzU3Mj
+E4NjIsLTIwNjQ4MDAyMzksMTE5NzU5Mzg0MiwyMDkxNjQ5MzJd
+fQ==
 -->
