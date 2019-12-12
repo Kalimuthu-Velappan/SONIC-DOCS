@@ -40,8 +40,6 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
 
 
 ## 1.1 Requirements
-
-![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
   
 ### 1.1.1 Functional Requirements
 
@@ -52,7 +50,7 @@ The monitoring framework should monitor both hardware and software resouces in t
  - The software resource monitoring should include     Process and
    Services in the system
  - It should monitor and report the usage through Syslog Message
- - Add new resource monitoring service  named 'sysmonitor.service'  to systemd service list. 
+ - The monitoring service should run as separate service and it should get lanched automatically during bootup.  By defauilt Add new resource monitoring service  named 'sysmonitor.service'  to systemd service list. 
  - All the alert message should be sent to syslog 
 
 Resouce Monitoring
@@ -183,11 +181,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAxODY0NjA2LDE0NjM4MDM1NjgsMTQxMT
-I3NzM3OCwxMzc5NzAzMzY2LC05MTIxMDI3NzIsMTE4NTE3OTE2
-NCw4NDQ2NjUyMzksLTYyMjQwNTg0OCwtMzQyNDg2NjM3LDM3ND
-E2NTI5MSwxMTMxNDcxMDE2LDk4ODQ1NDQ4MCwtNzQyNTcwMzky
-LDEzMzI0ODQ5MDUsLTIwNjM0Mzc5MTIsMTM5MjA1MzM3NCwtMT
-gyNTAyMzMxMyw4ODExNTg3LDE3Nzc1NjI3NTksMzU3MjE4NjJd
-fQ==
+eyJoaXN0b3J5IjpbMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2Mz
+gwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLTkxMjEwMjc3
+MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zND
+I0ODY2MzcsMzc0MTY1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgw
+LC03NDI1NzAzOTIsMTMzMjQ4NDkwNSwtMjA2MzQzNzkxMiwxMz
+kyMDUzMzc0LC0xODI1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1
+OV19
 -->
