@@ -44,10 +44,10 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
 ### 1.1.1 Functional Requirements
 
  - The monitoring framework should monitor both hardware and software resouces in the  Sonic system
- - The hardware resource monitoring should include CPU, Physical Memory
-   and Disk usage. 
+ - The hardware resource monitoring should include CPU, physical memory
+   and disk usage. 
  - The software resource monitoring should include  process, docker and
-   Services in the system
+   systemd services in the system
  - It should monitor and report the usage through Syslog Message
  - The monitoring service should run as separate service and it should get lanched automatically during bootup.  By defauilt Add new resource monitoring service  named 'sysmonitor.service'  to systemd service list. 
  - All the alert message should be sent to syslog 
@@ -180,7 +180,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTgyODA2MCwyMDg2NTYwOTMxLDQwMT
+eyJoaXN0b3J5IjpbLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMT
 g2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2
 NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC02Mj
 I0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3MTAx
