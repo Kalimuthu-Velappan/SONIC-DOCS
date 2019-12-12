@@ -133,7 +133,9 @@ Memory usage:
 		 - WARN -  80%  of the system memory
 		 - CRITICAL -  90%  of the system memory
 	 - Per process Memory threshold is derived from 30% system memory
-	 - INFO 
+		 - INFO - 30%  of the system memory
+		 - WARN - 40%  of system memory
+		 - CRITICAL - above 50% of system memory 
 ## 2.4 SYSLOG alert 
 
 
@@ -156,7 +158,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDk0ODQ3NiwtOTEyMTAyNzcyLDExOD
+eyJoaXN0b3J5IjpbMTEyODM3MDg3MiwtOTEyMTAyNzcyLDExOD
 UxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYz
 NywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0Mj
 U3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMz
