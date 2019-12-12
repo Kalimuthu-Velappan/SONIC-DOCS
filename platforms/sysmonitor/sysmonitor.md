@@ -122,8 +122,9 @@ One Syslog message is generated for each threshold level crossing.
 	 - Dec 11 13:03:19.242928 sonic INFO system#state: Per process memory threshold exceeded for process syncd[14083], threshold 3% of system memory 478.6M, current usage 515.3M
 
 
-## 3.2 DB Changes
-Describe changes to existing DBs or any new DB being added.
+## 3.2 Resource DB
+Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries in the database 
+
 ### 3.2.1 CONFIG DB
 ### 3.2.2 APP DB
 ### 3.2.3 STATE DB
@@ -194,10 +195,10 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ0NjY1MjM5LC02MjI0MDU4NDgsLTM0Mj
-Q4NjYzNywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAs
-LTc0MjU3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOT
-IwNTMzNzQsLTE4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5
-LDM1NzIxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MT
-Y0OTMyXX0=
+eyJoaXN0b3J5IjpbMjExMTkzMTY1MCw4NDQ2NjUyMzksLTYyMj
+QwNTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5MSwxMTMxNDcxMDE2
+LDk4ODQ1NDQ4MCwtNzQyNTcwMzkyLDEzMzI0ODQ5MDUsLTIwNj
+M0Mzc5MTIsMTM5MjA1MzM3NCwtMTgyNTAyMzMxMyw4ODExNTg3
+LDE3Nzc1NjI3NTksMzU3MjE4NjIsLTIwNjQ4MDAyMzksMTE5Nz
+U5Mzg0MiwyMDkxNjQ5MzJdfQ==
 -->
