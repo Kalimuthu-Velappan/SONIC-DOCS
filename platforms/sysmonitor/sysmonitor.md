@@ -128,7 +128,7 @@ Monitoring framework has self contained python database for maintaining the stat
 
 
 # 3 Tech-Support 
-Describe expected behavior and any limitation.
+All the resource statististics are forwarded to Describe expected behavior and any limitation.
 
 # 8 Scalability
 Describe key scaling factor and considerations.
@@ -142,10 +142,10 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2Nzg1NTgyLDExODUxNzkxNjQsODQ0Nj
-Y1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEs
-MTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyND
-g0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMzNzQsLTE4MjUwMjMz
-MTMsODgxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0yMDY0OD
-AwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
+eyJoaXN0b3J5IjpbLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0ND
+Y2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1Mjkx
+LDExMzE0NzEwMTYsOTg4NDU0NDgwLC03NDI1NzAzOTIsMTMzMj
+Q4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUzMzc0LC0xODI1MDIz
+MzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNTcyMTg2MiwtMjA2ND
+gwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkzMl19
 -->
