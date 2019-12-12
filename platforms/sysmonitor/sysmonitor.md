@@ -128,8 +128,10 @@ Monitoring framework has self contained python database for maintaining the stat
 ## 2.3 Resource Threshold Limit 
 The resouce limits are automitcally dervied from the system configurations. 
 Memory usage:
-	 - Overall memory threshold is set as 70% , 80% 90% of the system memory
-
+	 - Overall memory thresholds are drived from the system memory
+		 - INFO -  70%  of the system memory
+		 - WARN -  80%  of the system memory
+		 - CRITICAL -  80%  of the system memory
 ## 2.4 SYSLOG alert 
 
 
@@ -152,11 +154,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODk2OTY2OCwtOTEyMTAyNzcyLDExOD
-UxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYz
-NywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0Mj
-U3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMz
-NzQsLTE4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1Nz
-IxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMy
-XX0=
+eyJoaXN0b3J5IjpbLTE0MTc2MTgxMzQsLTkxMjEwMjc3MiwxMT
+g1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2
+MzcsMzc0MTY1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgwLC03ND
+I1NzAzOTIsMTMzMjQ4NDkwNSwtMjA2MzQzNzkxMiwxMzkyMDUz
+Mzc0LC0xODI1MDIzMzEzLDg4MTE1ODcsMTc3NzU2Mjc1OSwzNT
+cyMTg2MiwtMjA2NDgwMDIzOSwxMTk3NTkzODQyLDIwOTE2NDkz
+Ml19
 -->
