@@ -53,8 +53,7 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
  - It should support three levels of threshold limit for each resource type
  - It should support INFO, WARN and CRITICAL log level correcponding to each threshold limit.
  - The resource threshold limit should be drived from the respective resource type and its system configuration.
- - Resource monitoring interval should be derived from the system  configration
- -  
+ - Resource monitoring interval should be derived from the system platform configration
 
 Resouce Monitoring
  - CPU Monitoring
@@ -184,11 +183,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE4NTY4NjE4LC0xODM3NzcxMTQ0LDE0Nj
-UxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYw
-NiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2NiwtOT
-EyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4
-NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5OD
-g0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3
-OTEyXX0=
+eyJoaXN0b3J5IjpbLTE3OTQ1ODQ3MTIsLTE4Mzc3NzExNDQsMT
+Q2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0
+NjA2LDE0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAzMzY2LC
+05MTIxMDI3NzIsMTE4NTE3OTE2NCw4NDQ2NjUyMzksLTYyMjQw
+NTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5MSwxMTMxNDcxMDE2LD
+k4ODQ1NDQ4MCwtNzQyNTcwMzkyLDEzMzI0ODQ5MDUsLTIwNjM0
+Mzc5MTJdfQ==
 -->
