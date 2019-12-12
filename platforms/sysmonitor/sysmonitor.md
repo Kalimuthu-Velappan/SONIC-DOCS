@@ -82,8 +82,8 @@ Resouce Monitoring
    NA
 ### 1.1.4 Warm Boot Requirements
   NA
-# 3 Design
-## 3.1 Overview
+# 2 Design
+## 2.1 Overview
 
 ![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
 
@@ -122,48 +122,12 @@ One Syslog message is generated for each threshold level crossing.
 	 - Dec 11 13:03:19.242928 sonic INFO system#state: Per process memory threshold exceeded for process syncd[14083], threshold 3% of system memory 478.6M, current usage 515.3M
 
 
-## 3.2 Resource DB
+## 2.2 Resource DB
 Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
 
-## 3.6 User Interface
-### 3.6.1 Data Models
-Can be reference to YANG if applicable. Also cover gNMI here.
 
-### 3.6.2 CLI
-#### 3.6.2.1 Configuration Commands
-#### 3.6.2.2 Show Commands
-#### 3.6.2.3 Debug Commands
-#### 3.6.2.4 IS-CLI Compliance
-The following table maps SONIC CLI commands to corresponding IS-CLI commands. The compliance column identifies how the command comply to the IS-CLI syntax:
 
-- **IS-CLI drop-in replace**  – meaning that it follows exactly the format of a pre-existing IS-CLI command.
-- **IS-CLI-like**  – meaning that the exact format of the IS-CLI command could not be followed, but the command is similar to other commands for IS-CLI (e.g. IS-CLI may not offer the exact option, but the command can be positioned is a similar manner as others for the related feature).
-- **SONIC** - meaning that no IS-CLI-like command could be found, so the command is derived specifically for SONIC.
-
-|CLI Command|Compliance|IS-CLI Command (if applicable)| Link to the web site identifying the IS-CLI command (if applicable)|
-|:---:|:-----------:|:------------------:|-----------------------------------|
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-
-**Deviations from IS-CLI:** If there is a deviation from IS-CLI, Please state the reason(s).
-
-### 3.6.3 REST API Support
-
-# 4 Flow Diagrams
-Provide flow diagrams for inter-container and intra-container interactions.
-
-# 5 Error Handling
-Provide details about incorporating error handling feature into the design and functionality of this feature.
-
-# 6 Serviceability and Debug
-Logging, counters, stats, trace considerations. Please make sure you have incorporated the debugging framework feature. e.g., ensure your code registers with the debugging framework and add your dump routines for any debug info you want to be collected.
-
-# 7 Warm Boot Support
+# 3 Tech-Support 
 Describe expected behavior and any limitation.
 
 # 8 Scalability
@@ -178,10 +142,10 @@ Internal BRCM information to be removed before sharing with the community.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NTE3OTE2NCw4NDQ2NjUyMzksLTYyMj
-QwNTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5MSwxMTMxNDcxMDE2
-LDk4ODQ1NDQ4MCwtNzQyNTcwMzkyLDEzMzI0ODQ5MDUsLTIwNj
-M0Mzc5MTIsMTM5MjA1MzM3NCwtMTgyNTAyMzMxMyw4ODExNTg3
-LDE3Nzc1NjI3NTksMzU3MjE4NjIsLTIwNjQ4MDAyMzksMTE5Nz
-U5Mzg0MiwyMDkxNjQ5MzJdfQ==
+eyJoaXN0b3J5IjpbMTk2Nzg1NTgyLDExODUxNzkxNjQsODQ0Nj
+Y1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEs
+MTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyND
+g0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMzNzQsLTE4MjUwMjMz
+MTMsODgxMTU4NywxNzc3NTYyNzU5LDM1NzIxODYyLC0yMDY0OD
+AwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMyXX0=
 -->
