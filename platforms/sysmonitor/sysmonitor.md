@@ -140,7 +140,9 @@ Memory usage:
 	 - CRITICAL - above 50% of system memory 
 
 CPU threshold limits:
- - Memory usage of the system is derived fromthe system memory 
+	- INFO -  70%  of partition size
+	 - WARN -  80%  of  partition size 
+	 - CRITICAL -  90%  of partition size
 
 Disk Parition Usage:
  - Overall partion usage thresholds are dervied as 
@@ -150,6 +152,8 @@ Disk Parition Usage:
 	 
 ## 2.4 SYSLOG alert 
 
+## 2.5 Sampling During
+   By the sampling interval is set as 3 minutes which indicates that every three minutes 
 
 ## 2.5 Tech-Support 
 All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate. During the techsupport data collection all the syslog is also collected as part of the tech-support data archive.
@@ -170,11 +174,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUwMjE5NjgyLC05MTIxMDI3NzIsMTE4NT
-E3OTE2NCw4NDQ2NjUyMzksLTYyMjQwNTg0OCwtMzQyNDg2NjM3
-LDM3NDE2NTI5MSwxMTMxNDcxMDE2LDk4ODQ1NDQ4MCwtNzQyNT
-cwMzkyLDEzMzI0ODQ5MDUsLTIwNjM0Mzc5MTIsMTM5MjA1MzM3
-NCwtMTgyNTAyMzMxMyw4ODExNTg3LDE3Nzc1NjI3NTksMzU3Mj
-E4NjIsLTIwNjQ4MDAyMzksMTE5NzU5Mzg0MiwyMDkxNjQ5MzJd
-fQ==
+eyJoaXN0b3J5IjpbLTI4MTE1Njc5NSwtOTEyMTAyNzcyLDExOD
+UxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYz
+NywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0Mj
+U3MDM5MiwxMzMyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMz
+NzQsLTE4MjUwMjMzMTMsODgxMTU4NywxNzc3NTYyNzU5LDM1Nz
+IxODYyLC0yMDY0ODAwMjM5LDExOTc1OTM4NDIsMjA5MTY0OTMy
+XX0=
 -->
