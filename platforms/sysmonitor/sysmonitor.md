@@ -54,7 +54,7 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
  - Generate syslog message with log level as INFO, WARNING and CRITIAL for respective threshold levels.
  - The resource threshold limit should be drived from the respective resource type and its system configuration.
  - Resource monitoring interval should be derived from the system platform configration
- - Only one syslog message should be generated when the resource us
+ - Only one syslog message should be generated when the resource usage crosses the threshold limit.
 
 Resouce Monitoring
  - CPU Monitoring
@@ -183,11 +183,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwODQxODc4LDE3MjQzMjM1MSwtMTgzNz
-c3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkz
-MSw0MDE4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNz
-k3MDMzNjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIz
-OSwtNjIyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1MjkxLDExMz
-E0NzEwMTYsOTg4NDU0NDgwLC03NDI1NzAzOTIsMTMzMjQ4NDkw
-NV19
+eyJoaXN0b3J5IjpbLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xOD
+M3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYw
+OTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMT
+M3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1
+MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMT
+EzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyNDg0
+OTA1XX0=
 -->
