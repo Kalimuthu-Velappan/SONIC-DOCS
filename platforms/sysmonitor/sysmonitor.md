@@ -92,6 +92,14 @@ Resouce Monitoring
 Monitor the resource usage and generate the  message  when its usage crosses the threshold level.
 One Syslog message is generated for each threshold level crossing. 
 
+## 2.4 SYSLOG alert 
+Whenever the resouce threshold limit is being reached,  alert message and related statistics are forwarded to syslog messaging system. The following three levels of syslog is being generated 
+
+	Level1  - INFO 
+	Level2 -  WARN
+	Level3 - CRITICAL
+ 
+ 
 ### Memory Monitoring :
 
 #### System Service Monitoring:
@@ -108,6 +116,19 @@ One Syslog message is generated for each threshold level crossing.
 
 	 - Overall system memory usage information
 	 - Memory usage information of all the runnings processes 
+##### 2.3 Resource Threshold Limit 
+The resouce limits are automitcally dervied from the system configurations. 
+Memory usage:
+
+ -  Overall memory usage  thresholds are drived from the system memory
+	- INFO -  70%  of system memory
+	 - WARN -  80%  of system memory
+	 - CRITICAL -  90%  of system memory
+	
+ - Per process usage Memory threshold is derived from 30% system memory
+	 - INFO - 30%  of system memory
+	 - WARN - 40%  of system memory
+	 - CRITICAL - above 50% of system memory 
 	 
  - #### Example :
 	- Dec 11 13:06:19.397949 sonic INFO system#state: System memory usage is above 60%, Total: 15.6G, Free: 1.8G, Used: 2.8G, Buffers: 314.8M, Cached: 10.7G
@@ -177,11 +198,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY2NDgyMjI5LC0xNzgyMDc5ODcyLDE3Mj
-QzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUy
-NDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2OCwxND
-ExMjc3Mzc4LDEzNzk3MDMzNjYsLTkxMjEwMjc3MiwxMTg1MTc5
-MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2MzcsMz
-c0MTY1MjkxLDExMzE0NzEwMTYsOTg4NDU0NDgwLC03NDI1NzAz
-OTJdfQ==
+eyJoaXN0b3J5IjpbLTE2NDc2MTY5MDYsLTE3ODIwNzk4NzIsMT
+cyNDMyMzUxLC0xODM3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIz
+NTI0NywyMDg2NTYwOTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LD
+E0MTEyNzczNzgsMTM3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUx
+NzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYzNy
+wzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3
+MDM5Ml19
 -->
