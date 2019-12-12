@@ -47,8 +47,8 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
  - The hardware resource monitoring should include CPU, physical memory
    and disk usage. 
  - The software resource monitoring should include  process, docker and
-   systemd services in the system
- - It should monitor and report the usage through Syslog Message
+   core systemd services in the system
+ - It should monitor and report the resource usage through syslog message
  - The monitoring service should run as separate service and it should get lanched automatically during bootup.  By defauilt Add new resource monitoring service  named 'sysmonitor.service'  to systemd service list. 
  - All the alert message should be sent to syslog 
 
@@ -180,11 +180,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMT
-g2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2
-NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC02Mj
-I0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3MTAx
-Niw5ODg0NTQ0ODAsLTc0MjU3MDM5MiwxMzMyNDg0OTA1LC0yMD
-YzNDM3OTEyLDEzOTIwNTMzNzQsLTE4MjUwMjMzMTMsODgxMTU4
-N119
+eyJoaXN0b3J5IjpbLTEyNDY3NjYyMzAsLTQzMDIzNTI0NywyMD
+g2NTYwOTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzcz
+NzgsMTM3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsOD
+Q0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUy
+OTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3MDM5MiwxMz
+MyNDg0OTA1LC0yMDYzNDM3OTEyLDEzOTIwNTMzNzQsLTE4MjUw
+MjMzMTNdfQ==
 -->
