@@ -157,6 +157,8 @@ CPU threshold limits:
 	 - WARN -  80%  of  High CPU
 	 - CRITICAL -  90%  of High CPU
 
+#### Disk partition Monitoring:
+   CPU usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
 
 Disk Parition Usage:
  - Overall partion usage thresholds are dervied as 
@@ -173,29 +175,6 @@ Monitoring framework has self contained python database for maintaining the stat
 ## 2.3 Resource Threshold Limit 
 The resouce limits are automitcally dervied from the system configurations. 
 Memory usage:
-
- -  Overall memory usage  thresholds are drived from the system memory
-	- INFO -  70%  of system memory
-	 - WARN -  80%  of system memory
-	 - CRITICAL -  90%  of system memory
-	
- - Per process usage Memory threshold is derived from 30% system memory
-	 - INFO - 30%  of system memory
-	 - WARN - 40%  of system memory
-	 - CRITICAL - above 50% of system memory 
-
-CPU threshold limits:
--  The CPU threshold limit is considered as duration of Sampling interval in which the process high CPU condition detected.
-	- INFO -  70%  of High CPU
-	 - WARN -  80%  of  High CPU
-	 - CRITICAL -  90%  of High CPU
-
-Disk Parition Usage:
- - Overall partion usage thresholds are dervied as 
-	- INFO -  70%  of partition size
-	 - WARN -  80%  of  partition size 
-	 - CRITICAL -  90%  of partition size
-	 
 
 
 ## 2.5 Sampling Interval
@@ -220,7 +199,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MjE2Mzc4MCwtMTc4MjA3OTg3MiwxNz
+eyJoaXN0b3J5IjpbMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNz
 I0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1
 MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LDE0NjM4MDM1NjgsMT
 QxMTI3NzM3OCwxMzc5NzAzMzY2LC05MTIxMDI3NzIsMTE4NTE3
