@@ -144,6 +144,28 @@ Memory usage:
 	 - Dec 11 13:03:19.209233 sonic INFO system#state: Per process memory threshold exceeded for process rest_server[3781], threshold 3% of system memory 478.6M, current usage 538.2M
 	 - Dec 11 13:03:19.242928 sonic INFO system#state: Per process memory threshold exceeded for process syncd[14083], threshold 3% of system memory 478.6M, current usage 515.3M
 
+##### 2.3 Resource Threshold Limit 
+The resouce limits are automitcally dervied from the system configurations. 
+Memory usage:
+
+#### CPU Monitoring:
+   CPU usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
+
+CPU threshold limits:
+-  The CPU threshold limit is considered as duration of Sampling interval in which the process high CPU condition detected.
+	- INFO -  70%  of High CPU
+	 - WARN -  80%  of  High CPU
+	 - CRITICAL -  90%  of High CPU
+
+
+Disk Parition Usage:
+ - Overall partion usage thresholds are dervied as 
+	- INFO -  70%  of partition size
+	 - WARN -  80%  of  partition size 
+	 - CRITICAL -  90%  of partition size
+	 
+
+
 
 ## 2.2 Resource DB
 Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
@@ -198,11 +220,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDc2MTY5MDYsLTE3ODIwNzk4NzIsMT
-cyNDMyMzUxLC0xODM3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIz
-NTI0NywyMDg2NTYwOTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LD
-E0MTEyNzczNzgsMTM3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUx
-NzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYzNy
-wzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0ODAsLTc0MjU3
-MDM5Ml19
+eyJoaXN0b3J5IjpbLTI2MjE2Mzc4MCwtMTc4MjA3OTg3MiwxNz
+I0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1
+MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LDE0NjM4MDM1NjgsMT
+QxMTI3NzM3OCwxMzc5NzAzMzY2LC05MTIxMDI3NzIsMTE4NTE3
+OTE2NCw4NDQ2NjUyMzksLTYyMjQwNTg0OCwtMzQyNDg2NjM3LD
+M3NDE2NTI5MSwxMTMxNDcxMDE2LDk4ODQ1NDQ4MCwtNzQyNTcw
+MzkyXX0=
 -->
