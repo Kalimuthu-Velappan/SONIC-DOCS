@@ -112,7 +112,8 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 
 #### System Service Monitoring:
    
-   It monitor the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it monitor and print the system not ready message. 
+   It monitor the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the system not ready message because of the service down.  
+   The core serv 
 
 - #### Example
 		   - Dec 10 08:35:48.817550 System is ready
@@ -211,7 +212,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzQwNTUxOSwxMzcwNjc3ODksNzI3Nj
+eyJoaXN0b3J5IjpbLTc4NjIwMDk2MywxMzcwNjc3ODksNzI3Nj
 Q2MzgwLDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUx
 LC0xODM3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMD
 g2NTYwOTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzcz
