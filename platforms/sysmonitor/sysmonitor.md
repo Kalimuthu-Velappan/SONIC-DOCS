@@ -200,7 +200,7 @@ CPU usage of all the process in the system is being monitored.  When the usage c
 	 - CRITICAL -  90%  of High CPU
 
 #### Disk Partition Monitoring:
-   In a long running network environment,  monitoring disk parition usage is a crucial process. As a network operating system, disk partitions mainly used for storing the log files, debug infos, There would be many fileCPU usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
+   In a long running network environment,  monitoring disk parition usage is a crucial process. As a network operating system, disk partitions mainly used for storing the log files, debug infos, OS images files,  There would be many fileCPU usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
 
 Disk Parition Usage:
  - Overall partion usage thresholds are dervied as 
@@ -237,11 +237,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkyMjE5NjU1LC0zNDA2OTU1MjYsLTgwMD
-UxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5
-LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNz
-A2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3
-MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtND
-MwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LDE0NjM4MDM1
-NjhdfQ==
+eyJoaXN0b3J5IjpbLTE2NDI1MTcyNzQsLTM0MDY5NTUyNiwtOD
+AwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLDE0Mjk3NjM0
+NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMT
+M3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5
+ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC
+00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2Mzgw
+MzU2OF19
 -->
