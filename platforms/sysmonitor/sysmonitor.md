@@ -132,7 +132,7 @@ It also monitors the docker services. If any of the docker service goes up/down,
 		   - Dec 10 08:35:48.817550 System is ready
   
 #### Memory Monitoring
-Memory is a critical resource in the system. It is essential to monitor the memory usage  at the system wide as well as per process level and report the usage of memory accross the system. This helps to indentify memory distribution accross system, the spike in the memory allocation and also if there is any memory leaks in the process. 
+Memory is a critical resource in the system. It is essential to monitor the memory usage  at the system wide as well as per process level and report the usage accross the system. This helps to indentify memory distribution accross system, the spike in the memory allocation and also if there is any memory leaks in the process. 
 
 The framework  monitors the memory usage at system level as well as per process level. Threshold is defined for both per process level and system level.  
 
@@ -225,11 +225,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTc2MzQ2OSwtMTM1NjA0MjE4Miw0MD
-E0MjcxNjQsMTA1NTI3NDY4NCwxMzcwNjc3ODksNzI3NjQ2Mzgw
-LDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xOD
-M3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYw
-OTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMT
-M3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1
-MjM5XX0=
+eyJoaXN0b3J5IjpbLTY5MTUzMDgxMywxNDI5NzYzNDY5LC0xMz
+U2MDQyMTgyLDQwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4
+OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNz
+I0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1
+MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LDE0NjM4MDM1NjgsMT
+QxMTI3NzM3OCwxMzc5NzAzMzY2LC05MTIxMDI3NzIsMTE4NTE3
+OTE2NF19
 -->
