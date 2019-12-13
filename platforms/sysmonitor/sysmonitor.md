@@ -126,8 +126,9 @@ It also monitors the docker services. If any of the docker service goes up/down,
    Memory usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
    
 
-	 - Overall system memory usage information
-	 - Memory usage information of all the runnings processes 
+ - Overall system memory usage information
+ - Memory usage information of all the runnings processes     -
+
 ##### 2.3 Resource Threshold Limit 
 The resouce limits are automitcally dervied from the system configurations. 
 Memory usage:
@@ -215,7 +216,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODY0MjI3NCw0MDE0MjcxNjQsMTA1NT
+eyJoaXN0b3J5IjpbLTg3NDE2MTA0OSw0MDE0MjcxNjQsMTA1NT
 I3NDY4NCwxMzcwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIzMDks
 LTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0Nj
 UxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYw
