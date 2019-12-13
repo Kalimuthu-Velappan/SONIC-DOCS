@@ -165,9 +165,11 @@ Process name, Process ID, RSS( physical memory)
 	- Dec 11 13:06:19.478060 sonic INFO system#state: MEM :: Name: zebra, Pid:9625, Rss:11.3M
 	   
 #### Per Process Memory Usage:
-  Per process memory usage goes beyond threshold limit, should also generate the process memory usage info on the system log message
+  Per process memory usage goes beyond threshold limit, should also generate the process memory usage info on the system log message. The syslog message is generated with following information.
   
-##### System Memory Threshold Limit 
+	 - It includes process name, process Id, and used memory size.
+	  
+##### Per Process Memory Threshold Limit 
   
  - Per process usage Memory threshold is derived from 30% system memory
 	 - INFO - 30%  of system memory
@@ -178,9 +180,6 @@ Process name, Process ID, RSS( physical memory)
 	 - Dec 11 13:03:19.209233 sonic INFO system#state: Per process memory threshold exceeded for process rest_server[3781], threshold 3% of system memory 478.6M, current usage 538.2M
 	 - Dec 11 13:03:19.242928 sonic INFO system#state: Per process memory threshold exceeded for process syncd[14083], threshold 3% of system memory 478.6M, current usage 515.3M
 
-##### 2.3 Resource Threshold Limit 
-The resouce limits are automitcally dervied from the system configurations. 
-Memory usage:
 
 #### CPU Monitoring:
    CPU usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
@@ -229,11 +228,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMjEwNDczMywtNjkxNTMwODEzLDE0Mj
-k3NjM0NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2
-ODQsMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNz
-gyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIx
-Mzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMT
-Q2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLTkxMjEw
-Mjc3Ml19
+eyJoaXN0b3J5IjpbNzgwNDg5ODg5LC02OTE1MzA4MTMsMTQyOT
+c2MzQ2OSwtMTM1NjA0MjE4Miw0MDE0MjcxNjQsMTA1NTI3NDY4
+NCwxMzcwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIzMDksLTE3OD
+IwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0NjUxMjEz
+ODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYwNiwxND
+YzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2NiwtOTEyMTAy
+NzcyXX0=
 -->
