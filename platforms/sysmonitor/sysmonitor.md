@@ -226,6 +226,14 @@ Disk Parition Usage:
 	- INFO -  70%  of partition size
 	 - WARN -  80%  of  partition size 
 	 - CRITICAL -  90%  of partition size
+
+#### Example:
+Nov 27 07:16:50.878011 sonic INFO system#state: DISK usage of '/' is above 8%, Total: 31.4G, Free: 20.1G, Used: 9.7G
+Nov 27 07:16:50.878694 sonic INFO system#state: DISK:: {'used': 10376302592, 'free': 21575340032, 'total': 33686405120}
+Nov 27 07:16:50.878747 sonic INFO system#state: DISK:: {'used': 10376302592, 'free': 21575340032, 'device': '/dev/sda4', 'mountpoint': '/var/lib/docker', 'total': 33686405120, 'percent': 32.5, 'opts': 'rw,relatime,data=ordered', 'fstype': 'ext4'}
+Nov 27 07:16:50.878798 sonic INFO system#state: DISK:: {'used': 10376302592, 'free': 21575340032, 'device': '/dev/sda4', 'mountpoint': '/boot', 'total': 33686405120, 'percent': 32.5, 'opts': 'rw,relatime,data=ordered', 'fstype': 'ext4'}
+Nov 27 07:16:50.878849 sonic INFO system#state: DISK:: {'used': 38285312, 'free': 3890614272, 'device': '/dev/loop1', 'mountpoint': '/var/log', 'total': 4160421888, 'percent': 1.0, 'opts': 'rw,relatime,data=ordered', 'fstype': 'ext4'}
+
 	 
 
 ## 2.5 Resource DB
@@ -253,11 +261,11 @@ All the resource statististics and usage alerts are forwarded to syslog.  The sy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODkwNTYwMTQsLTE4Mjg3ODg2MDgsNj
-U1OTUzODY1LC0xMjcxNzQyNDg2LC0zNDA2OTU1MjYsLTgwMDUx
-ODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5LC
-0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2
-Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3Mi
-wxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMw
-MjM1MjQ3XX0=
+eyJoaXN0b3J5IjpbLTM3MjU5NDYyMiwtMTM4OTA1NjAxNCwtMT
+gyODc4ODYwOCw2NTU5NTM4NjUsLTEyNzE3NDI0ODYsLTM0MDY5
+NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLD
+E0Mjk3NjM0NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUy
+NzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC
+0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1
+MTIxMzg5XX0=
 -->
