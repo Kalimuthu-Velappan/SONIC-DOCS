@@ -54,7 +54,7 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
  - The resource threshold limit should be drived from the respective resource type and its system configuration.
  - Resource monitoring interval should be derived from the system platform configration
  - Only one syslog message should be generated when the resource usage crosses the threshold limit.
- - The framework should also support the  action handler so the application can dump message specific to the  resource limit and the resource type.
+ - The framework should also support the custom action handler so that applications can dump message specific to the  resource limit and the resource type.
 
 Resouce Monitoring
  - CPU Monitoring
@@ -236,7 +236,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MDMzNzYxOCwtMzQwNjk1NTI2LC04MD
+eyJoaXN0b3J5IjpbMTI3OTk1NzIxOCwtMzQwNjk1NTI2LC04MD
 A1MTgzNDYsNzM2NTE0NjgxLC02OTE1MzA4MTMsMTQyOTc2MzQ2
 OSwtMTM1NjA0MjE4Miw0MDE0MjcxNjQsMTA1NTI3NDY4NCwxMz
 cwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIzMDksLTE3ODIwNzk4
