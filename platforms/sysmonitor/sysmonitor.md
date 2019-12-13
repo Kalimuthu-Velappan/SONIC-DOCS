@@ -116,7 +116,7 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 	  Level2 - 80% - WARN
 	  Level3 - 90% - CRITICAL
  
- There are some threshold which are specific to the particulate resource type. 
+ There are few threshold  that are specific to the particulate resource type would defined under the resouce type. 
  	   
 #### System Service Monitoring:
    
@@ -222,11 +222,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDI1Mzk5NiwtMTM1NjA0MjE4Miw0MD
-E0MjcxNjQsMTA1NTI3NDY4NCwxMzcwNjc3ODksNzI3NjQ2Mzgw
-LDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xOD
-M3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYw
-OTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMT
-M3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1
-MjM5XX0=
+eyJoaXN0b3J5IjpbLTE1NTgyMTU0NjUsLTEzNTYwNDIxODIsND
+AxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4
+MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMT
+gzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2
+MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LD
+EzNzk3MDMzNjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2
+NTIzOV19
 -->
