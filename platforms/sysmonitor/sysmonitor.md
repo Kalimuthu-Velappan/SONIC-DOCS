@@ -112,7 +112,7 @@ The framework supports both software and hardware resource types.  It includes t
 
 ## 2.4 SYSLOG Levels 
 
-Whenever the resouce threshold limit is being reached,  alert message and related statistics are forwarded to syslog messaging system. The following three levels of syslog shall be supported 
+The syslog alert message and related statistics are forwarded to syslog messaging system. The following three levels of syslog shall be supported 
 
 	Level1  - INFO 
 	Level2 -  WARN
@@ -126,11 +126,11 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 	  Level2 - 80% - WARN
 	  Level3 - 90% - CRITICAL
  
- There are few threshold  that are specific to the particulate resource type would defined under the resouce type. 
+ There are thresholds  that are specific to the particulate resource would be defined under the resouce type. 
 
 ## 2.4 Sampling Interval
 
-   By the sampling interval is set as 3 minutes which indicates that every 3 minutes resource usage being monitored and checked against the threshold. The sampling interval is fixed by default and it gets adjusted based on the system resource configuration.
+   By default, the sampling interval is set as 3 minutes which indicates that every 3 minutes resource usage being monitored and checked against the threshold. The sampling interval is fixed by default and it gets adjusted based on the system resource configuration.
       
 #### System Service Monitoring:
    
@@ -243,11 +243,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUxMTkyOTM5LDY1NTk1Mzg2NSwtMTI3MT
-c0MjQ4NiwtMzQwNjk1NTI2LC04MDA1MTgzNDYsNzM2NTE0Njgx
-LC02OTE1MzA4MTMsMTQyOTc2MzQ2OSwtMTM1NjA0MjE4Miw0MD
-E0MjcxNjQsMTA1NTI3NDY4NCwxMzcwNjc3ODksNzI3NjQ2Mzgw
-LDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xOD
-M3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYw
-OTMxXX0=
+eyJoaXN0b3J5IjpbLTE3OTM4MzAzMzgsNjU1OTUzODY1LC0xMj
+cxNzQyNDg2LC0zNDA2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2
+ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLD
+QwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYz
+ODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLT
+E4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1
+NjA5MzFdfQ==
 -->
