@@ -226,6 +226,7 @@ CPU usage of all the process in the system is being monitored.  When the usage c
  - Total space
 
  - Overall partion usage thresholds are dervied as 
+ 
 	- INFO -  70%  of total partition size
 	 - WARN -  80%  of  total partition size 
 	 - CRITICAL -  90%  of total partition size
@@ -261,7 +262,7 @@ All the resource statististics and usage alerts are forwarded to syslog.  The sy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NTk2ODE4NywtMTM4OTA1NjAxNCwtMT
+eyJoaXN0b3J5IjpbLTUyMjA0NzU0NSwtMTM4OTA1NjAxNCwtMT
 gyODc4ODYwOCw2NTU5NTM4NjUsLTEyNzE3NDI0ODYsLTM0MDY5
 NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLD
 E0Mjk3NjM0NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUy
