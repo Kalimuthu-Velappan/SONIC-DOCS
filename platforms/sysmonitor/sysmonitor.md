@@ -93,7 +93,7 @@ Other services
 # 2 Design
 ## 2.1 Overview
 
-Sysmonitor framework monitors the various resource and 
+Sysmonitor framework monitors the various so 
 
 ![](images/sysmonitor.png)
 
@@ -139,7 +139,7 @@ Memory usage:
 	 - CRITICAL - above 50% of system memory 
 	
 Memory usage of resource is dumped on the console with following format
-Process name, Process ID, RSS( pyshical memory)
+Process name, Process ID, RSS( physical memory)
 
  
  - #### Example :
@@ -211,11 +211,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDExMDQ5LDcyNzY0NjM4MCwxMzI4OT
-kyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0
-NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MD
-E4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMz
-NjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNj
-IyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1MjkxLDExMzE0NzEw
-MTZdfQ==
+eyJoaXN0b3J5IjpbLTE0ODUyNjU3OTQsNzI3NjQ2MzgwLDEzMj
+g5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3Nzcx
+MTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLD
+QwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcw
+MzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC
+02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3
+MTAxNl19
 -->
