@@ -215,7 +215,7 @@ Monitoring framework has self contained python database for maintaining the stat
 
 
 ## 2.5 Sampling Interval
-   By the sampling interval is set as 3 minutes which indicates that every three minutes resource usage being monitored and checked against the threshold.
+   By the sampling interval is set as 3 minutes which indicates that every 3 minutes resource usage being monitored and checked against the threshold. The sampling interval is fixed by default and it gets adu
 
 ## 2.5 Tech-Support 
 All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate. During the techsupport data collection all the syslog is also collected as part of the tech-support data archive.
@@ -236,11 +236,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzE3NDI0ODYsLTM0MDY5NTUyNiwtOD
-AwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLDE0Mjk3NjM0
-NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMT
-M3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5
-ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC
-00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2Mzgw
-MzU2OF19
+eyJoaXN0b3J5IjpbLTcxMDY4NjY5LC0xMjcxNzQyNDg2LC0zND
+A2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgx
+MywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMD
+U1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMw
+OSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMT
+Q2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0
+NjA2XX0=
 -->
