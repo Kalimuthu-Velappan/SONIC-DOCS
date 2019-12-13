@@ -41,7 +41,7 @@ This document describes the high level design of System Resource Monitoring Enha
 ### Table 1: Abbreviations
 | **Term**                 | **Meaning**                         |
 |--------------------------|-------------------------------------|
-| ODM                      | Term description                    |
+| ODM                      | Original Design Manufacturer        |
 
 # 1 Feature Overview
 
@@ -215,7 +215,7 @@ CPU usage of all the process in the system is being monitored.  When the usage c
 	 - CRITICAL -  90%  of High CPU
 
 #### Disk Partition Monitoring:
-   In a long running network environment,  monitoring disk parition usage is a crucial process. As a network operating system, disk partitions mainly used for storing the log files, core dumps,  debug infos, application files, config files and OS images. It is essential to keep track of the disk partition useage  There would be many fil usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
+   In a long running network environment,  monitoring disk parition usage is a crucial process. As a network operating system, disk partitions mainly used for storing the log files, core dumps,  debug infos, application files, config files and OS images. It is essential to keep track of the disk partition useage  There would be many fil usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with the following information.
 
 Disk Parition Usage:
  - Overall partion usage thresholds are dervied as 
@@ -247,11 +247,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3NTE3NjcyLDY1NTk1Mzg2NSwtMTI3MT
-c0MjQ4NiwtMzQwNjk1NTI2LC04MDA1MTgzNDYsNzM2NTE0Njgx
-LC02OTE1MzA4MTMsMTQyOTc2MzQ2OSwtMTM1NjA0MjE4Miw0MD
-E0MjcxNjQsMTA1NTI3NDY4NCwxMzcwNjc3ODksNzI3NjQ2Mzgw
-LDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xOD
-M3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYw
-OTMxXX0=
+eyJoaXN0b3J5IjpbLTExNTU4NDU0MTksNjU1OTUzODY1LC0xMj
+cxNzQyNDg2LC0zNDA2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2
+ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLD
+QwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYz
+ODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLT
+E4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1
+NjA5MzFdfQ==
 -->
