@@ -72,14 +72,15 @@ Resouce Monitoring
 	 - Disk threshold shall be predefined as 70%, 80%, 90%
 	 - 
  - Service Monitoring
-	 - Monitor the System core services   which includes  'swss',  'bgp',  'teamd',  'pmon',  'syncd' and  'database'.
+	 - Monitor the System core services   which includes  'swss',  'bgp',  'teamd',  'pmon',  'syncd' and  'database'. Other service can be added to list when it expands the core list.
 	 - Generate the system ready syslog message when the core services are up and port initailation is done.
 	 - Generate system not ready message when only the service goes down. 
  
 
 
 Service   |   Action
-Memoy
+Memoy | syslog
+Other services 
  
 ### 1.1.2 Configuration and Management Requirements
 
@@ -206,11 +207,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1ODExNjc5NSw3Mjc2NDYzODAsMTMyOD
-k5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzEx
-NDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsND
-AxODY0NjA2LDE0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAz
-MzY2LC05MTIxMDI3NzIsMTE4NTE3OTE2NCw4NDQ2NjUyMzksLT
-YyMjQwNTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5MSwxMTMxNDcx
-MDE2XX0=
+eyJoaXN0b3J5IjpbLTE1NTQxNDM1MDcsNzI3NjQ2MzgwLDEzMj
+g5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3Nzcx
+MTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLD
+QwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcw
+MzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC
+02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3
+MTAxNl19
 -->
