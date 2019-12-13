@@ -76,6 +76,10 @@ Resouce Monitoring
 	 - Generate the system ready syslog message when the core services are up and port initailation is done.
 	 - Generate system not ready message when only the service goes down. 
  
+
+
+Service   |   Action
+Memoy
  
 ### 1.1.2 Configuration and Management Requirements
 
@@ -87,6 +91,8 @@ Resouce Monitoring
   NA
 # 2 Design
 ## 2.1 Overview
+
+Sysmonitor framework monitors the various resource and 
 
 ![](images/sysmonitor.png)
 
@@ -200,11 +206,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMwODQ5Mzg2LDcyNzY0NjM4MCwxMzI4OT
-kyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0
-NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MD
-E4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMz
-NjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNj
-IyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1MjkxLDExMzE0NzEw
-MTZdfQ==
+eyJoaXN0b3J5IjpbLTQ1ODExNjc5NSw3Mjc2NDYzODAsMTMyOD
+k5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzEx
+NDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsND
+AxODY0NjA2LDE0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAz
+MzY2LC05MTIxMDI3NzIsMTE4NTE3OTE2NCw4NDQ2NjUyMzksLT
+YyMjQwNTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5MSwxMTMxNDcx
+MDE2XX0=
 -->
