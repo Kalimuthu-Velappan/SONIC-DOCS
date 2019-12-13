@@ -122,7 +122,7 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
  	   
 #### System Service Monitoring:
    
-   In sonic, it is essential know the current state the system whether the system is ready to handle all the config commands or not.  If one of the core services are down, there should be way to identify the system state that it is not ready to take the config commands.  The sysmonitor framework monitors the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the system not ready message because of the service down.  The system ready state message is sent to both syslog as well as console session so that user would know the live state on the console.
+   In sonic, it is essential know the current state the system whether the system is ready to handle all the config commands or not.  If one of the core services are down, there should be way to identify the system state that it is not ready to take the config commands.  The sysmonitor framework monitors the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the 'system not ready' message because of the service down.  The system ready state message is sent to both syslog as well as console session so that user would know the live state on the console.
   
   The system core services includes  'swss',  'bgp',  'teamd',  'pmon',  'syncd' and  'database'. Other service can be added to list when it expands its core list.
 It also monitors the docker services. If any of the docker service goes up/down, it checks the state of system and report log accordingly.
@@ -236,11 +236,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ1MjIyOTY0LC0zNDA2OTU1MjYsLTgwMD
-UxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5
-LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNz
-A2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3
-MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtND
-MwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LDE0NjM4MDM1
-NjhdfQ==
+eyJoaXN0b3J5IjpbLTEyNzE3NDI0ODYsLTM0MDY5NTUyNiwtOD
+AwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLDE0Mjk3NjM0
+NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMT
+M3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5
+ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC
+00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2Mzgw
+MzU2OF19
 -->
