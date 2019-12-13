@@ -96,7 +96,7 @@ Other services
 
 Sysmonitor framework monitors the various software and hardware resource in the SONIC system.  There would be three levels of threshold limit defined for each of the resource type. It checks resource usage with its predefined threshold limit and generates the syslog alert message along with resource stats information when the usage reaches each of the threshold level.  When usage stays at the same level, it  generates only one syslog message for each level. 
 
-![](images/sysmonitor.png)
+![](images/Sysmonitor.png)
 
 The framework supports both software and hardware resource types.  It includes the three major hardware resource types as CPU, Memory and Disk partitions and the software resource types as systemd core services.  
 
@@ -214,11 +214,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NTI3NDY4NCwxMzcwNjc3ODksNzI3Nj
-Q2MzgwLDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUx
-LC0xODM3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMD
-g2NTYwOTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzcz
-NzgsMTM3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsOD
-Q0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUy
-OTFdfQ==
+eyJoaXN0b3J5IjpbNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MD
+Y3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcy
+LDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC00Mz
+AyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2
+OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLTkxMjEwMjc3MiwxMT
+g1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2
+MzddfQ==
 -->
