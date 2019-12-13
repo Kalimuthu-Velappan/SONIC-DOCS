@@ -117,7 +117,7 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
    In sonic, it is essential know the current state the system whether the system is ready to handle all the config commands or not.  If one of the core services are down, there should be way to identify the system state that it is not ready to take the config commands.  The sysmonitor framework monitors the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the system not ready message because of the service down.  The system ready state message is sent to both syslog as well as console session so that user would know the live state on the console.
   
   The system core services includes  'swss',  'bgp',  'teamd',  'pmon',  'syncd' and  'database'. Other service can be added to list when it expands its core list.
-It also monitors the docker services. If any of the docker service goes up/down, it checks the state of system and report log
+It also monitors the docker services. If any of the docker service goes up/down, it checks the state of system and report log accordingly.
 
 - #### Example
 		   - Dec 10 08:35:48.817550 System is ready
@@ -216,11 +216,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE2MTk3NjMwLDQwMTQyNzE2NCwxMDU1Mj
-c0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwt
-MTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NT
-EyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2
-LDE0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAzMzY2LC05MT
-IxMDI3NzIsMTE4NTE3OTE2NCw4NDQ2NjUyMzksLTYyMjQwNTg0
-OF19
+eyJoaXN0b3J5IjpbLTE4NDgxMzgwMjUsNDAxNDI3MTY0LDEwNT
+UyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5
+LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxND
+Y1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2
+MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLT
+kxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1
+ODQ4XX0=
 -->
