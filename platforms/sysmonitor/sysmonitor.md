@@ -234,7 +234,8 @@ Monitoring framework has a self contained python database for maintaining the st
 
 
 ## 2.6 Tech-Support 
-All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate framework. During the techsupport data collection, all the syslog data added as part of the tech-support data archive.
+
+All the resource statististics and usage alerts are forwarded to syslog.  The syslog is automatically monitored by the logrotate framework. During the techsupport data collection, all the syslog data added as part of the tech-support data archive.
 
 
 # 3 Unit Test
@@ -242,9 +243,9 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 |SNO|  Testcase                                     |  Result |
 |---|-----------------------------------------------| ------- |
 | 1 | Simulate and verify the overall memory usage when it goes above threshold |   |
-| 2 | Verify the per process memory usage and check for the sys log alert || 
-| 3 | Verify the high CPU condition of a process and check for syslog alert | |
-| 4 | Verify the disk partition usage and syslog alert |  |
+| 2 | Verify the per process memory usage and check the syslog alert || 
+| 3 | Verify the high CPU condition of a process and check the syslog alert | |
+| 4 | Verify the disk partition usage and check thesyslog alert |  |
 | 5 | Verify the system service status and check for system ready message | |
 | 6 | Simulate the system services failure and check for the system not read message ||
 
@@ -252,7 +253,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMTMwMDI0MywtMTgyODc4ODYwOCw2NT
+eyJoaXN0b3J5IjpbMTg3NzU5ODM2NCwtMTgyODc4ODYwOCw2NT
 U5NTM4NjUsLTEyNzE3NDI0ODYsLTM0MDY5NTUyNiwtODAwNTE4
 MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLDE0Mjk3NjM0NjksLT
 EzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3
