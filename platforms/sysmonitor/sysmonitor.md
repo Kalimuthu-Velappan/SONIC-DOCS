@@ -104,6 +104,7 @@ Sysmonitor framework monitors various software and hardware resources in the SON
 The framework supports both software and hardware resource types.  It includes the three major hardware resource types as CPU, Memory and Disk partitions and the software resource types as systemd core services.  
 
 ## 2.4 SYSLOG Levels 
+
 Whenever the resouce threshold limit is being reached,  alert message and related statistics are forwarded to syslog messaging system. The following three levels of syslog shall be supported 
 
 	Level1  - INFO 
@@ -119,7 +120,11 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 	  Level3 - 90% - CRITICAL
  
  There are few threshold  that are specific to the particulate resource type would defined under the resouce type. 
- 	   
+
+## 2.5 Sampling Interval
+
+   By the sampling interval is set as 3 minutes which indicates that every 3 minutes resource usage being monitored and checked against the threshold. The sampling interval is fixed by default and it gets adjusted based on the system resource configuration.
+      
 #### System Service Monitoring:
    
    In sonic, it is essential know the current state the system whether the system is ready to handle all the config commands or not.  If one of the core services are down, there should be way to identify the system state that it is not ready to take the config commands.  The sysmonitor framework monitors the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the 'system not ready' message because of the service down.  The system ready state message is sent to both syslog as well as console session so that user would know the live state on the console.
@@ -213,11 +218,11 @@ Disk Parition Usage:
 ## 2.2 Resource DB
 Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
 
-## 2.5 Sampling Interval
-   By the sampling interval is set as 3 minutes which indicates that every 3 minutes resource usage being monitored and checked against the threshold. The sampling interval is fixed by default and it gets adjusted based on the system resource configuration.
+
+
 
 ## 2.5 Tech-Support 
-All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate framework. During the techsupport data collection, all the syslog is also collected as part of the tech-support data archive.
+All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate framework. During the techsupport data collection, all the syslog data added as part of the tech-support data archive.
 
 
 # 4 Unit Test
@@ -235,7 +240,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAwMTg1OTM5LC0xMjcxNzQyNDg2LC0zND
+eyJoaXN0b3J5IjpbNTYwODc5ODU3LC0xMjcxNzQyNDg2LC0zND
 A2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgx
 MywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMD
 U1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMw
