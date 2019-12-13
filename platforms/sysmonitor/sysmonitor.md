@@ -55,6 +55,7 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
  - The resource threshold limit should be drived from the respective resource type and its system configuration.
  - Resource monitoring interval should be derived from the system platform configration
  - Only one syslog message should be generated when the resource usage crosses the threshold limit.
+ - The framework should support the action custom handler so the application  
 
 Resouce Monitoring
  - CPU Monitoring
@@ -99,7 +100,7 @@ Sysmonitor framework monitors the various software and hardware resource in the 
 
 The framework supports both software and hardware resource types.  It includes the three major hardware resource types as CPU, Memory and Disk partitions and the software resource types as systemd core services.  
 
-## 2.4 SYSLOG alert 
+## 2.4 SYSLOG Levels 
 Whenever the resouce threshold limit is being reached,  alert message and related statistics are forwarded to syslog messaging system. The following three levels of syslog is being generated 
 
 	Level1  - INFO 
@@ -210,11 +211,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg0MjM2NTYzLDEzNzA2Nzc4OSw3Mjc2ND
-YzODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEs
-LTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwOD
-Y1NjA5MzEsNDAxODY0NjA2LDE0NjM4MDM1NjgsMTQxMTI3NzM3
-OCwxMzc5NzAzMzY2LC05MTIxMDI3NzIsMTE4NTE3OTE2NCw4ND
-Q2NjUyMzksLTYyMjQwNTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5
-MV19
+eyJoaXN0b3J5IjpbLTE1NTAwMTMzNTMsMTM3MDY3Nzg5LDcyNz
+Y0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1
+MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMj
+A4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3
+Mzc4LDEzNzk3MDMzNjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LD
+g0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1
+MjkxXX0=
 -->
