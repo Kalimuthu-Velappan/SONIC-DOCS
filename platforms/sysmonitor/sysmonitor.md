@@ -1,8 +1,11 @@
 
 
 # System Resource Monitoring
+
 System Resource Monitoring Enhancements.
+
 # High Level Design Document
+
 #### Rev 0.1
 
 # Table of Contents
@@ -26,8 +29,11 @@ System Resource Monitoring Enhancements.
 | 0.1 | 04/12/2019  |   Kalimuthu        | Initial version                   |
 
 # About this Manual
+
 This document provides general information about the System Resource Monitoring Enhancements feature implementation in SONiC.
+
 # Scope
+
 This document describes the high level design of System Resource Monitoring Enhancements feature. 
 
 # Definition/Abbreviation
@@ -245,11 +251,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NzUwNjg5MywtMTI3MTc0MjQ4NiwtMz
-QwNjk1NTI2LC04MDA1MTgzNDYsNzM2NTE0NjgxLC02OTE1MzA4
-MTMsMTQyOTc2MzQ2OSwtMTM1NjA0MjE4Miw0MDE0MjcxNjQsMT
-A1NTI3NDY4NCwxMzcwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIz
-MDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LD
-E0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2
-NDYwNl19
+eyJoaXN0b3J5IjpbLTE1NDAwNzYyNDUsLTEyNzE3NDI0ODYsLT
+M0MDY5NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMw
+ODEzLDE0Mjk3NjM0NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LD
+EwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTky
+MzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NC
+wxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4
+NjQ2MDZdfQ==
 -->
