@@ -129,6 +129,7 @@ It also monitors the docker services. If any of the docker service goes up/down,
 #### Memory Monitoring
 Memory is a critical resource in the system. It is essential to monitor the memory usage  at the system wide as well as per process level and report the usage of memory accross the system. This helps to indentify memory distribution accross system, the spike in the memory allocation and also if there is any memory leaks in the process. 
 
+The framework  monitors the memory usage at system level as well as per process level. Threshold is defined for both p 
 
 #### System Memory Usage: 
    Memory usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
@@ -220,11 +221,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTYyMjMzLC0xMzU2MDQyMTgyLDQwMT
-QyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAs
-MTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mz
-c3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5
-MzEsNDAxODY0NjA2LDE0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMz
-c5NzAzMzY2LC05MTIxMDI3NzIsMTE4NTE3OTE2NCw4NDQ2NjUy
-MzldfQ==
+eyJoaXN0b3J5IjpbLTEyNTA2NzMxNDYsLTEzNTYwNDIxODIsND
+AxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4
+MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMT
+gzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2
+MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LD
+EzNzk3MDMzNjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2
+NTIzOV19
 -->
