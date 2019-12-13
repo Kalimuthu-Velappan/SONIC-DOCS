@@ -218,19 +218,17 @@ CPU usage of all the process in the system is being monitored.  When the usage c
 
 #### Disk Partition Monitoring:
 
-   In a long running network environment,  monitoring the disk parition usage is a crucial process. As a network operating system, disk partitions mainly used for storing the log files, core dumps,  debug infos, application files, config files and OS images. It is essential to keep track of the disk partition usage. There would be many fils usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with the following information.
+   In a long running network environment,  monitoring the disk parition usage is a crucial process. As a network operating system, disk partitions mainly used for storing the log files, core dumps,  debug infos, application files, config files and OS images. It is essential to keep track of the disk partition usage. When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with the following parition information.
 
  - Mount point
  - Used space
  - Free space 
  - Total space
 
-Disk Parition Usage:
-
  - Overall partion usage thresholds are dervied as 
-	- INFO -  70%  of partition size
-	 - WARN -  80%  of  partition size 
-	 - CRITICAL -  90%  of partition size
+	- INFO -  70%  of total partition size
+	 - WARN -  80%  of  total partition size 
+	 - CRITICAL -  90%  of total partition size
 
 #### Example:
 Nov 27 07:16:50.878011 sonic INFO system#state: DISK usage of '/' is above 8%, Total: 31.4G, Free: 20.1G, Used: 9.7G
@@ -263,11 +261,11 @@ All the resource statististics and usage alerts are forwarded to syslog.  The sy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDU1ODc4NTIsLTEzODkwNTYwMTQsLT
-E4Mjg3ODg2MDgsNjU1OTUzODY1LC0xMjcxNzQyNDg2LC0zNDA2
-OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgxMy
-wxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMDU1
-Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOS
-wtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2
-NTEyMTM4OV19
+eyJoaXN0b3J5IjpbMTc1NTk2ODE4NywtMTM4OTA1NjAxNCwtMT
+gyODc4ODYwOCw2NTU5NTM4NjUsLTEyNzE3NDI0ODYsLTM0MDY5
+NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLD
+E0Mjk3NjM0NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUy
+NzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC
+0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1
+MTIxMzg5XX0=
 -->
