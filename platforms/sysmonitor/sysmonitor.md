@@ -137,7 +137,11 @@ Memory usage:
 	 - INFO - 30%  of system memory
 	 - WARN - 40%  of system memory
 	 - CRITICAL - above 50% of system memory 
-	 
+	
+Memory usage of resource is dumped on the console with following format
+Process name, Process ID, RSS( pyshical memory)
+
+ 
  - #### Example :
 	- Dec 11 13:06:19.397949 sonic INFO system#state: System memory usage is above 60%, Total: 15.6G, Free: 1.8G, Used: 2.8G, Buffers: 314.8M, Cached: 10.7G
 	- Dec 11 13:06:19.477884 sonic INFO system#state: MEM :: Name: orchagent, Pid:6269, Rss:10.5M
@@ -207,11 +211,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQxNDM1MDcsNzI3NjQ2MzgwLDEzMj
-g5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3Nzcx
-MTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLD
-QwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcw
-MzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC
-02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3
-MTAxNl19
+eyJoaXN0b3J5IjpbMTQzMDExMDQ5LDcyNzY0NjM4MCwxMzI4OT
+kyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0
+NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MD
+E4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMz
+NjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNj
+IyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1MjkxLDExMzE0NzEw
+MTZdfQ==
 -->
