@@ -11,6 +11,8 @@ System Resource Monitoring Enhancements.
   * [About This Manual](#about-this-manual)
   * [Scope](#scope)
   * [Definition/Abbreviation](#definitionabbreviation)
+  * [Feature Overview](#FeatureOverview)
+
 
 # List of Tables
 [Table 1: Abbreviations](#table-1-abbreviations)
@@ -121,7 +123,7 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
  
  There are few threshold  that are specific to the particulate resource type would defined under the resouce type. 
 
-## 2.5 Sampling Interval
+## 2.4 Sampling Interval
 
    By the sampling interval is set as 3 minutes which indicates that every 3 minutes resource usage being monitored and checked against the threshold. The sampling interval is fixed by default and it gets adjusted based on the system resource configuration.
       
@@ -215,17 +217,17 @@ Disk Parition Usage:
 
 
 
-## 2.2 Resource DB
+## 2.5 Resource DB
 Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
 
 
 
 
-## 2.5 Tech-Support 
+## 2.6 Tech-Support 
 All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate framework. During the techsupport data collection, all the syslog data added as part of the tech-support data archive.
 
 
-# 4 Unit Test
+# 3 Unit Test
 
 |SNO|  Testcase                                     |  Result |
 |---|-----------------------------------------------| ------- |
@@ -240,11 +242,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYwODc5ODU3LC0xMjcxNzQyNDg2LC0zND
-A2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgx
-MywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMD
-U1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMw
-OSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMT
-Q2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0
-NjA2XX0=
+eyJoaXN0b3J5IjpbLTYyNTk4NzY1MSwtMTI3MTc0MjQ4NiwtMz
+QwNjk1NTI2LC04MDA1MTgzNDYsNzM2NTE0NjgxLC02OTE1MzA4
+MTMsMTQyOTc2MzQ2OSwtMTM1NjA0MjE4Miw0MDE0MjcxNjQsMT
+A1NTI3NDY4NCwxMzcwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIz
+MDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LD
+E0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2
+NDYwNl19
 -->
