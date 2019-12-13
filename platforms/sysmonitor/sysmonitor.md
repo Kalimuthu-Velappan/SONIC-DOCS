@@ -182,7 +182,11 @@ Process name, Process ID, RSS( physical memory)
 
 
 #### CPU Monitoring:
-   CPU usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
+
+CPU usage of all the process in the system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
+
+- Makei
+   
 
 ##### CPU threshold limits:
 -  The CPU threshold limit is considered as duration of sampling interval in which the process high CPU condition detected.
@@ -228,11 +232,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDUxODM0Niw3MzY1MTQ2ODEsLTY5MT
-UzMDgxMywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2
-NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyOD
-k5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzEx
-NDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsND
-AxODY0NjA2LDE0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAz
-MzY2XX0=
+eyJoaXN0b3J5IjpbLTM0MDY5NTUyNiwtODAwNTE4MzQ2LDczNj
+UxNDY4MSwtNjkxNTMwODEzLDE0Mjk3NjM0NjksLTEzNTYwNDIx
+ODIsNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNz
+Y0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1
+MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMj
+A4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3
+Mzc4XX0=
 -->
