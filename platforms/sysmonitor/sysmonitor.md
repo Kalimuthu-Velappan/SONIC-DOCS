@@ -167,7 +167,7 @@ Process name, Process ID, RSS( physical memory)
 #### Per Process Memory Usage:
   Per process memory usage goes beyond threshold limit, should also generate the process memory usage info on the system log message. The syslog message is generated with following information.
   
-	 - It includes process name, process Id, and used memory size.
+ - It includes process name, process Id, and used memory size.
 	  
 ##### Per Process Memory Threshold Limit 
   
@@ -228,7 +228,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgwNDg5ODg5LC02OTE1MzA4MTMsMTQyOT
+eyJoaXN0b3J5IjpbNzM2NTE0NjgxLC02OTE1MzA4MTMsMTQyOT
 c2MzQ2OSwtMTM1NjA0MjE4Miw0MDE0MjcxNjQsMTA1NTI3NDY4
 NCwxMzcwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIzMDksLTE3OD
 IwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0NjUxMjEz
