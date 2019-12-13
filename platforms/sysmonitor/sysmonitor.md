@@ -213,12 +213,11 @@ Disk Parition Usage:
 ## 2.2 Resource DB
 Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
 
-
 ## 2.5 Sampling Interval
-   By the sampling interval is set as 3 minutes which indicates that every 3 minutes resource usage being monitored and checked against the threshold. The sampling interval is fixed by default and it gets adu
+   By the sampling interval is set as 3 minutes which indicates that every 3 minutes resource usage being monitored and checked against the threshold. The sampling interval is fixed by default and it gets adjusted based on the system resource configuration.
 
 ## 2.5 Tech-Support 
-All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate. During the techsupport data collection all the syslog is also collected as part of the tech-support data archive.
+All the resource statististics and usage alert are forwarded to syslog.  The syslog is automatically monitored by the logrotate framework. During the techsupport data collection, all the syslog is also collected as part of the tech-support data archive.
 
 
 # 4 Unit Test
@@ -236,7 +235,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDY4NjY5LC0xMjcxNzQyNDg2LC0zND
+eyJoaXN0b3J5IjpbODAwMTg1OTM5LC0xMjcxNzQyNDg2LC0zND
 A2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgx
 MywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMD
 U1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMw
