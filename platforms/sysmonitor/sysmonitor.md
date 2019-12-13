@@ -166,9 +166,9 @@ The resouce limits are automitcally dervied from the system configurations.
 	 - WARN -  80%  of system memory
 	 - CRITICAL -  90%  of system memory
 	
-	
-Memory usage of resource is dumped on the console with following format
-Process name, Process ID, RSS( physical memory)
+Memory usage of resource is dumped on the console with the following format:
+
+- Process name, Process ID, RSS( physical memory)
  
  - #### Example :
 	- Dec 11 13:06:19.397949 sonic INFO system#state: System memory usage is above 60%, Total: 15.6G, Free: 1.8G, Used: 2.8G, Buffers: 314.8M, Cached: 10.7G
@@ -178,7 +178,8 @@ Process name, Process ID, RSS( physical memory)
 	- Dec 11 13:06:19.478060 sonic INFO system#state: MEM :: Name: zebra, Pid:9625, Rss:11.3M
 	   
 #### Per Process Memory Usage:
-  Per process memory usage goes beyond threshold limit, should also generate the process memory usage info on the system log message. The syslog message is generated with following information.
+
+  When  per process memory usage goes beyond threshold limit, should also generate the process memory usage info on the system log message. The message is generated with the following information.
   
  - Memory info of a process 
 	 - Process name, 
@@ -187,12 +188,12 @@ Process name, Process ID, RSS( physical memory)
 	  
 ##### Per Process Memory Threshold Limit 
   
- - Per process usage Memory threshold is derived from 30% system memory
+ - Per process usage Memory threshold is derived from system memory
 	 - INFO - 30%  of system memory
 	 - WARN - 40%  of system memory
 	 - CRITICAL - above 50% of system memory 
 
-- #### Example
+ #### Example
 	 - Dec 11 13:03:19.209233 sonic INFO system#state: Per process memory threshold exceeded for process rest_server[3781], threshold 3% of system memory 478.6M, current usage 538.2M
 	 - Dec 11 13:03:19.242928 sonic INFO system#state: Per process memory threshold exceeded for process syncd[14083], threshold 3% of system memory 478.6M, current usage 515.3M
 
@@ -246,11 +247,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NzI0NjgwNCw2NTU5NTM4NjUsLTEyNz
-E3NDI0ODYsLTM0MDY5NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4
-MSwtNjkxNTMwODEzLDE0Mjk3NjM0NjksLTEzNTYwNDIxODIsND
-AxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4
-MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMT
-gzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2
-MDkzMV19
+eyJoaXN0b3J5IjpbLTIxMTEwOTUyOTUsNjU1OTUzODY1LC0xMj
+cxNzQyNDg2LC0zNDA2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2
+ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLD
+QwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYz
+ODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLT
+E4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1
+NjA5MzFdfQ==
 -->
