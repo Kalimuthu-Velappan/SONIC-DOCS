@@ -230,7 +230,7 @@ Disk Parition Usage:
 
 ## 2.5 Resource DB
 
-Monitoring framework has a self contained python database for maintaining the state each resources.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
+Monitoring framework has a self contained python database for maintaining the state of each resources.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
 
 
 ## 2.6 Tech-Support 
@@ -252,11 +252,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mjg3ODg2MDgsNjU1OTUzODY1LC0xMj
-cxNzQyNDg2LC0zNDA2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2
-ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLD
-QwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYz
-ODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLT
-E4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1
-NjA5MzFdfQ==
+eyJoaXN0b3J5IjpbLTUyMTMwMDI0MywtMTgyODc4ODYwOCw2NT
+U5NTM4NjUsLTEyNzE3NDI0ODYsLTM0MDY5NTUyNiwtODAwNTE4
+MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLDE0Mjk3NjM0NjksLT
+EzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3
+Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLD
+E3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAy
+MzUyNDddfQ==
 -->
