@@ -245,7 +245,7 @@ All the resource statististics and usage alerts are forwarded to syslog.  The sy
 | 1 | Simulate and verify the overall memory usage when it goes above threshold |   |
 | 2 | Verify the per process memory usage and check the syslog alert || 
 | 3 | Verify the high CPU condition of a process and check the syslog alert | |
-| 4 | Verify the disk partition usage and check thesyslog alert |  |
+| 4 | Verify the disk partition usage and check the syslog alert |  |
 | 5 | Verify the system service status and check for system ready message | |
 | 6 | Simulate the system services failure and check for the system not read message ||
 
@@ -253,11 +253,11 @@ All the resource statististics and usage alerts are forwarded to syslog.  The sy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NzU5ODM2NCwtMTgyODc4ODYwOCw2NT
-U5NTM4NjUsLTEyNzE3NDI0ODYsLTM0MDY5NTUyNiwtODAwNTE4
-MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLDE0Mjk3NjM0NjksLT
-EzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3
-Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLD
-E3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAy
-MzUyNDddfQ==
+eyJoaXN0b3J5IjpbLTEzODkwNTYwMTQsLTE4Mjg3ODg2MDgsNj
+U1OTUzODY1LC0xMjcxNzQyNDg2LC0zNDA2OTU1MjYsLTgwMDUx
+ODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5LC
+0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2
+Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3Mi
+wxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMw
+MjM1MjQ3XX0=
 -->
