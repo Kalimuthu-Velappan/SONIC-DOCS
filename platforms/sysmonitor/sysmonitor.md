@@ -55,7 +55,7 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
  - The resource threshold limit should be drived from the respective resource type and its system configuration.
  - Resource monitoring interval should be derived from the system platform configration
  - Only one syslog message should be generated when the resource usage crosses the threshold limit.
- - The framework should support the action custom handler so the application  
+ - The framework should support the action custom action handler so the application can dump message specific to the  resource limit and the resource type.
 
 Resouce Monitoring
  - CPU Monitoring
@@ -101,7 +101,7 @@ Sysmonitor framework monitors the various software and hardware resource in the 
 The framework supports both software and hardware resource types.  It includes the three major hardware resource types as CPU, Memory and Disk partitions and the software resource types as systemd core services.  
 
 ## 2.4 SYSLOG Levels 
-Whenever the resouce threshold limit is being reached,  alert message and related statistics are forwarded to syslog messaging system. The following three levels of syslog is being generated 
+Whenever the resouce threshold limit is being reached,  alert message and related statistics are forwarded to syslog messaging system. The following three levels of syslog shall be supported 
 
 	Level1  - INFO 
 	Level2 -  WARN
@@ -112,7 +112,7 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 
 #### System Service Monitoring:
    
-   It monitor the system core services and port initializatin state and generate the system ready message. If one of the system core service goes down, it monitor and print the system not ready message. 
+   It monitor the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it monitor and print the system not ready message. 
 
 - #### Example
 		   - Dec 10 08:35:48.817550 System is ready
@@ -211,11 +211,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTAwMTMzNTMsMTM3MDY3Nzg5LDcyNz
-Y0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1
-MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMj
-A4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3
-Mzc4LDEzNzk3MDMzNjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LD
-g0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1
-MjkxXX0=
+eyJoaXN0b3J5IjpbMTE0MzQwNTUxOSwxMzcwNjc3ODksNzI3Nj
+Q2MzgwLDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUx
+LC0xODM3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMD
+g2NTYwOTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzcz
+NzgsMTM3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsOD
+Q0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUy
+OTFdfQ==
 -->
