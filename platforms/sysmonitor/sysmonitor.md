@@ -41,7 +41,7 @@ This document describes the high level design of System Resource Monitoring Enha
 ### Table 1: Abbreviations
 | **Term**                 | **Meaning**                         |
 |--------------------------|-------------------------------------|
-| XYZ                      | Term description                    |
+| ODM                      | Term description                    |
 
 # 1 Feature Overview
 
@@ -224,12 +224,8 @@ Disk Parition Usage:
 	 - CRITICAL -  90%  of partition size
 	 
 
-
-
 ## 2.5 Resource DB
 Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
-
-
 
 
 ## 2.6 Tech-Support 
@@ -251,11 +247,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU1OTUzODY1LC0xMjcxNzQyNDg2LC0zND
-A2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgx
-MywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMD
-U1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMw
-OSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMT
-Q2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0
-NjA2XX0=
+eyJoaXN0b3J5IjpbOTA3NTE3NjcyLDY1NTk1Mzg2NSwtMTI3MT
+c0MjQ4NiwtMzQwNjk1NTI2LC04MDA1MTgzNDYsNzM2NTE0Njgx
+LC02OTE1MzA4MTMsMTQyOTc2MzQ2OSwtMTM1NjA0MjE4Miw0MD
+E0MjcxNjQsMTA1NTI3NDY4NCwxMzcwNjc3ODksNzI3NjQ2Mzgw
+LDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xOD
+M3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYw
+OTMxXX0=
 -->
