@@ -127,7 +127,7 @@ It also monitors the docker services. If any of the docker service goes up/down,
 		   - Dec 10 08:35:48.817550 System is ready
   
 #### Memory Monitoring
-
+Memory is a critical resource in the system. It is essential to monitor the memory usage  at system wide as well as per process level. 
 #### System Memory Usage: 
    Memory usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
    
@@ -195,10 +195,6 @@ Disk Parition Usage:
 ## 2.2 Resource DB
 Monitoring framework has self contained python database for maintaining the state of the resource.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
 
-## 2.3 Resource Threshold Limit 
-The resouce limits are automitcally dervied from the system configurations. 
-Memory usage:
-
 
 ## 2.5 Sampling Interval
    By the sampling interval is set as 3 minutes which indicates that every three minutes resource usage being monitored and checked against the threshold.
@@ -222,7 +218,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjIwMTk3ODksLTEzNTYwNDIxODIsND
+eyJoaXN0b3J5IjpbLTEzNDQ0NjI4MjksLTEzNTYwNDIxODIsND
 AxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4
 MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMT
 gzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2
