@@ -67,9 +67,10 @@ Resouce Monitoring
 		 - Generate the syslog alert with proceess memory stats when its usages crosses the threshold limit.
 		 - Memory threshold shall be predefined as 70%, 80%, 90%
 
- - Disk Monitoring
-	 - Generate the syslog alert with root partition stats when its usages crosses the threshold limit.
+ - Disk Partition Monitoring
+	 - Generate the syslog alert with partition stats when its usages crosses the threshold limit.
 	 - Disk threshold shall be predefined as 70%, 80%, 90%
+	 - 
  - Service Monitoring
 	 - Monitor the System core services   which includes  'swss',  'bgp',  'teamd',  'pmon',  'syncd' and  'database'.
 	 - Generate the system ready syslog message when the core services are up and port initailation is done.
@@ -199,11 +200,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNz
-I0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1
-MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LDE0NjM4MDM1NjgsMT
-QxMTI3NzM3OCwxMzc5NzAzMzY2LC05MTIxMDI3NzIsMTE4NTE3
-OTE2NCw4NDQ2NjUyMzksLTYyMjQwNTg0OCwtMzQyNDg2NjM3LD
-M3NDE2NTI5MSwxMTMxNDcxMDE2LDk4ODQ1NDQ4MCwtNzQyNTcw
-MzkyXX0=
+eyJoaXN0b3J5IjpbNzI3NjQ2MzgwLDEzMjg5OTIzMDksLTE3OD
+IwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0NjUxMjEz
+ODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYwNiwxND
+YzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2NiwtOTEyMTAy
+NzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLT
+M0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0
+ODBdfQ==
 -->
