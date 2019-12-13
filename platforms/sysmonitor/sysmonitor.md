@@ -115,7 +115,9 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 	  Level1 - 70% - INFO
 	  Level2 - 80% - WARN
 	  Level3 - 90% - CRITICAL
-	   
+ 
+ There are some threshold which are specific to the particulate resource type. 
+ 	   
 #### System Service Monitoring:
    
    In sonic, it is essential know the current state the system whether the system is ready to handle all the config commands or not.  If one of the core services are down, there should be way to identify the system state that it is not ready to take the config commands.  The sysmonitor framework monitors the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the system not ready message because of the service down.  The system ready state message is sent to both syslog as well as console session so that user would know the live state on the console.
@@ -129,11 +131,10 @@ It also monitors the docker services. If any of the docker service goes up/down,
 #### Memory Monitoring
 Memory is a critical resource in the system. It is essential to monitor the memory usage  at the system wide as well as per process level and report the usage of memory accross the system. This helps to indentify memory distribution accross system, the spike in the memory allocation and also if there is any memory leaks in the process. 
 
-The framework  monitors the memory usage at system level as well as per process level. Threshold is defined for both p 
+The framework  monitors the memory usage at system level as well as per process level. Threshold is defined for both per process level and system level.  
 
 #### System Memory Usage: 
    Memory usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
-   
 
  - Overall system memory usage information
  - Memory usage information of all the runnings processes     -
@@ -221,11 +222,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTA2NzMxNDYsLTEzNTYwNDIxODIsND
-AxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4
-MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMT
-gzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2
-MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LD
-EzNzk3MDMzNjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2
-NTIzOV19
+eyJoaXN0b3J5IjpbMTU2MDI1Mzk5NiwtMTM1NjA0MjE4Miw0MD
+E0MjcxNjQsMTA1NTI3NDY4NCwxMzcwNjc3ODksNzI3NjQ2Mzgw
+LDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xOD
+M3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYw
+OTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMT
+M3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1
+MjM5XX0=
 -->
