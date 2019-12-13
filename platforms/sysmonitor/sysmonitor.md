@@ -97,8 +97,8 @@ Sysmonitor framework monitors the various software and hardware resource in the 
 
 ![](images/sysmonitor.png)
 
-It supports to 
-One Syslog message is generated for each threshold level crossing. 
+The framework supports both software and hardware resource types.  It includes the three major hardware resource types - CPU, Memory and D
+One Syslog message is  for each threshold level crossing. 
 
 ## 2.4 SYSLOG alert 
 Whenever the resouce threshold limit is being reached,  alert message and related statistics are forwarded to syslog messaging system. The following three levels of syslog is being generated 
@@ -211,11 +211,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzY2MTE4MjcsNzI3NjQ2MzgwLDEzMj
-g5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3Nzcx
-MTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLD
-QwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcw
-MzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC
-02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3
-MTAxNl19
+eyJoaXN0b3J5IjpbMjA4MTQ0MTA5OSw3Mjc2NDYzODAsMTMyOD
+k5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzEx
+NDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsND
+AxODY0NjA2LDE0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAz
+MzY2LC05MTIxMDI3NzIsMTE4NTE3OTE2NCw4NDQ2NjUyMzksLT
+YyMjQwNTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5MSwxMTMxNDcx
+MDE2XX0=
 -->
