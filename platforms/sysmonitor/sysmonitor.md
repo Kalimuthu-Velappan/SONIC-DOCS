@@ -96,7 +96,9 @@ Other services
 
 Sysmonitor framework monitors the various software and hardware resource in the SONIC system.  There would be three levels of threshold limit defined for each of the resource type. It checks resource usage with its predefined threshold limit and generates the syslog alert message along with resource stats information when the usage reaches each of the threshold level.  When usage stays at the same level, it  generates only one syslog message for each level. 
 
+
 ![](images/Sysmonitor.png)
+
 
 The framework supports both software and hardware resource types.  It includes the three major hardware resource types as CPU, Memory and Disk partitions and the software resource types as systemd core services.  
 
@@ -112,7 +114,7 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 
 #### System Service Monitoring:
    
-   It monitor the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the system not ready message because of the service down.  
+   In sonic, it is impartent to know the It monitor the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the system not ready message because of the service down.  
   
   The system core services includes  'swss',  'bgp',  'teamd',  'pmon',  'syncd' and  'database'. Other service can be added to list when it expands its core list.
 It also monitors the docker services 
@@ -214,11 +216,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MD
-Y3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcy
-LDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC00Mz
-AyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2
-OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLTkxMjEwMjc3MiwxMT
-g1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2
-MzddfQ==
+eyJoaXN0b3J5IjpbMzkwNTc1MjQxLDQwMTQyNzE2NCwxMDU1Mj
+c0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwt
+MTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NT
+EyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2
+LDE0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAzMzY2LC05MT
+IxMDI3NzIsMTE4NTE3OTE2NCw4NDQ2NjUyMzksLTYyMjQwNTg0
+OF19
 -->
