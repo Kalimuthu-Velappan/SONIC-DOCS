@@ -84,7 +84,7 @@ Resouce Monitoring
 	 - Disk threshold shall be predefined as 70%, 80%, 90%
 	 - 
  - Service Monitoring
-	 - It should monitor the core systemd services . Other service can be added to list when it expands the core list.
+	 - It should monitor the core systemd services and generated the syslog for system ready state.
 	 - Generate  'system ready' syslog message when the core services are up and port initailation is done.
 	 - Generate 'system not ready' syslog message when one of the service goes down. 
  
@@ -248,11 +248,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQ4NTI4Nyw2NTU5NTM4NjUsLTEyNz
-E3NDI0ODYsLTM0MDY5NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4
-MSwtNjkxNTMwODEzLDE0Mjk3NjM0NjksLTEzNTYwNDIxODIsND
-AxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4
-MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMT
-gzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2
-MDkzMV19
+eyJoaXN0b3J5IjpbLTEwMDQ0MjQ5MzIsNjU1OTUzODY1LC0xMj
+cxNzQyNDg2LC0zNDA2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2
+ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLD
+QwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYz
+ODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLT
+E4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1
+NjA5MzFdfQ==
 -->
