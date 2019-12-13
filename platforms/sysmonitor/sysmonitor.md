@@ -93,11 +93,11 @@ Other services
 # 2 Design
 ## 2.1 Overview
 
-Sysmonitor framework monitors the various software and hardware resource in the SONIC system.  There would be three levels of threshold limit defined for each of the resource type. It checks resource usage with its predefined threshold limit and generates the syslog alert message when the usage reaches each of the threshold level.  When usage stays at the same level, it  generates only one syslog message for each level. The 
+Sysmonitor framework monitors the various software and hardware resource in the SONIC system.  There would be three levels of threshold limit defined for each of the resource type. It checks resource usage with its predefined threshold limit and generates the syslog alert message when the usage reaches each of the threshold level.  When usage stays at the same level, it  generates only one syslog message for each level. 
 
 ![](images/sysmonitor.png)
 
-Monitor the resource usage and generate the  message  when its usage crosses the threshold level.
+It supports to 
 One Syslog message is generated for each threshold level crossing. 
 
 ## 2.4 SYSLOG alert 
@@ -211,11 +211,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NDg4MTI1NSw3Mjc2NDYzODAsMTMyOD
-k5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzEx
-NDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsND
-AxODY0NjA2LDE0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAz
-MzY2LC05MTIxMDI3NzIsMTE4NTE3OTE2NCw4NDQ2NjUyMzksLT
-YyMjQwNTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5MSwxMTMxNDcx
-MDE2XX0=
+eyJoaXN0b3J5IjpbLTEzNzY2MTE4MjcsNzI3NjQ2MzgwLDEzMj
+g5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3Nzcx
+MTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLD
+QwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcw
+MzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC
+02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3
+MTAxNl19
 -->
