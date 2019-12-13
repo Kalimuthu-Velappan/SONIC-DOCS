@@ -188,7 +188,7 @@ Memory usage of resource is dumped on the console with the following format:
 	  
 ##### Per Process Memory Threshold Limit 
   
- - Per process usage Memory threshold is derived from the system memory
+ - Per process usage Memory threshold is derived from the overall system memory
 	 - INFO - 30%  of system memory
 	 - WARN - 40%  of system memory
 	 - CRITICAL - above 50% of system memory 
@@ -209,15 +209,19 @@ CPU usage of all the process in the system is being monitored.  When the usage c
    
 
 ##### Per Process CPU threshold limits:
+
 -  The CPU threshold limit is considered as duration of sampling interval in which the process high CPU condition detected.
+
 	- INFO -  70%  of High CPU
 	 - WARN -  80%  of  High CPU
 	 - CRITICAL -  90%  of High CPU
 
 #### Disk Partition Monitoring:
-   In a long running network environment,  monitoring disk parition usage is a crucial process. As a network operating system, disk partitions mainly used for storing the log files, core dumps,  debug infos, application files, config files and OS images. It is essential to keep track of the disk partition useage  There would be many fil usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with the following information.
+
+   In a long running network environment,  monitoring the disk parition usage is a crucial process. As a network operating system, disk partitions mainly used for storing the log files, core dumps,  debug infos, application files, config files and OS images. It is essential to keep track of the disk partition usage. There would be many fils usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with the following information.
 
 Disk Parition Usage:
+
  - Overall partion usage thresholds are dervied as 
 	- INFO -  70%  of partition size
 	 - WARN -  80%  of  partition size 
@@ -247,11 +251,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg4OTU0NzA3LDY1NTk1Mzg2NSwtMTI3MT
-c0MjQ4NiwtMzQwNjk1NTI2LC04MDA1MTgzNDYsNzM2NTE0Njgx
-LC02OTE1MzA4MTMsMTQyOTc2MzQ2OSwtMTM1NjA0MjE4Miw0MD
-E0MjcxNjQsMTA1NTI3NDY4NCwxMzcwNjc3ODksNzI3NjQ2Mzgw
-LDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xOD
-M3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYw
-OTMxXX0=
+eyJoaXN0b3J5IjpbMjEyNjkxMTAzMSw2NTU5NTM4NjUsLTEyNz
+E3NDI0ODYsLTM0MDY5NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4
+MSwtNjkxNTMwODEzLDE0Mjk3NjM0NjksLTEzNTYwNDIxODIsND
+AxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4
+MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMT
+gzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2
+MDkzMV19
 -->
