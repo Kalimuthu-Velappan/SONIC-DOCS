@@ -199,8 +199,8 @@ CPU usage of all the process in the system is being monitored.  When the usage c
 	 - WARN -  80%  of  High CPU
 	 - CRITICAL -  90%  of High CPU
 
-#### Disk partition Monitoring:
-   CPU usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
+#### Disk Partition Monitoring:
+   In a long running network operating environment,   CPU usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
 
 Disk Parition Usage:
  - Overall partion usage thresholds are dervied as 
@@ -237,7 +237,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA2MjUzMDAsLTM0MDY5NTUyNiwtOD
+eyJoaXN0b3J5IjpbLTE3NDEyNjE4MjMsLTM0MDY5NTUyNiwtOD
 AwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLDE0Mjk3NjM0
 NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMT
 M3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5
