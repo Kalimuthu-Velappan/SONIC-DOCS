@@ -110,10 +110,11 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 	Level3 - CRITICAL
  
 ## 2.3 Threshold Limit
-  By default, the threshold limit defined as three levels
+  By default, the threshold limit defined as three levels and each of the level maps to corresponding syslog levels.
+  
 	  Level1 - 70% - INFO
-	  Level2 - 80% - 
-	   Level3 - 90% - INFO
+	  Level2 - 80% - WARN
+	  Level3 - 90% - CRITICAL
 	   
 #### System Service Monitoring:
    
@@ -221,11 +222,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MjQyNTcxNCw0MDE0MjcxNjQsMTA1NT
-I3NDY4NCwxMzcwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIzMDks
-LTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0Nj
-UxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYw
-NiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2NiwtOT
-EyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4
-NDhdfQ==
+eyJoaXN0b3J5IjpbLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNT
+UyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5
+LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxND
+Y1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2
+MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLT
+kxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1
+ODQ4XX0=
 -->
