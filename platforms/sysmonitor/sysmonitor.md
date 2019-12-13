@@ -170,7 +170,7 @@ Memory usage of resource is dumped on the console with the following format:
 
 - Process name, Process ID, RSS( physical memory)
  
- - #### Example :
+ #### Example :
 	- Dec 11 13:06:19.397949 sonic INFO system#state: System memory usage is above 60%, Total: 15.6G, Free: 1.8G, Used: 2.8G, Buffers: 314.8M, Cached: 10.7G
 	- Dec 11 13:06:19.477884 sonic INFO system#state: MEM :: Name: orchagent, Pid:6269, Rss:10.5M
 	- Dec 11 13:06:19.477951 sonic INFO system#state: MEM :: Name: ospfd, Pid:11029, Rss:10.5M
@@ -193,7 +193,7 @@ Memory usage of resource is dumped on the console with the following format:
 	 - WARN - 40%  of system memory
 	 - CRITICAL - above 50% of system memory 
 
- #### Example
+#### Example
 	 - Dec 11 13:03:19.209233 sonic INFO system#state: Per process memory threshold exceeded for process rest_server[3781], threshold 3% of system memory 478.6M, current usage 538.2M
 	 - Dec 11 13:03:19.242928 sonic INFO system#state: Per process memory threshold exceeded for process syncd[14083], threshold 3% of system memory 478.6M, current usage 515.3M
 
@@ -247,7 +247,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTEwOTUyOTUsNjU1OTUzODY1LC0xMj
+eyJoaXN0b3J5IjpbLTEwNzg2NDczNTYsNjU1OTUzODY1LC0xMj
 cxNzQyNDg2LC0zNDA2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2
 ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLD
 QwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYz
