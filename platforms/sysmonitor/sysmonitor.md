@@ -76,7 +76,7 @@ Resouce Monitoring
 	 - Memory threshold shall be predefined as 70%, 80%, 90%
 	 - Per process memory monitoring
 		 - Generate the syslog alert with proceess memory stats when its usages crosses the threshold limit.
-		 - Memory threshold shall be predefined as 70%, 80%, 90%
+		 - Memory threshold shall be predefined as 30%, 40%,  above 50% of system memory.
 
  - Disk Partition Monitoring
 	 - Generate the syslog alert with partition stats when its usages crosses the threshold limit.
@@ -251,11 +251,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDAwNzYyNDUsLTEyNzE3NDI0ODYsLT
-M0MDY5NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMw
-ODEzLDE0Mjk3NjM0NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LD
-EwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTky
-MzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NC
-wxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4
-NjQ2MDZdfQ==
+eyJoaXN0b3J5IjpbNjU1OTUzODY1LC0xMjcxNzQyNDg2LC0zND
+A2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgx
+MywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMD
+U1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMw
+OSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMT
+Q2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0
+NjA2XX0=
 -->
