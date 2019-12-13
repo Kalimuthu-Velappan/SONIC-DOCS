@@ -60,7 +60,7 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
  - The software resource monitoring should include  process, docker and
    core systemd services in the system
  - It should monitor and report the resource usage  through system syslog message
- - The system monitoring framework should run as a separate service and it should get lanched automatically during bootup.  System monitoring service should start by default. 
+ - The system monitoring framework should run as a separate service and it should get lanched automatically during bootup.  System monitoring service should be  started by default. 
  - It should support three levels of threshold limit for each resource type
  - Generate syslog message with log level as INFO, WARNING and CRITIAL for respective threshold levels.
  - The resource threshold limit should be drived from the respective resource type and its system configuration.
@@ -248,11 +248,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjgyMjIxNzcsNjU1OTUzODY1LC0xMj
-cxNzQyNDg2LC0zNDA2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2
-ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLD
-QwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYz
-ODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLT
-E4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1
-NjA5MzFdfQ==
+eyJoaXN0b3J5IjpbLTc4MjI2NjAyMSw2NTU5NTM4NjUsLTEyNz
+E3NDI0ODYsLTM0MDY5NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4
+MSwtNjkxNTMwODEzLDE0Mjk3NjM0NjksLTEzNTYwNDIxODIsND
+AxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4
+MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMT
+gzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2
+MDkzMV19
 -->
