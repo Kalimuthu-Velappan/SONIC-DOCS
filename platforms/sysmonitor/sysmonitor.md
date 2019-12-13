@@ -137,7 +137,7 @@ Memory is a critical resource in the system. It is essential to monitor the memo
 The framework  monitors the memory usage at system level as well as per process level. Threshold is defined for both per process level and system level.  
 
 #### System Memory Usage: 
-   Memory usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
+  Memory usage of overall system is being monitored with predifined threshold.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
 
  - Overall system memory usage information
  - Memory usage information of all the runnings processes     -
@@ -225,11 +225,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTUzMDgxMywxNDI5NzYzNDY5LC0xMz
-U2MDQyMTgyLDQwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4
-OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNz
-I0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1
-MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LDE0NjM4MDM1NjgsMT
-QxMTI3NzM3OCwxMzc5NzAzMzY2LC05MTIxMDI3NzIsMTE4NTE3
-OTE2NF19
+eyJoaXN0b3J5IjpbLTIxMjQyMjMzMzAsLTY5MTUzMDgxMywxND
+I5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMDU1Mjc0
+Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwtMT
+c4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEy
+MTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LD
+E0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAzMzY2LC05MTIx
+MDI3NzJdfQ==
 -->
