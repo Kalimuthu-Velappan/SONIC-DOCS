@@ -141,7 +141,7 @@ The framework  monitors the memory usage at system level as well as per process 
 
  - Overall system memory usage information
  - Memory usage information of all runnings processes 
-	 - It includes process name, process Id, and amount of memory used for this process.
+	 - It includes process name, process Id, and used memory size.
 
 ##### 2.3 Resource Threshold Limit 
 The resouce limits are automitcally dervied from the system configurations. 
@@ -226,11 +226,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MzM0MzI3MiwtNjkxNTMwODEzLDE0Mj
-k3NjM0NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2
-ODQsMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNz
-gyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIx
-Mzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMT
-Q2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLTkxMjEw
-Mjc3Ml19
+eyJoaXN0b3J5IjpbLTE5MDg1NzEzNjQsLTY5MTUzMDgxMywxND
+I5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMDU1Mjc0
+Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwtMT
+c4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEy
+MTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LD
+E0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAzMzY2LC05MTIx
+MDI3NzJdfQ==
 -->
