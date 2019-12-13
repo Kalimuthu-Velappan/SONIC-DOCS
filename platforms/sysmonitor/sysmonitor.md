@@ -93,12 +93,11 @@ Other services
 # 2 Design
 ## 2.1 Overview
 
-Sysmonitor framework monitors the various software and hardware resource in the SONIC system.  There would be three levels of threshold limit defined for each of the resource type. It checks resource usage with its predefined threshold limit and generates the syslog alert message when the usage reaches each of the threshold level.  When usage stays at the same level, it  generates only one syslog message for each level. 
+Sysmonitor framework monitors the various software and hardware resource in the SONIC system.  There would be three levels of threshold limit defined for each of the resource type. It checks resource usage with its predefined threshold limit and generates the syslog alert message along with resource stats information when the usage reaches each of the threshold level.  When usage stays at the same level, it  generates only one syslog message for each level. 
 
 ![](images/sysmonitor.png)
 
-The framework supports both software and hardware resource types.  It includes the three major hardware resource types as CPU, Memory and Disk partitions and the software resource types as service type. 
-One Syslog message is  for each threshold level crossing. 
+The framework supports both software and hardware resource types.  It includes the three major hardware resource types as CPU, Memory and Disk partitions and the software resource types as systemd core services.  
 
 ## 2.4 SYSLOG alert 
 Whenever the resouce threshold limit is being reached,  alert message and related statistics are forwarded to syslog messaging system. The following three levels of syslog is being generated 
@@ -211,11 +210,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OT
-kyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0
-NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MD
-E4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMz
-NjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNj
-IyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1MjkxLDExMzE0NzEw
-MTZdfQ==
+eyJoaXN0b3J5IjpbNzg0MjM2NTYzLDEzNzA2Nzc4OSw3Mjc2ND
+YzODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEs
+LTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwOD
+Y1NjA5MzEsNDAxODY0NjA2LDE0NjM4MDM1NjgsMTQxMTI3NzM3
+OCwxMzc5NzAzMzY2LC05MTIxMDI3NzIsMTE4NTE3OTE2NCw4ND
+Q2NjUyMzksLTYyMjQwNTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5
+MV19
 -->
