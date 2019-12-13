@@ -110,8 +110,6 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 	Level3 - CRITICAL
  
  
-### Memory Monitoring :
-
 #### System Service Monitoring:
    
    In sonic, it is essential know the current state the system whether the system is ready to handle all the config commands or not.  If one of the core services are down, there should be way to identify the system state that it is not ready to take the config commands.  The sysmonitor framework monitors the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the system not ready message because of the service down.  The system ready state message is sent to both syslog as well as console session so that user would know the live state on the console.
@@ -121,9 +119,10 @@ It also monitors the docker services. If any of the docker service goes up/down,
 
 - #### Example
 		   - Dec 10 08:35:48.817550 System is ready
-   
-#### System Memory Usage:
-   
+  
+#### Memory Monitoring
+
+#### System Memory Usage: 
    Memory usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with following information.
    
 
@@ -216,11 +215,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDgxMzgwMjUsNDAxNDI3MTY0LDEwNT
-UyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5
-LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxND
-Y1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2
-MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLT
-kxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNjIyNDA1
-ODQ4XX0=
+eyJoaXN0b3J5IjpbMTA4ODY0MjI3NCw0MDE0MjcxNjQsMTA1NT
+I3NDY4NCwxMzcwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIzMDks
+LTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0Nj
+UxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYw
+NiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2NiwtOT
+EyMTAyNzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4
+NDhdfQ==
 -->
