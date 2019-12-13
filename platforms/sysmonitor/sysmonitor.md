@@ -143,20 +143,23 @@ It also monitors the docker services. If any of the docker service goes up/down,
 		   - Dec 10 08:35:48.817550 System is ready
   
 #### Memory Monitoring
+
 Memory is a critical resource in the system. It is essential to monitor the memory usage  at the system wide as well as per process level and report the usage accross the system. This helps to indentify memory distribution accross system, the spike in the memory allocation and also if there is any memory leaks in the process. 
 
 The framework  monitors the memory usage at system level as well as per process level. Threshold is defined for both per process level and system level.  
 
 #### System Memory Usage: 
+
   Memory usage of overall system is being monitored with predifined threshold.  When the usage crosses the threshold limit, syslog message is being generated.  Syslog message is generated with following information.
 
  - Overall system memory usage information
  - Memory usage information of all runnings processes 
-	 - It includes process name, process Id, and used memory size.
+	 - Process name, 
+	 - Process Id, 
+	 - Used memory size.
 
 ##### System Memory Threshold Limit 
 The resouce limits are automitcally dervied from the system configurations. 
-Memory usage:
 
  -  Overall memory usage  thresholds are drived from the system memory
 	- INFO -  70%  of system memory
@@ -243,7 +246,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwOTI4MDk4OSw2NTU5NTM4NjUsLTEyNz
+eyJoaXN0b3J5IjpbMTI0NzI0NjgwNCw2NTU5NTM4NjUsLTEyNz
 E3NDI0ODYsLTM0MDY5NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4
 MSwtNjkxNTMwODEzLDE0Mjk3NjM0NjksLTEzNTYwNDIxODIsND
 AxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4
