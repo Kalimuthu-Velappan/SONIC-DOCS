@@ -115,7 +115,7 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
    It monitor the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the system not ready message because of the service down.  
   
   The system core services includes  'swss',  'bgp',  'teamd',  'pmon',  'syncd' and  'database'. Other service can be added to list when it expands its core list.
-  
+It also monitors the docker services 
 
 - #### Example
 		   - Dec 10 08:35:48.817550 System is ready
@@ -214,11 +214,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTUyNzQwNzYsMTM3MDY3Nzg5LDcyNz
-Y0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1
-MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMj
-A4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3
-Mzc4LDEzNzk3MDMzNjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LD
-g0NDY2NTIzOSwtNjIyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1
-MjkxXX0=
+eyJoaXN0b3J5IjpbMTA1NTI3NDY4NCwxMzcwNjc3ODksNzI3Nj
+Q2MzgwLDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUx
+LC0xODM3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMD
+g2NTYwOTMxLDQwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzcz
+NzgsMTM3OTcwMzM2NiwtOTEyMTAyNzcyLDExODUxNzkxNjQsOD
+Q0NjY1MjM5LC02MjI0MDU4NDgsLTM0MjQ4NjYzNywzNzQxNjUy
+OTFdfQ==
 -->
