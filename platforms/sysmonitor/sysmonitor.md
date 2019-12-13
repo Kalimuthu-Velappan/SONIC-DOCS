@@ -88,7 +88,7 @@ Resouce Monitoring
 # 2 Design
 ## 2.1 Overview
 
-![](http://10.59.132.240:9009/projects/csg_sonic/documentation/graphics/templates/Sysmonitor.png)
+![](images/sysmonitor.png)
 
 Monitor the resource usage and generate the  message  when its usage crosses the threshold level.
 One Syslog message is generated for each threshold level crossing. 
@@ -200,11 +200,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3NjQ2MzgwLDEzMjg5OTIzMDksLTE3OD
-IwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0NjUxMjEz
-ODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYwNiwxND
-YzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcwMzM2NiwtOTEyMTAy
-NzcyLDExODUxNzkxNjQsODQ0NjY1MjM5LC02MjI0MDU4NDgsLT
-M0MjQ4NjYzNywzNzQxNjUyOTEsMTEzMTQ3MTAxNiw5ODg0NTQ0
-ODBdfQ==
+eyJoaXN0b3J5IjpbODMwODQ5Mzg2LDcyNzY0NjM4MCwxMzI4OT
+kyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0
+NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MD
+E4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMz
+NjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNj
+IyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1MjkxLDExMzE0NzEw
+MTZdfQ==
 -->
