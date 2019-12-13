@@ -46,7 +46,7 @@ This document describes the high level design of System Resource Monitoring Enha
 
 # 1 Feature Overview
 
-As SONiC runs on different ODM platform hardware configurations, it becomes necessary to have a monitoring framework that is native to SONiC to monitor the usage of system resouces and software service state of the system and generate  the syslog alert when it reaches a certain threshold . However, it should be noted that the scope of this framework is limited to monitoring and generating the syslog alert. The user can take the corrective measures in the context of the SONiC OS. 
+As SONiC runs on different ODM platform hardware configurations, it becomes necessary to have a monitoring framework that is native to SONiC to monitor the usage of system resouces and software service state and generate  the syslog alert when it reaches a certain threshold . However, it should be noted that the scope of this framework is limited to monitoring and generating the syslog alert. The user can take the corrective measures in the context of the SONiC OS. 
 
 
 
@@ -248,11 +248,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyNjgxNzAyLDY1NTk1Mzg2NSwtMTI3MT
-c0MjQ4NiwtMzQwNjk1NTI2LC04MDA1MTgzNDYsNzM2NTE0Njgx
-LC02OTE1MzA4MTMsMTQyOTc2MzQ2OSwtMTM1NjA0MjE4Miw0MD
-E0MjcxNjQsMTA1NTI3NDY4NCwxMzcwNjc3ODksNzI3NjQ2Mzgw
-LDEzMjg5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xOD
-M3NzcxMTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYw
-OTMxXX0=
+eyJoaXN0b3J5IjpbLTEyMjgyMjIxNzcsNjU1OTUzODY1LC0xMj
+cxNzQyNDg2LC0zNDA2OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2
+ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLD
+QwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNzA2Nzc4OSw3Mjc2NDYz
+ODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLT
+E4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1
+NjA5MzFdfQ==
 -->
