@@ -93,7 +93,7 @@ Other services
 # 2 Design
 ## 2.1 Overview
 
-Sysmonitor framework monitors the various so 
+Sysmonitor framework monitors the various software and hardware resource in the SONIC system.  There would be three levels of threshold limit shallIt checks resource usage with predefined thresh
 
 ![](images/sysmonitor.png)
 
@@ -211,7 +211,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODUyNjU3OTQsNzI3NjQ2MzgwLDEzMj
+eyJoaXN0b3J5IjpbLTE1OTQwMjcyNDYsNzI3NjQ2MzgwLDEzMj
 g5OTIzMDksLTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3Nzcx
 MTQ0LDE0NjUxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLD
 QwMTg2NDYwNiwxNDYzODAzNTY4LDE0MTEyNzczNzgsMTM3OTcw
