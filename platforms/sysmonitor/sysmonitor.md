@@ -143,7 +143,7 @@ The framework  monitors the memory usage at system level as well as per process 
  - Memory usage information of all runnings processes 
 	 - It includes process name, process Id, and used memory size.
 
-##### 2.3 Resource Threshold Limit 
+##### System Memory Threshold Limit 
 The resouce limits are automitcally dervied from the system configurations. 
 Memory usage:
 
@@ -152,10 +152,6 @@ Memory usage:
 	 - WARN -  80%  of system memory
 	 - CRITICAL -  90%  of system memory
 	
- - Per process usage Memory threshold is derived from 30% system memory
-	 - INFO - 30%  of system memory
-	 - WARN - 40%  of system memory
-	 - CRITICAL - above 50% of system memory 
 	
 Memory usage of resource is dumped on the console with following format
 Process name, Process ID, RSS( physical memory)
@@ -168,8 +164,15 @@ Process name, Process ID, RSS( physical memory)
 	- Dec 11 13:06:19.478011 sonic INFO system#state: MEM :: Name: redis-server, Pid:1006, Rss:10.6M
 	- Dec 11 13:06:19.478060 sonic INFO system#state: MEM :: Name: zebra, Pid:9625, Rss:11.3M
 	   
-#### System Memory Usage:
+#### Per Process Memory Usage:
   Per process memory usage goes beyond threshold limit, should also generate the process memory usage info on the system log message
+  
+##### System Memory Threshold Limit 
+  
+ - Per process usage Memory threshold is derived from 30% system memory
+	 - INFO - 30%  of system memory
+	 - WARN - 40%  of system memory
+	 - CRITICAL - above 50% of system memory 
 
 - #### Example
 	 - Dec 11 13:03:19.209233 sonic INFO system#state: Per process memory threshold exceeded for process rest_server[3781], threshold 3% of system memory 478.6M, current usage 538.2M
@@ -226,11 +229,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDg1NzEzNjQsLTY5MTUzMDgxMywxND
-I5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMDU1Mjc0
-Njg0LDEzNzA2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwtMT
-c4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEy
-MTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LD
-E0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAzMzY2LC05MTIx
-MDI3NzJdfQ==
+eyJoaXN0b3J5IjpbMTkxMjEwNDczMywtNjkxNTMwODEzLDE0Mj
+k3NjM0NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2
+ODQsMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNz
+gyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIx
+Mzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMT
+Q2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMzNjYsLTkxMjEw
+Mjc3Ml19
 -->
