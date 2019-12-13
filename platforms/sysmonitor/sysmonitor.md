@@ -220,6 +220,11 @@ CPU usage of all the process in the system is being monitored.  When the usage c
 
    In a long running network environment,  monitoring the disk parition usage is a crucial process. As a network operating system, disk partitions mainly used for storing the log files, core dumps,  debug infos, application files, config files and OS images. It is essential to keep track of the disk partition usage. There would be many fils usage of overall system is being monitored.  When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with the following information.
 
+ - Mount point
+ - Used space
+ - Free space 
+ - Total space
+
 Disk Parition Usage:
 
  - Overall partion usage thresholds are dervied as 
@@ -229,10 +234,7 @@ Disk Parition Usage:
 
 #### Example:
 Nov 27 07:16:50.878011 sonic INFO system#state: DISK usage of '/' is above 8%, Total: 31.4G, Free: 20.1G, Used: 9.7G
-Nov 27 07:16:50.878694 sonic INFO system#state: DISK:: {'used': 10376302592, 'free': 21575340032, 'total': 33686405120}
-Nov 27 07:16:50.878747 sonic INFO system#state: DISK:: {'used': 10376302592, 'free': 21575340032, 'total': 33686405120}
-Nov 27 07:16:50.878798 sonic INFO system#state: DISK:: {'used': 10376302592, 'free': 21575340032, 'device': '/dev/sda4', 'mountpoint': '/boot', 'total': 33686405120, 'percent': 32.5, 'opts': 'rw,relatime,data=ordered', 'fstype': 'ext4'}
-Nov 27 07:16:50.878849 sonic INFO system#state: DISK:: {'used': 38285312, 'free': 3890614272, 'device': '/dev/loop1', 'mountpoint': '/var/log', 'total': 4160421888, 'percent': 1.0, 'opts': 'rw,relatime,data=ordered', 'fstype': 'ext4'}
+Nov 27 07:16:50.878849 sonic INFO system#state: DISK:: {'used': 38285312, 'free': 3890614272,  'mountpoint': '/var/log', 'total': 4160421888}
 
 	 
 
@@ -261,7 +263,7 @@ All the resource statististics and usage alerts are forwarded to syslog.  The sy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTg2MDQ3NDYsLTEzODkwNTYwMTQsLT
+eyJoaXN0b3J5IjpbLTIxMDU1ODc4NTIsLTEzODkwNTYwMTQsLT
 E4Mjg3ODg2MDgsNjU1OTUzODY1LC0xMjcxNzQyNDg2LC0zNDA2
 OTU1MjYsLTgwMDUxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgxMy
 wxNDI5NzYzNDY5LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMDU1
