@@ -155,7 +155,6 @@ Memory usage:
 	
 Memory usage of resource is dumped on the console with following format
 Process name, Process ID, RSS( physical memory)
-
  
  - #### Example :
 	- Dec 11 13:06:19.397949 sonic INFO system#state: System memory usage is above 60%, Total: 15.6G, Free: 1.8G, Used: 2.8G, Buffers: 314.8M, Cached: 10.7G
@@ -167,7 +166,10 @@ Process name, Process ID, RSS( physical memory)
 #### Per Process Memory Usage:
   Per process memory usage goes beyond threshold limit, should also generate the process memory usage info on the system log message. The syslog message is generated with following information.
   
- - It includes process name, process Id, and used memory size.
+ - Memory info of a process 
+	 - Process name, 
+	 - Process Id
+	 - Rss - Used memory size.
 	  
 ##### Per Process Memory Threshold Limit 
   
@@ -188,10 +190,10 @@ CPU usage of all the process in the system is being monitored.  When the usage c
 - Process info:
 	- Process Name
 	- Process Id
-	- CPU 
+	- CPU usage Time
    
 
-##### CPU threshold limits:
+##### Per Process CPU threshold limits:
 -  The CPU threshold limit is considered as duration of sampling interval in which the process high CPU condition detected.
 	- INFO -  70%  of High CPU
 	 - WARN -  80%  of  High CPU
@@ -235,11 +237,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMjAzODM5NywtMzQwNjk1NTI2LC04MD
-A1MTgzNDYsNzM2NTE0NjgxLC02OTE1MzA4MTMsMTQyOTc2MzQ2
-OSwtMTM1NjA0MjE4Miw0MDE0MjcxNjQsMTA1NTI3NDY4NCwxMz
-cwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIzMDksLTE3ODIwNzk4
-NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0NjUxMjEzODksLT
-QzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYwNiwxNDYzODAz
-NTY4XX0=
+eyJoaXN0b3J5IjpbLTE5NDA2MjUzMDAsLTM0MDY5NTUyNiwtOD
+AwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLDE0Mjk3NjM0
+NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUyNzQ2ODQsMT
+M3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OTkyMzA5LC0xNzgyMDc5
+ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0NCwxNDY1MTIxMzg5LC
+00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MDE4NjQ2MDYsMTQ2Mzgw
+MzU2OF19
 -->
