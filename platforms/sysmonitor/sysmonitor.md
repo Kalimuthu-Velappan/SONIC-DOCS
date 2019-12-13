@@ -220,7 +220,7 @@ CPU usage of all the process in the system is being monitored.  When the usage c
 
    In a long running network environment,  monitoring the disk parition usage is a crucial process. As a network operating system, disk partitions mainly used for storing the log files, core dumps,  debug infos, application files, config files and OS images. It is essential to keep track of the disk partition usage. When the usage crosses the threshold, syslog message is being generated.  Syslog message is generated with the following parition information.
 
- - Mount point
+ - Parition name 
  - Used space
  - Free space 
  - Total space
@@ -235,8 +235,7 @@ CPU usage of all the process in the system is being monitored.  When the usage c
 Nov 27 07:16:50.878011 sonic INFO system#state: DISK usage of '/' is above 8%, Total: 31.4G, Free: 20.1G, Used: 9.7G
 Nov 27 07:16:50.878849 sonic INFO system#state: DISK:: {'used': 38285312, 'free': 3890614272,  'mountpoint': '/var/log', 'total': 4160421888}
 
-	 
-
+	
 ## 2.5 Resource DB
 
 Monitoring framework has a self contained python database for maintaining the state of each resources.  The duration and number of entries for a resouce is automatically tuned based on the system resource configuration.
@@ -262,7 +261,7 @@ All the resource statististics and usage alerts are forwarded to syslog.  The sy
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMjA0NzU0NSwtMTM4OTA1NjAxNCwtMT
+eyJoaXN0b3J5IjpbLTc5NzA3ODg4MywtMTM4OTA1NjAxNCwtMT
 gyODc4ODYwOCw2NTU5NTM4NjUsLTEyNzE3NDI0ODYsLTM0MDY5
 NTUyNiwtODAwNTE4MzQ2LDczNjUxNDY4MSwtNjkxNTMwODEzLD
 E0Mjk3NjM0NjksLTEzNTYwNDIxODIsNDAxNDI3MTY0LDEwNTUy
