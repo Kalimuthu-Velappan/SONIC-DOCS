@@ -109,8 +109,12 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 	Level2 -  WARN
 	Level3 - CRITICAL
  
-## 2.3 ThresholSYSLOG Levels 
- 
+## 2.3 Threshold Limit
+  By default, the threshold limit defined as three levels
+	  Level1 - 70% - INFO
+	  Level2 - 80% - 
+	   Level3 - 90% - INFO
+	   
 #### System Service Monitoring:
    
    In sonic, it is essential know the current state the system whether the system is ready to handle all the config commands or not.  If one of the core services are down, there should be way to identify the system state that it is not ready to take the config commands.  The sysmonitor framework monitors the system core services and port initialization state and generate the system ready message. If one of the system core service goes down, it also monitor and print the system not ready message because of the service down.  The system ready state message is sent to both syslog as well as console session so that user would know the live state on the console.
@@ -217,7 +221,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MjM5MTY2Myw0MDE0MjcxNjQsMTA1NT
+eyJoaXN0b3J5IjpbMTg2MjQyNTcxNCw0MDE0MjcxNjQsMTA1NT
 I3NDY4NCwxMzcwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIzMDks
 LTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0Nj
 UxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYw
