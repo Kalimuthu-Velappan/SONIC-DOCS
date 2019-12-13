@@ -48,13 +48,13 @@ As SONiC runs on different ODM platform hardware configurations, it becomes nece
  - The software resource monitoring should include  process, docker and
    core systemd services in the system
  - It should monitor and report the resource usage  through system syslog message
- - The system monitoring framework should run as separate service and it should get lanched automatically during bootup.  By default  system monitoring service should get started by default. 
+ - The system monitoring framework should run as a separate service and it should get lanched automatically during bootup.  System monitoring service should start by default. 
  - It should support three levels of threshold limit for each resource type
  - Generate syslog message with log level as INFO, WARNING and CRITIAL for respective threshold levels.
  - The resource threshold limit should be drived from the respective resource type and its system configuration.
  - Resource monitoring interval should be derived from the system platform configration
  - Only one syslog message should be generated when the resource usage crosses the threshold limit.
- - The framework should support the action custom action handler so the application can dump message specific to the  resource limit and the resource type.
+ - The framework should also support the  action handler so the application can dump message specific to the  resource limit and the resource type.
 
 Resouce Monitoring
  - CPU Monitoring
@@ -236,11 +236,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk0OTEwNDY0LC0zNDA2OTU1MjYsLTgwMD
-UxODM0Niw3MzY1MTQ2ODEsLTY5MTUzMDgxMywxNDI5NzYzNDY5
-LC0xMzU2MDQyMTgyLDQwMTQyNzE2NCwxMDU1Mjc0Njg0LDEzNz
-A2Nzc4OSw3Mjc2NDYzODAsMTMyODk5MjMwOSwtMTc4MjA3OTg3
-MiwxNzI0MzIzNTEsLTE4Mzc3NzExNDQsMTQ2NTEyMTM4OSwtND
-MwMjM1MjQ3LDIwODY1NjA5MzEsNDAxODY0NjA2LDE0NjM4MDM1
-NjhdfQ==
+eyJoaXN0b3J5IjpbLTY2MDMzNzYxOCwtMzQwNjk1NTI2LC04MD
+A1MTgzNDYsNzM2NTE0NjgxLC02OTE1MzA4MTMsMTQyOTc2MzQ2
+OSwtMTM1NjA0MjE4Miw0MDE0MjcxNjQsMTA1NTI3NDY4NCwxMz
+cwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIzMDksLTE3ODIwNzk4
+NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0NjUxMjEzODksLT
+QzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYwNiwxNDYzODAz
+NTY4XX0=
 -->
