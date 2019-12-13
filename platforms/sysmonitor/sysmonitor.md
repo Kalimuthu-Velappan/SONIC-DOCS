@@ -97,7 +97,7 @@ Sysmonitor framework monitors the various software and hardware resource in the 
 
 ![](images/sysmonitor.png)
 
-The framework supports both software and hardware resource types.  It includes the three major hardware resource types - CPU, Memory and D
+The framework supports both software and hardware resource types.  It includes the three major hardware resource types as CPU, Memory and Disk partitions and the software resource types as service type. 
 One Syslog message is  for each threshold level crossing. 
 
 ## 2.4 SYSLOG alert 
@@ -211,11 +211,11 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MTQ0MTA5OSw3Mjc2NDYzODAsMTMyOD
-k5MjMwOSwtMTc4MjA3OTg3MiwxNzI0MzIzNTEsLTE4Mzc3NzEx
-NDQsMTQ2NTEyMTM4OSwtNDMwMjM1MjQ3LDIwODY1NjA5MzEsND
-AxODY0NjA2LDE0NjM4MDM1NjgsMTQxMTI3NzM3OCwxMzc5NzAz
-MzY2LC05MTIxMDI3NzIsMTE4NTE3OTE2NCw4NDQ2NjUyMzksLT
-YyMjQwNTg0OCwtMzQyNDg2NjM3LDM3NDE2NTI5MSwxMTMxNDcx
-MDE2XX0=
+eyJoaXN0b3J5IjpbMTM3MDY3Nzg5LDcyNzY0NjM4MCwxMzI4OT
+kyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMTgzNzc3MTE0
+NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2MDkzMSw0MD
+E4NjQ2MDYsMTQ2MzgwMzU2OCwxNDExMjc3Mzc4LDEzNzk3MDMz
+NjYsLTkxMjEwMjc3MiwxMTg1MTc5MTY0LDg0NDY2NTIzOSwtNj
+IyNDA1ODQ4LC0zNDI0ODY2MzcsMzc0MTY1MjkxLDExMzE0NzEw
+MTZdfQ==
 -->
