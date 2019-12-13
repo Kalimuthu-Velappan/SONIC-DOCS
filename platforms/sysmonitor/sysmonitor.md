@@ -109,6 +109,7 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 	Level2 -  WARN
 	Level3 - CRITICAL
  
+## 2.3 ThresholSYSLOG Levels 
  
 #### System Service Monitoring:
    
@@ -216,7 +217,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NDE2MTA0OSw0MDE0MjcxNjQsMTA1NT
+eyJoaXN0b3J5IjpbMTY0MjM5MTY2Myw0MDE0MjcxNjQsMTA1NT
 I3NDY4NCwxMzcwNjc3ODksNzI3NjQ2MzgwLDEzMjg5OTIzMDks
 LTE3ODIwNzk4NzIsMTcyNDMyMzUxLC0xODM3NzcxMTQ0LDE0Nj
 UxMjEzODksLTQzMDIzNTI0NywyMDg2NTYwOTMxLDQwMTg2NDYw
