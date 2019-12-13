@@ -110,6 +110,7 @@ Whenever the resouce threshold limit is being reached,  alert message and relate
 	Level3 - CRITICAL
  
 ## 2.3 Threshold Limit
+
  The resouce limits are automitcally dervied from the system configurations.  By default, the threshold limit defined as three levels and each of the level maps to corresponding syslog levels.
   
 	  Level1 - 70% - INFO
@@ -222,7 +223,7 @@ All the resource statististics and usage alert are forwarded to syslog.  The sys
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTgyMTU0NjUsLTEzNTYwNDIxODIsND
+eyJoaXN0b3J5IjpbLTExNzU5NDI4NzEsLTEzNTYwNDIxODIsND
 AxNDI3MTY0LDEwNTUyNzQ2ODQsMTM3MDY3Nzg5LDcyNzY0NjM4
 MCwxMzI4OTkyMzA5LC0xNzgyMDc5ODcyLDE3MjQzMjM1MSwtMT
 gzNzc3MTE0NCwxNDY1MTIxMzg5LC00MzAyMzUyNDcsMjA4NjU2
