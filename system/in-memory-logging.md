@@ -215,7 +215,12 @@ During the sytem reobot, All the In-Memory logs should be stored on the persiste
 4. Just before reboot, repeate the step 1 and 2 again. 
     
 ## 3.0 Kernal Crash 
-All the In-memory logs should be saved as part of kdump data collection. 
+During the kernel crash, all the In-memory logs should be saved as part of kdump data collection. When kenrel crash happens the following action sequence gets executed.
+1. During the kernel bootup, reserve the same physical memory used in the primary kernel.
+2. Insert the ramdisk driver for emulating the reserved physical memory as ram block device and user space.
+3. During the kdump serve startup, mount the ramblock device as ramfs into /var/log/ramfs foler.
+4. As port of the kdump data collection, copy the contents of in-memory contents into /var/log/ folder.
+5. reboot the system. 
 
 # 3 Unit Test
 
