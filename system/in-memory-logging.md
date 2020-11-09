@@ -76,9 +76,18 @@ In order to improve the performance of the logger and increase the life of disk 
 # 2 Design
 ## 2.1 Overview
 
-The existing sonic logSysmonitor framework monitors various software and hardware resources in the SONIC system.  There would be three levels of threshold limit defined for each of the resource type. It checks resource usage with its predefined threshold limit and generates the syslog alert message along with resource stats information.  When usage stays at the same level, it  generates only one syslog message for each level. 
+SONiC uses syslog as logging infrastructure for logging the application log informations. In order to minimize the application code changes, the In-Memory infrastructure leverage the same existing syslog infrastructure for application sending the debug informations. The debug and non-debug information is classified through syslog interface Log lelvel as below. 
 
-
+| **Log Level**         | **Log Value**     | **Classification**    |
+|-----------------------|-------------------|-----------------------|
+|  LOG_EMERG            |     0             | Non-debug             |
+|  LOG_ALERT            |     1             | Non-debug             |
+|  LOG_CRIT             |     2             | Non-debug             |
+|  LOG_ERR              |     3             | Non-debug             |
+|  LOG_WARNING          |     4             | Non-debug             |
+|  LOG_NOTICE           |     5             | Non-debug             |
+|  LOG_INFO             |     6             | debug                 |
+|  LOG_DEBUG            |     7             | debug                 |
 
 ![](images/in-memory-logging.png)
 
