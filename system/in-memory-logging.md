@@ -98,14 +98,17 @@ Syslog provides uniform interface to all the langages in the SONiC applications.
 - It minimze the code changes on the application side because of unified interface.
 
 ## 2.2 Current Model
+
 SONiC uses the rsyslog as centralized logger for receiving and storing the logs from various SONiC applications including logs from docker applications.  The Rsyslog receives the logs and process the logs if some action to be taken and then store the logs into log files into disk usually on the /var/log/ folder. Some of the SONiC application adds rules in the rsyslog to serapate the application specific logs into a seprate file, for example, all the audit related log messages are stored on the separate log /var/log/audit.log. 
 
 ## 2.3 In-Memory Logging
-The In-memory Logging levarage the existing rsyslog infrastructure to process and store the logs into In-Memory. It doesn't require much change from application side as it uses same syslog API for generating the debug information by using log level as INFO or DEBUG. A simple rsyslog filter rule is added to syslog config for filtering and storing the debug logs.  
+
+The In-memory Logging levarage the existing rsyslog infrastructure to process and store the logs into In-Memory. It doesn't require much change on the application side because it uses same syslog API for generating the debug information with log level as INFO or DEBUG. A simple rsyslog filter rule is added to syslog config for filtering and storing the debug logs.  
 
 ![](images/in-memory-logging.png)
 
 ### Kernel driver 
+
 A block of memory is reserved from kernel physicall address space during bootup and mapped into userspace as ramblock device. The phyical memory reservation is done at the kernel level and the same memory can be mapped in to userspace for saving the in-memory contents into a file. The following kernel parameter enforces the fixed physical memory reservation during kernel bootup. 
 
     memmap=memory-size@address
@@ -113,15 +116,18 @@ A block of memory is reserved from kernel physicall address space during bootup 
 A simple kernel driver will be loaded into kernel which emulates this memory area as RAM block device into userspace as '/dev/im-device'. 
 
 ### In-Memory
-All the In-Memory logs are initially stored in the RAM memory and then it gets stored into persistant storage disk periodically. During the system startup, a portion of system RAM is reserved for in-memory storage and emulated as ram block device into a userspace. The reserved memory is formated as in ext4 filesystem and mounted into into as part of log file system as bellow.  All the file stored inside the 'ramfs' folder will be treated as in-memory files. The rsyslog uses this memory for storing the debug information into this file system. 
+
+All the In-Memory logs are initially stored in the RAM memory and then it gets stored into persistent storage disk periodically. During the system startup, a portion of system RAM is reserved for in-memory storage and emulated as ram block device into a userspace. The reserved memory is formated as in ext4 filesystem and mounted into into as part of log file system as bellow.  All the file stored inside the 'ramfs' folder will be treated as in-memory files. The rsyslog uses this file system for storing the debug information into this file system. 
 
         # mkfs.etx4 /dev/ramdisk  
         # mount /dev/ramdisk /var/log/ramfs/
 
 ### In-memory with Kdump
-During the kernel crash, all the data stored in the in-memory should be written into persistant disk. This is done using fixed kernel memory map. During primary kernel bootup, a fixed physical memory is reserved for inmemory storage.  When secondary kernel bootup, it uses hte same fixed physical memory area and maps into application space. Kdump collection utility is enhanced to dump the in-memory contents into persistant storage. 
+
+During the kernel crash, all the data stored in the in-memory should be written into persistent disk. This is done using fixed kernel memory map. During primary kernel bootup, a fixed physical memory is reserved for in-memory storage.  When secondary kernel boots up, it uses hte same fixed physical memory area and maps into application space as a ramfs. Kdump collection utility is enhanced to dump the in-memory contents from ramfs into persistent storage. 
 
 ### Rsyslog Policy
+
 In order to separate out the debug information from syslog, the following Rsyslog rules being added into rsylog config. This will configure rsyslog to store all the debug logs into ramfs file system. 
 
         # Store all the DEBUG and INFO logs into ramfs file system.
@@ -139,7 +145,8 @@ Log format is remain same as regular syslog format as bellow.
 
 
 ## 2.4 Log Rotation Policy
-The following log rotation policy is applied for the log stored in in-memory and also logs stored in persistant disk. The first policy enforce the logrotate to rotate the logs stored in in-memory and as part of the port rotate script, it forces the rotated logs into persist disk. The second policy instruct the logrotate to rotate the logs within peristent storage which is same as other syslog rotation.
+
+The following log rotation policy is applied to all the log stored in in-memory and also logs stored in persistent disk. The first policy enforce the logrotate to rotate the logs stored in the in-memory file system and as part of the port rotate script, it forces the rotated logs into persist disk. The second policy instruct the logrotate to rotate the logs within peristent storage which is same as other syslog rotation policy.
 
         /var/log/ramfs/syslog-debug.log
         {
@@ -164,11 +171,13 @@ The following log rotation policy is applied for the log stored in in-memory and
             nosharedscripts
         }
 
-When rsyslog is being restarted, all the in-memory contents should flushed to disk. The in-memory log rotation policy is added as part existing syslog rotation policy.
+When rsyslog is being restarted, all the in-memory contents should flushed to disk. The in-memory log rotation policy is added as part of existing syslog rotation policy.
+The log rotation happens every 2 minutes and keeps 4 weeks of log or max size of all the logs should be less than 4G. If it reaches the 4G usage, it deletes all the oldest logs in the log folder. 
 
 ## 2.5 In-Memory Logging Policy
-In order to simply the application interface and improve the logging performace, the following polices are enforce on the in-memory logging.
-- Only In-Memory logging file is prefered as this improves the performance and simplifies the in-memory logging interface and its the implementation.
+
+In order to simplify the application interface and improve the logging performace, the following polices are enforced on the in-memory logging.
+- Only one In-Memory logging file is prefered as this improves the performance and simplifies the in-memory logging interface and its implementation.
 - Log Rotation Policy
     -   Cron job to rotate the in-memory log for every 2 minutes.
     -   Size of file is restricted to 1mb
@@ -178,18 +187,19 @@ In order to simply the application interface and improve the logging performace,
     - 512mb on >=16GB
 - Disk write policy
     - Logs are written into disk by every 2 minutes.
-    - Written into disk when user issued a reboot(cold/warm/fast) command.
+    - Logs are written into disk when user issue a reboot(cold/warm/fast) command.
     - During kernel panic, all the in-memory logs are written into disk as port kdump data collection.
 
 ## 2.6 Tech-Support 
 
-The techsupport script is enhanced to support the in-memory log collection. During the tech-support collection, all the in-memory logs are included as part regular syslog collection.
+The techsupport script is enhanced to support the in-memory log collection. During the tech-support collection, all the in-memory logs are included as part of regular syslog collection.
 
 - All the logs from in-memory.
-- All the logs which are already stored in the persistant disk.
+- All the logs which are already stored in the persistent disk.
 
 
 ## 2.7 In-Memory Dump Tools
+
 A utility is provided to dump and filter the logs from in-memory as well as syslog. The in-memory logs should be accessed in the following order to get the log timeing sequence.
 
 1. /var/log/ramfs/debug-in-memory.log
@@ -197,8 +207,8 @@ A utility is provided to dump and filter the logs from in-memory as well as sysl
 3. /var/log/syslog-debug.log.1
 4. /var/log/syslog-debug.log.2.gz, ...
 
-
 ## 2.8 KLISH/CLICK Commands
+
 The following CLI is commands are supported to dump the logs from in-memory.
 
 - Show all the logs from In-Memory contents.
@@ -210,16 +220,19 @@ The following CLI is commands are supported to dump the logs from in-memory.
         # show log all 
 
 ## 2.9 Cold/Warm/Fast Reboot
-During the sytem reobot, All the In-Memory logs should be stored on the persistence disk. When user initiate the system reboot, the following sequence gets executed.
-1. Append the contents of In-Memory into persistence storage file /var/log/in-memory-debug.log. 
-2. Reset the In-Memory file pointer
+
+During the sytem reobot, all the In-Memory logs should be stored on the persistence disk. When user initiate a system reboot, the following sequence gets executed.
+
+1. Append the contents of In-Memory into persistence storage file - /var/log/in-memory-debug.log. 
+2. Reset the In-Memory file pointer.
 3. Let the reboot script to continue. 
-4. Just before reboot, repeate the step 1 and 2 again. 
+4. Just before the reboot, repeate the step 1 and 2 again. 
     
 ## 3.0 Kernal Crash 
-During the kernel crash, all the In-memory logs should be saved as part of kdump data collection. When kenrel crash happens the following action sequence gets executed.
-1. During the kernel bootup, reserve the same physical memory used in the primary kernel.
-2. Insert the ramdisk driver for emulating the reserved physical memory as ram block device and user space.
+
+During the kernel crash, all the In-memory logs should be saved into /var/log folder as part of kdump data collection. When kernel crash happens the following action sequence gets executed.
+1. During the kernel bootup, it reserves the same physical memory used in the primary kernel.
+2. Insert the ramdisk driver for emulating the reserved physical memory as ram block device in the userspace.
 3. During the kdump serve startup, mount the ramblock device as ramfs into /var/log/ramfs foler.
 4. As port of the kdump data collection, copy the contents of in-memory contents into /var/log/ folder.
 5. reboot the system. 
@@ -232,11 +245,11 @@ During the kernel crash, all the In-memory logs should be saved as part of kdump
 | 2 | Verify the reserved memory block mounted as ramfs || 
 | 3 | Verify the In-memory logging entry through rsyslog  | |
 | 4 | Verify the In-memory contents are stored into disk for every 2 mintues |  |
-| 5 | Verify the In-memory log files are rotated in the disk | |
-| 6 | Verify the In-memory contents are saved during system reboot ||
-| 7 | Verify the In-memory contents are save during kernel panic ||
-| 8 | Verify the show commands for both Im-memory and regularsyslog ||
-| 9 | Verify the techsupport that includes the In-Memory contents ||
+| 5 | Verify the In-memory log files stored on the disk are rotated  | |
+| 6 | Verify the In-memory contents are saved into disk during system reboot ||
+| 7 | Verify the In-memory contents are save into disk during kernel panic ||
+| 8 | Verify the show commands for both Im-memory and regular syslog ||
+| 9 | Verify the techsupport that includes both In-memory and regular syslog contents ||
 | 10 | Verify the In-memory dump utils ||
 
 
