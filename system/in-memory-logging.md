@@ -107,19 +107,48 @@ The In-memory Logging levarage the existing rsyslog infrastructure to process an
 A block of memory is reserved from kernel physicall address space during bootup and mapped into userspace as ramblock device. The phyical memory reservation is done at the kernel level, so that in cause of kernel crash same memory can be mapped in to userspace for saving the in-memory contents into a file.  
 
 ### In-Memory
-All the In-Memory logs are initially stored in the RAM memory and then it gets stored into persistant storage disk periodically. During the system startup, a portion of system RAM is reserved for in-memory storage and emulated as ram block device into a userspace. The reserved memory is formated as in ext4 filesystem and mounted into into as part of log file system as bellow.  All the file stored inside the 'in-memory' folder will be treated as in-memory files. The rsyslog uses this memory for storing the debug information into this file system. 
+All the In-Memory logs are initially stored in the RAM memory and then it gets stored into persistant storage disk periodically. During the system startup, a portion of system RAM is reserved for in-memory storage and emulated as ram block device into a userspace. The reserved memory is formated as in ext4 filesystem and mounted into into as part of log file system as bellow.  All the file stored inside the 'ramfs' folder will be treated as in-memory files. The rsyslog uses this memory for storing the debug information into this file system. 
 
         # mkfs.etx4 /dev/ramdisk  
-        # mount /dev/ramdisk /var/log/in-memory/
+        # mount /dev/ramdisk /var/log/ramfs/
 
 ### Rsyslog Rule
+In order to separate out the debug information from syslog, the following Rsyslog rules being added into rsylog config.
 
-
+        # Store all the DEBUG and INFO logs into ramfs file system.
+        if  $syslogseverity >= 6 then {
+            /var/log/ramfs/syslog-debug.log
+            stop
+        }
 
 ### RASLOG Servicerestart
 
 
 ## 2.4 Log Rotation Policy
+
+        /var/log/ramfs/syslog-debug.log
+        {
+            size 1M
+            rotate 2
+            daily
+            missingok
+            notifempty
+            postrotate
+                cat /var/log/ramfs/syslog-debug.log.1  >> /var/log/syslog-debug.log
+                rm -f /var/log/ramfs/syslog-debug.log.1
+            endscript
+        }
+        /var/log/debug-syslog.log
+        {
+            size 1M
+            rotate 100
+            missingok
+            notifempty
+            compress
+            delaycompress
+            nosharedscripts
+        }
+
 
 ## 2.5 In-Memory Logging Policy
 
