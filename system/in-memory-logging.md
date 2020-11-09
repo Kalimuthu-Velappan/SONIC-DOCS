@@ -95,14 +95,29 @@ Syslog provides uniform interface to all the langages in the SONiC applications.
 - It provides the standard interface to all the application including C, C++, Python, Go, Shell script and Perl languages.
 - It minimze the code changes on the application side because of unified interface.
 
-
 ## 2.2 Current Model
 SONiC uses the rsyslog as centralized logger for receiving and storing the logs from various SONiC applications including logs from docker applications.  The Rsyslog receives the logs and process the logs if some action to be taken and store the logs into log files usually on the /var/log/ folder. Some of the SONiC application adds rules in the rsyslog to serapate the application specific logs into a seprate file, for example, all the audit related log messages are stored on the /var/log/audit.log. 
 
 ## 2.3 In-Memory Logging
-The In-memory Logging levarage the existing rsyslog infrastructure to process and store the logs into In-Memory. It doesn't require much change from application side as it uses same syslog API for generating the debug information by using log level as INFO or DEBUG. A simple rsyslog rule is added to syslog config for filtering the debug log 
+The In-memory Logging levarage the existing rsyslog infrastructure to process and store the logs into In-Memory. It doesn't require much change from application side as it uses same syslog API for generating the debug information by using log level as INFO or DEBUG. A simple rsyslog filter rule is added to syslog config for filtering and storing the debug logs.  
 
 ![](images/in-memory-logging.png)
+
+### Kernel driver 
+A block of memory is reserved from kernel physicall address space during bootup and mapped into userspace as ramblock device. The phyical memory reservation is done at the kernel level, so that in cause of kernel crash same memory can be mapped in to userspace for saving the in-memory contents into a file.  
+
+### In-Memory
+All the In-Memory logs are initially stored in the RAM memory and then it gets stored into persistant storage disk periodically. During the system startup, a portion of system RAM is reserved for in-memory storage and emulated as ram block device into a userspace. The reserved memory is formated as in ext4 filesystem and mounted into into as part of log file system as bellow.  All the file stored inside the 'in-memory' folder will be treated as in-memory files. The rsyslog uses this memory for storing the debug information into this file system. 
+
+        # mkfs.etx4 /dev/ramdisk  
+        # mount /dev/ramdisk /var/log/in-memory/
+
+### Rsyslog Rule
+
+
+
+### RASLOG Servicerestart
+
 
 ## 2.4 Log Rotation Policy
 
