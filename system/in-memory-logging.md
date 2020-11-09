@@ -122,6 +122,7 @@ In order to separate out the debug information from syslog, the following Rsyslo
         }
 
 Log format is remain same as regular syslog format as bellow.
+ 
         # SONiC syslog default template
         $template SONiCFileFormat,"%timegenerated%.%timegenerated:::date-subseconds% %timegenerated:::date-year% %HOSTNAME% %syslogseverity-text:::uu
         ppercase% %syslogtag%%!msg1:::sp-if-no-1st-sp%%!msg1:::drop-last-lf%\n"
@@ -130,6 +131,7 @@ Log format is remain same as regular syslog format as bellow.
 
 ## 2.4 Log Rotation Policy
 The following log rotation policy is applied for the log stored in in-memory and also logs stored in persistant disk. The first policy enforce the logrotate to rotate the logs stored in in-memory and as part of the port rotate script, it forces the rotated logs into persist disk. The second policy instruct the logrotate to rotate the logs within peristent storage which is same as other syslog rotation.
+
         /var/log/ramfs/syslog-debug.log
         {
             size 1M
