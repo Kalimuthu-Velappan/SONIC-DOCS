@@ -226,11 +226,15 @@ During the kernel crash, all the In-memory logs should be saved as part of kdump
 
 |SNO|  Testcase                                     |  Result |
 |---|-----------------------------------------------| ------- |
-| 1 | Verify the  |   |
-| 2 | Verify the per process memory usage and check the syslog alert || 
-| 3 | Verify the high CPU condition of a process and check the syslog alert | |
-| 4 | Verify the disk partition usage and check the syslog alert |  |
-| 5 | Verify the system service status and check for system ready message | |
-| 6 | Simulate the system services failure and check for the system not read message ||
+| 1 | Verify the In-memory logging memory reservation  |   |
+| 2 | Verify the reserved memory block mounted as ramfs || 
+| 3 | Verify the In-memory logging entry through rsyslog  | |
+| 4 | Verify the In-memory contents are stored into disk for every 2 mintues |  |
+| 5 | Verify the In-memory log files are rotated in the disk | |
+| 6 | Verify the In-memory contents are saved during system reboot ||
+| 7 | Verify the In-memory contents are save during kernel panic ||
+| 8 | Verify the show commands for both Im-memory and regularsyslog ||
+| 9 | Verify the techsupport that includes the In-Memory contents ||
+| 10 | Verify the In-memory dump utils ||
 
 
