@@ -34,7 +34,7 @@ This document provides general information about the In-Memory Logging feature i
 
 # Scope
 
-This document describes the high level design of In-Memory Logging Enhancements feature. 
+This document describes the high level design of In-Memory Logging Enhancement feature. 
 
 # Definition/Abbreviation
 
@@ -42,25 +42,26 @@ This document describes the high level design of In-Memory Logging Enhancements 
 | **Term**                 | **Meaning**                         |
 |--------------------------|-------------------------------------|
 | ODM                      | Original Design Manufacturer        |
-| SYSLOG                   | System log
+| SYSLOG                   | System log                          |
+| KDUMP                    | Kernel Dump                         |
 
 # 1 Feature Overview
 
-SONiC is an open source network operating system based on Linux that integrates and runs various opensource application. SONiC application generates logs with differnt log level, capturing and storing logs into persistent storage from all the appplications is essential for debugging the system. In order maintain the persistance, every logs needs to be written into the log file in disk. The continus write of log into disk reduces the life time of disk and also performace of the logger. 
+SONiC is an open source network operating system based on Linux that integrates and runs various opensource applications. Each SONiC application generates log with differnt log level for every event happens on the system. Capturing and storing the logs from all the applicaiton into persistent storage is essential for debugging the system events. In order maintain the persistance, every logs needs to be written into the log file in the disk. The continus write of log into disk reduces the life time of disk and also affect the performace of the logger. 
 
-In order to improve the performance of the logger and increase the life of disk by dividing the logs into  debug and non-debug logs.  The debug Logs are called in-memory logging which will be stored in a non-persistance storage called ram memory or in-mormory  and periodically saved them into persistance storage.  All the non-debug logs are stored directly into persistance storage. The division of debug and non-debug log improves the life of disk as well as performance of the logger because the log generation rate of debug log is very high compare to non-debug logs. In-memory logging feature for application to log the debug and non-debug messages through unified syslog interface.
+In order to improve the performance of the logger and increase the life of disk is logs are divied into debug and non-debug logs.  The debug Logs are called in-memory logging which will be stored in a non-persistance storage called ram memory or in-mormory and periodically saved them into persistance storage.  All the non-debug logs are stored directly into persistance storage. The division of debug and non-debug log improves the life of disk as well as performance of the logger because the log generation rate of debug log is very high compare to non-debug logs. In-memory logging feature allows the application to log the debug and non-debug messages through unified syslog interface.
 
 ## 1.1 Requirements
   
 ### 1.1.1 Functional Requirements
 
- - It should provide unified interface to all SONiC application to log the information so that minimal code change is required from application. 
- - It should leverage the syslog as unified to interface for logging the application debug and non-debugs informations.
- - The division of debug and non-debug logs should be based on the Log Level. 
+ - It should provide a unified interface to all SONiC application to log the information so that minimal code change is required from the application. 
+ - It should leverage the syslog as a unified interface for the application to log both debug and non-debugs informations.
+ - The separation of debug and non-debug logs should be based on the Log Level. 
  - All the non-debug logs should be stored into presistance disk directly and stored logs should be rotated by lograotate periodically. 
- - All the debug logs should be stored into in-memory first and then saved them into disk and rotated by logrotate periodically.
+ - All the debug logs should be stored into in-memory first and then saved into disk and rotated by logrotate periodically.
  - All the in-memory logs should be saved into disk when cold/fast/warm command is issued.
- - In case of kernel crash, the in-memory logs should saved into disk as part of kdump collection. 
+ - In case of kernel crash, the in-memory logs should be saved into disk as part of kdump collection. 
  - During the techsupport data collection, it should include both debug and non-debug logs. 
  - Klish/Click CLI is added to dump and filter the logs from both debug and non debugs logs. 
  - It should provide offline tools to show/filter the logs from both debug and non-debug logs.
@@ -70,13 +71,14 @@ In order to improve the performance of the logger and increase the life of disk 
 
 ### 1.1.3 Scalability Requirements
 - NA
+
 ### 1.1.4 Warm/fast/cold Boot Requirements
 - All the In-Memory logs should be saved into the disk before the reboot.
   
 # 2 Design
 ## 2.1 Overview
 
-SONiC uses syslog as logging infrastructure for logging the application log informations. In order to minimize the application code changes, the In-Memory infrastructure leverage the same existing syslog infrastructure for application sending the debug informations. The debug and non-debug information is classified through syslog interface Log lelvel as below. 
+SONiC uses syslog as a logging infrastructure for application to log information. In order to minimize the application code changes, the In-Memory infrastructure leverage the same existing syslog infrastructure for application to log the debug information. The debug and non-debug information are classified through syslog interface Log lelvel as below. 
 
 | **Log Level**         | **Log Value**     | **Classification**    |
 |-----------------------|-------------------|-----------------------|
@@ -86,8 +88,8 @@ SONiC uses syslog as logging infrastructure for logging the application log info
 |  LOG_ERR              |     3             | Non-debug             |
 |  LOG_WARNING          |     4             | Non-debug             |
 |  LOG_NOTICE           |     5             | Non-debug             |
-|  LOG_INFO             |     6             | debug                 |
-|  LOG_DEBUG            |     7             | debug                 |
+|  LOG_INFO             |     6             | Debug                 |
+|  LOG_DEBUG            |     7             | Debug                 |
 
 Syslog provides uniform interface to all the langages in the SONiC applications. The application uses these log level to differentiate the debug and non-debug information for logging. 
 - It uses the standard syslog mechanism for generating the debug messages.
@@ -96,7 +98,7 @@ Syslog provides uniform interface to all the langages in the SONiC applications.
 - It minimze the code changes on the application side because of unified interface.
 
 ## 2.2 Current Model
-SONiC uses the rsyslog as centralized logger for receiving and storing the logs from various SONiC applications including logs from docker applications.  The Rsyslog receives the logs and process the logs if some action to be taken and store the logs into log files usually on the /var/log/ folder. Some of the SONiC application adds rules in the rsyslog to serapate the application specific logs into a seprate file, for example, all the audit related log messages are stored on the /var/log/audit.log. 
+SONiC uses the rsyslog as centralized logger for receiving and storing the logs from various SONiC applications including logs from docker applications.  The Rsyslog receives the logs and process the logs if some action to be taken and then store the logs into log files into disk usually on the /var/log/ folder. Some of the SONiC application adds rules in the rsyslog to serapate the application specific logs into a seprate file, for example, all the audit related log messages are stored on the separate log /var/log/audit.log. 
 
 ## 2.3 In-Memory Logging
 The In-memory Logging levarage the existing rsyslog infrastructure to process and store the logs into In-Memory. It doesn't require much change from application side as it uses same syslog API for generating the debug information by using log level as INFO or DEBUG. A simple rsyslog filter rule is added to syslog config for filtering and storing the debug logs.  
