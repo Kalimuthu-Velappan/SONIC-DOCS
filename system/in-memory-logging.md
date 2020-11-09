@@ -155,10 +155,22 @@ The following log rotation policy is applied for the log stored in in-memory and
             nosharedscripts
         }
 
-When rsyslog is being restarted, all the in-memory contents should flushed to disk.
+When rsyslog is being restarted, all the in-memory contents should flushed to disk. The in-memory log rotation policy is added as part existing syslog rotation policy.
 
 ## 2.5 In-Memory Logging Policy
-
+In order to simply the application interface and improve the logging performace, the following polices are enforce on the in-memory logging.
+- Only In-Memory logging file is prefered as this Improves the performance and simplifies the in-memory logging interface and its the implementation.
+- Log Rotation Policy
+    -   Cron job to rotate the in-memory log for every 2 minutes.
+    -   Size of file is restricted to 1mb
+- Size of of the In-Memory as bellow
+    - 128mb on <=4GB
+    - 256mb on 8GB
+    - 512mb on >=16GB
+- Disk write policy
+    - Logs are written into disk by every 2 minutes.
+    - Written into disk when user issued a reboot(cold/warm/fast) command.
+    - During kernel panic, all the in-memory logs are written into disk as port kdump data collection.
 
 ## 2.6 Tech-Support 
 
