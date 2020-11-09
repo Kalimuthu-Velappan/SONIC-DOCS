@@ -46,23 +46,24 @@ This document describes the high level design of In-Memory Logging Enhancements 
 
 # 1 Feature Overview
 
-SONiC is an open source network operating system based on Linux that integrates and runs various opensource application. SONiC application generates logs with differnt log level, capturing and storing logs into persistent storage from all the appplications is essential for debugging the system. In order maintain the persistance, every logs needs to be written into the log file in disk.
+SONiC is an open source network operating system based on Linux that integrates and runs various opensource application. SONiC application generates logs with differnt log level, capturing and storing logs into persistent storage from all the appplications is essential for debugging the system. In order maintain the persistance, every logs needs to be written into the log file in disk. The continus write of log into disk reduces the life time of disk and also performace of the logger. 
 
-The continus write of log into disk reduces the life time of disk and also performace of the logger. In order to improve the performance of the logger and increase the life of disk by dividing the logs into  debug and non-debug logs.  The debug Logs are called in-memory logging which will be stored in a non-persistance storage called ram memory or in-mormory  and periodically saved them into persistance storage.  All the non-debug logs are stored directly into persistance storage. The division of debug and non-debug log improves the life of disk as well as performance of the logger because the log generation rate of debug log is very high compare to non-debug logs. 
+In order to improve the performance of the logger and increase the life of disk by dividing the logs into  debug and non-debug logs.  The debug Logs are called in-memory logging which will be stored in a non-persistance storage called ram memory or in-mormory  and periodically saved them into persistance storage.  All the non-debug logs are stored directly into persistance storage. The division of debug and non-debug log improves the life of disk as well as performance of the logger because the log generation rate of debug log is very high compare to non-debug logs. In-memory logging feature for application to log the debug and non-debug messages through unified syslog interface.
 
 ## 1.1 Requirements
   
 ### 1.1.1 Functional Requirements
 
- - It should provide unified interface to all SONiC application to log the information. 
+ - It should provide unified interface to all SONiC application to log the information so that minimal code change is required from application. 
+ - It should leverage the syslog as unified to interface for logging the application debug and non-debugs informations.
  - The division of debug and non-debug logs should be based on the Log Level. 
  - All the non-debug logs should be stored into presistance disk directly and stored logs should be rotated by lograotate periodically. 
- - All the debugs logs should be stored into in-memory first and then saved them into disk and rotated by logrotate periodically.
+ - All the debug logs should be stored into in-memory first and then saved them into disk and rotated by logrotate periodically.
  - All the in-memory logs should be saved into disk when cold/fast/warm command is issued.
  - In case of kernel crash, the in-memory logs should saved into disk as part of kdump collection. 
  - During the techsupport data collection, it should include both debug and non-debug logs. 
  - Klish/Click CLI is added to dump and filter the logs from both debug and non debugs logs. 
- - It should provide tools to extract and corelate logs from both logs.
+ - It should provide offline tools to show/filter the logs from both debug and non-debug logs.
 
 ### 1.1.2 Configuration and Management Requirements
 
@@ -75,11 +76,11 @@ The continus write of log into disk reduces the life time of disk and also perfo
 # 2 Design
 ## 2.1 Overview
 
-Sysmonitor framework monitors various software and hardware resources in the SONIC system.  There would be three levels of threshold limit defined for each of the resource type. It checks resource usage with its predefined threshold limit and generates the syslog alert message along with resource stats information.  When usage stays at the same level, it  generates only one syslog message for each level. 
+The existing sonic logSysmonitor framework monitors various software and hardware resources in the SONIC system.  There would be three levels of threshold limit defined for each of the resource type. It checks resource usage with its predefined threshold limit and generates the syslog alert message along with resource stats information.  When usage stays at the same level, it  generates only one syslog message for each level. 
 
 
 
-![](images/Sysmonitor.png)
+![](images/in-memory-logging.png)
 
 
 
