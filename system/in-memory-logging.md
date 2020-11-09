@@ -70,9 +70,9 @@ In order to improve the performance of the logger and increase the life of disk 
 - Klish/Click CLI is added to dump and filter the logs from both debug and non debugs logs. 
 
 ### 1.1.3 Scalability Requirements
-   NA
-### 1.1.4 Warm Boot Requirements
-  NA
+- NA
+### 1.1.4 Warm/fast/cold Boot Requirements
+  - All the 
 # 2 Design
 ## 2.1 Overview
 
@@ -89,6 +89,18 @@ SONiC uses syslog as logging infrastructure for logging the application log info
 |  LOG_INFO             |     6             | debug                 |
 |  LOG_DEBUG            |     7             | debug                 |
 
+Syslog provides uniform interface to all the langages in the SONiC applications. The application uses these log level to differentiate the debug and non-debug information for logging. 
+- It uses the standard syslog mechanism for generating the debug messages.
+- Is uses standard system call syslog(LOG_DEBUG,….) for sending the logs messages.
+- It provides the standard interface to all the application including C, C++, Python, Go, Shell script and Perl languages.
+- It minimze the code changes on the application side because of unified interface.
+
+
+## 2.2 Current Model
+SONiC uses the rsyslog as centralized logger for receiving and storing the logs from various SONiC applications including logs from docker applications.  The Rsyslog receives the logs and process the logs if some action to be taken and store the logs into log files usually on the /var/log/ folder. Some of the SONiC application adds rules in the rsyslog to serapate the application specific logs into a seprate file, for example, all the audit related log messages are stored on the /var/log/audit.log. 
+
+## 2.3 In-Memory Logging
+The In-memory Logging levarage the existing rsyslog in 
 ![](images/in-memory-logging.png)
 
 
