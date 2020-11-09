@@ -113,7 +113,7 @@ All the In-Memory logs are initially stored in the RAM memory and then it gets s
         # mount /dev/ramdisk /var/log/ramfs/
 
 ### Rsyslog Rule
-In order to separate out the debug information from syslog, the following Rsyslog rules being added into rsylog config.
+In order to separate out the debug information from syslog, the following Rsyslog rules being added into rsylog config. This will configure rsyslog to store all the debug logs into ramfs file system. 
 
         # Store all the DEBUG and INFO logs into ramfs file system.
         if  $syslogseverity >= 6 then {
@@ -121,11 +121,15 @@ In order to separate out the debug information from syslog, the following Rsyslo
             stop
         }
 
-### RASLOG Servicerestart
+Log format is remain same as regular syslog format as bellow.
+        # SONiC syslog default template
+        $template SONiCFileFormat,"%timegenerated%.%timegenerated:::date-subseconds% %timegenerated:::date-year% %HOSTNAME% %syslogseverity-text:::uu
+        ppercase% %syslogtag%%!msg1:::sp-if-no-1st-sp%%!msg1:::drop-last-lf%\n"
+        $ActionFileDefaultTemplate SONiCFileFormat
 
 
 ## 2.4 Log Rotation Policy
-
+The following log rotation policy is applied for the log stored in in-memory and also logs stored in persistant disk. The first policy enforce the logrotate to rotate the logs stored in in-memory and as part of the port rotate script, it forces the rotated logs into persist disk. The second policy instruct the logrotate to rotate the logs within peristent storage which is same as other syslog rotation.
         /var/log/ramfs/syslog-debug.log
         {
             size 1M
@@ -149,6 +153,7 @@ In order to separate out the debug information from syslog, the following Rsyslo
             nosharedscripts
         }
 
+When rsyslog is being restarted, all the in-memory contents should flushed to disk.
 
 ## 2.5 In-Memory Logging Policy
 
