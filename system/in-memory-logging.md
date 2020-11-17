@@ -30,7 +30,7 @@ System logging Enhancements.
 
 # About this Manual
 
-This document provides general information about the In-Memory Logging feature implementation in SONiC.
+This document provides general information about In-Memory Logging feature implementation in SONiC.
 
 # Scope
 
@@ -47,23 +47,23 @@ This document describes the high level design of In-Memory Logging Enhancement f
 
 # 1 Feature Overview
 
-SONiC is an open source network operating system based on Linux that integrates and runs various opensource applications. Each SONiC application generates log with differnt log level for every event happens on the system. Capturing and storing the logs from all the applicaiton into persistent storage is essential for debugging the system events. In order maintain the persistance, every logs needs to be written into the log file in the disk. The continus write of log into disk reduces the life time of disk and also affect the performace of the logger. 
+SONiC is an open source network operating system based on Debian Linux, integrated with various opensource applications. Each SONiC application generates logs with differnt log level for the events that are occurring on the system. Capturing and storing the logs from all the applicaiton into persistent storage is essential for debugging the system events. In order maintain the persistance of log information, every log message needs to be written into the disk log file. The continuous write of log into disk reduces the life time of disk and also affect the performace of the logger. 
 
-In order to improve the performance of the logger and increase the life of disk is logs are divied into debug and non-debug logs.  The debug Logs are called in-memory logging which will be stored in a non-persistance storage called ram memory or in-mormory and periodically saved them into persistance storage.  All the non-debug logs are stored directly into persistance storage. The division of debug and non-debug log improves the life of disk as well as performance of the logger because the log generation rate of debug log is very high compare to non-debug logs. In-memory logging feature allows the application to log the debug and non-debug messages through unified syslog interface.
+In order to improve the performance of the logger and increase the life of disk, the logs are divied into debug and non-debug logs.  The debug Logs are called in-memory logging which will be stored in a non-persistance storage called ram memory or in-mormory and periodically saved them into persistance storage.  All the non-debug logs are stored directly into persistance storage(Like Disk). The division of debug and non-debug log improves the life of disk as well as performance of the logger because the log generation rate of debug log is very high compare to non-debug logs. In-memory logging feature allows the application to log both debug and non-debug messages through a unified syslog interface which reudces the amount code change required on the application side.
 
 ## 1.1 Requirements
   
 ### 1.1.1 Functional Requirements
 
- - It should provide a unified interface to all SONiC application to log the information so that minimal code change is required from the application. 
- - It should leverage the syslog as a unified interface for the application to log both debug and non-debugs informations.
+ - It should provide a unified interface to all the SONiC applications with different programming language to log the information, so that the minimal code change is required from the application side. 
+ - It should leverage the existing syslog as a unified interface for the application to log both debug and non-debug informations.
  - The separation of debug and non-debug logs should be based on the Log Level. 
  - All the non-debug logs should be stored into presistance disk directly and stored logs should be rotated by lograotate periodically. 
  - All the debug logs should be stored into in-memory first and then saved into disk and rotated by logrotate periodically.
  - All the in-memory logs should be saved into disk when cold/fast/warm command is issued.
- - In case of kernel crash, the in-memory logs should be saved into disk as part of kdump collection. 
+ - In case of kernel crash, all the in-memory logs should be saved into disk as part of kdump collection. 
  - During the techsupport data collection, it should include both debug and non-debug logs. 
- - Klish/Click CLI is added to dump and filter the logs from both debug and non debugs logs. 
+ - Klish/Click CLI should be provided to dump and filter the logs from both debug and non debugs logs. 
  - It should provide offline tools to show/filter the logs from both debug and non-debug logs.
 
 ### 1.1.2 Configuration and Management Requirements
@@ -73,7 +73,7 @@ In order to improve the performance of the logger and increase the life of disk 
 - NA
 
 ### 1.1.4 Warm/fast/cold Boot Requirements
-- All the In-Memory logs should be saved into the disk before the reboot.
+- When user initiates the system reboot, all the In-Memory logs should be saved into the disk before it goes for reboot.
   
 # 2 Design
 ## 2.1 Overview
