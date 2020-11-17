@@ -230,6 +230,7 @@ During the system reboot, all the In-Memory logs should be stored on the persist
 ## 3.0 Kernal Crash 
 
 During the kernel crash, all the In-memory logs should be saved into /var/log folder as part of kdump data collection. When kernel crash happens the following action sequence gets executed.
+
 1. During the kernel bootup, it reserves the same physical memory used in the primary kernel.
 2. Insert the ramdisk driver for emulating the reserved physical memory as a ram block device in the userspace.
 3. During the In-Memory service startup, mount the ram block device as ramfs into /var/log/ramfs folder.
@@ -251,5 +252,5 @@ During the kernel crash, all the In-memory logs should be saved into /var/log fo
 | 9 | Verify the techsupport that includes both In-memory and regular Syslog contents ||
 | 10 | Verify the In-memory dump utils                                 |         |
 
-End
+
 
