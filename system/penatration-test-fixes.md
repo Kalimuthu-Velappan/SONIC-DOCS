@@ -1,6 +1,6 @@
 # SONiC Penetration Test Fixes
 
-Fixes for vulnerabilites found during system penetration test by ebay.
+Information on fixes for some of the security vulnerabilities reported by the eBay Red team as part of their SONiC Network OS PenTest report
 
 # High Level Design Document
 
@@ -28,11 +28,11 @@ Fixes for vulnerabilites found during system penetration test by ebay.
 
 # About this Manual
 
-This document provides general information about In-Memory Logging feature implementation in SONiC.
+This document provides information on fixes for some of the security vulnerabilities reported by the eBay Red team as part of their SONiC Network OS PenTest report.
 
 # Scope
 
-This document describes the high-level design of the In-Memory Logging Enhancement feature. 
+This document describes the high-level design on fixes for some of the security vulnerabilities reported by the eBay Red team as part of their SONiC Network OS PenTest report.
 
 # Definition/Abbreviation
 
@@ -52,10 +52,12 @@ This document provides information on fixes for some of the security vulnerabili
 
 ### 1.1.1 Functional Requirements
 
+Address all the vulnerabilities reported in PenTest by ebay.
+In summary,
 - It should allow only the authenticated application or user to access the redis database. 
 - It should restrict the non sudo user access to certain commands. 
 - It should provide container to run in the non privileged mode. 
-- 
+
 ### 1.1.2 Configuration and Management Requirements
 - NA 
 
@@ -68,8 +70,6 @@ This document provides information on fixes for some of the security vulnerabili
 # 2 Design
 ## 2.1 Overview
 
-eBay Penetration Test Report:
-
 ## Issue 1: sudo Entry "/usr/bin/docker exec * ps aux" leading to privilege escalation
 
 Test: sudo docker exec -it mgmt-framework sh -c "/bin/bash;# ps aux"
@@ -78,8 +78,7 @@ Vulnerability: The intention for the wildcard character ‘*’ specified in the
 
 Fix: Removed sudo entry of "docker exec * ps aux" in the sudoers file and replaced it with specific "docker exec {{container-name}} ps aux" commands. 
 
-## Issue 2: sudo Entry "/usr/bin/vtysh -c show *" can be used to do a configuration
-write by a non sudoer
+## Issue 2: sudo Entry "/usr/bin/vtysh -c show *" can be used to do a configuration write by a non sudoer
 
 Test: sudo vtysh -c 'show version' -c 'configure terminal' -c 'interface Ethernet0' -c 'exit' -c 'exit' -E
 
@@ -103,11 +102,10 @@ Test: The Redis server listens on TCP6379 on localhost. The standard redis-cli c
 Vulnerability:  The local Redis database acts as a centralized location for storing device state and configuration. The Redis server runs inside the database container, and the user is required to execute redis-cli inside the database container to access the Redis database, which requires admin privilege. However, the Redis database also listens locally on TCP6379 without authentication, allowing any user to read/write to the Redis database.
 
 Fix: Enabled redis db authentication by default to prevent read/write access from local unprivileged users.
-Detail:
-Random passwords generated on every system boot up to be stored in a file shared across linux host and all containers with appropriate permissions set.
-All Clients(cpp,python,go variants) to pass in the password parameter(read from the file) while accessing the redis db.
-redis-cli client binary internally parses the password from an env variable (REDISCLI_AUTH) set.
-Non-sudo users direct read/write access to redis db is prevented but the basic fixed show commands which depend on the redis db are added to sudoers file.
+- Random passwords generated on every system boot up to be stored in a file shared across linux host and all containers with appropriate permissions set.
+- All Clients(cpp,python,go variants) to pass in the password parameter(read from the file) while accessing the redis db.
+- redis-cli client binary internally parses the password from an env variable (REDISCLI_AUTH) set.
+- Non-sudo users direct read/write access to redis db is prevented but the basic fixed show commands which depend on the redis db are added to sudoers file.
 
 
 
@@ -115,15 +113,16 @@ Non-sudo users direct read/write access to redis db is prevented but the basic f
 
 Test: for c in $(docker ps --format '{{.Names}}'); do printf "$c:"; docker inspect $c --format {{.HostConfig.Privileged}}'; done
 
-Vulnerability: 
+Vulnerability: Each service is running inside their own docker container in privileged mode. The privileged mode container doesn’t offer security benefit of isolating but have full read/write access to host OS resources, such as file system, allowing container escape or elevate privilege on the host OS. The docker socket on the host OS is also exposed inside mgmt-framework container, giving the container full control over all other docker containers and host OS.
 
+Fix: To run all the containers in non-privileged mode to achieve better isolation. Removed the --privileged flag from each docker creation.
 
 
 # 3 Unit Test
 
 |SNO|  Testcase                                                        | Result  |
 |---|------------------------------------------------------------------| ------- |
-| 1 | Verify the In-memory logging memory reservation                  |         |
+| 1 | Verify by executing all the above tests                 |         |
 | 2 | Verify the reserved memory block mounted as ramfs                |         | 
 | 3 | Verify the In-memory logging entry through rsyslog               |         |
 
