@@ -1,6 +1,6 @@
-# In-Memory Logging
+# SONiC Penetration Test Fixes
 
-System logging Enhancements.
+Fixes for vulnerabilites found during system penetration test by ebay.
 
 # High Level Design Document
 
@@ -24,7 +24,7 @@ System logging Enhancements.
 # Revision
 | Rev |   Date  |    Author    | Change Description        |
 |:---:|:-----------:|:------------------:|-----------------------------------|
-| 0.1 | 04/12/2020 |  Kalimuthu    | Initial version          |
+| 0.1 | 28/12/2020 |  Senthil    | Initial version          |
 
 # About this Manual
 
