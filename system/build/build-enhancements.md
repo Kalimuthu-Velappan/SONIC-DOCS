@@ -272,7 +272,8 @@ files/build/versions/
 │   |   ├── versions-git
 │   |   ├── versions-web
     ...
-```´
+```
+
 
 ![Package Versioning](images/package-versoning.png)
 
