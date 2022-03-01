@@ -66,7 +66,7 @@ This document describes the Functionality and High level design of the build imp
 
 
 This feature provides improvements in three essential areas.
-- Parallel build
+- Multi user  build
 	- Parallel build using Native docker mode.
 	- OverlayFS to virtualize the build root.
 - Build time Optimization
@@ -80,8 +80,8 @@ This feature provides improvements in three essential areas.
 Reference:
 - Version caching feature is enhanced on top of DPKG caching and Versioning framework.
 Ref:
-	- [https://github.com/Azure/SONiC/blob/master/doc/sonic-build-system/DPKG%20caching%20framework%20.ppt](url)
-	- [https://github.com/xumia/SONiC/blob/repd3/doc/sonic-build-system/SONiC-Reproduceable-Build.md](url)
+	- https://github.com/Azure/SONiC/blob/master/doc/sonic-build-system/DPKG%20caching%20framework%20.ppt
+	- https://github.com/xumia/SONiC/blob/repd3/doc/sonic-build-system/SONiC-Reproduceable-Build.md
 
 # Feature Requirements
  - Feature should support build improvements in overall SONiC build.
@@ -106,7 +106,7 @@ Following requirements are addressed by the design presented in this document:
     
 - Caching Requirements:
     - Sonic image is built by pulling binary and source components from various sources.
-        - Debian repo, python repo, docker repo, http(s) repo and go module repo.
+        - Debian repo, python repo, docker repo, web repo, git module and go module repo.
         - Requires flexibility to select the different versions of a component.
     - Sonic development is diverged into multiple development branches.
         - Each development branch needs different version of build components.
@@ -114,15 +114,11 @@ Following requirements are addressed by the design presented in this document:
         - Release branch needs fixed version of build components as the prebuilt binary and source packages are keep moving to the latest version
     - Requires Caching/Mirroring support.
         - Component changes outside the SONIC repo which causes frequent build failures.
-        - Unavailability of external side causes the dependency build failure. 
+        - Unavailability of external site causes the dependency build failure. 
         - Flexibility to switch between fixed version vs  latest version.
-    - Different branch can freeze different set of versions.
+    - Different branch can freeze different´ set of versions.
         - Still, Individual package should be upgraded to selected versions. 
     - Versions cache should be enabled/disabled globally.
-    - Unavailability of external sites should not cause the dependency build failures.
-
-
-
 
 
 ## Configuration and Management Requirements
@@ -144,7 +140,7 @@ This feature provides build improvements in SONIC.
 
 # Feature Design
 ## Design Overview
-## Parallel Build
+## Multi user Build
 ### Native docker mode
 - Docker supports two types of mode to run a container.
     - Docker-in-Docker(DinD) mode
@@ -160,7 +156,7 @@ This feature provides build improvements in SONIC.
     - As a workaround to address these problems using:
         - Container creation using dind docker solutions.
 	    - To use AUFS in the inner Docker, just promote /var/lib/docker to inner docker.
-	- Apart from the security aspect, a lot of performace panaliteis are involved as it uses the UnionFS/OverlayFS that degrades the performace when number of lower layers are more. 
+	- <b>Apart from the security aspect, a lot of performace panaliteis are involved as it uses the UnionFS/OverlayFS that degrades the performace when number of lower layers are more. 
     - All the child container resource usage is restricted within the paraent container usage. 
 
 - Native docker mode.
@@ -200,15 +196,15 @@ This feature provides build improvements in SONIC.
 
 - Docker image save sequence protected with lock as bellow,
 	- docker_image_lock()
-	- docker tag docker-name-<user>:latest docker-name:latest
-	- docker save docker-name:latest > docker-name-<user>.gz
+	- docker tag docker-name-\<user\>:latest docker-name:latest
+	- docker save docker-name:latest > docker-name-\<user\>.gz
 	- docker rm docker-name:latest
 	- docker_image_unlock()
 
 - Docker image load sequence protected with lock as bellow,
 	- docker_image_lock()
-	- docker load -i < docker-name-<user>.gz
-	- docker tag docker-name:latest docker-name-<user>:latest
+	- docker load -i < docker-name-\<user\>.gz
+	- docker tag docker-name:latest docker-name-\<user\>:latest
 	- docker rm docker-name:latest
 	- docker_image_unlock()
 
@@ -216,13 +212,13 @@ This feature provides build improvements in SONIC.
 
 - The template processing covers only for common dockers, Broadcom and VS platform dockers. For other vendor specific dockers, respective vendors need to add the support.
 
-### Target Specific Build Root ( Experimental )
+### Target Specific Build Root
 
 - OverlayFS allows multiple virtual rootfs creation for target specific build.
 - Virtual bulid root - Merging the container root(/) and SONiC source(/sonic) and mounted into target specific virutal build root using OverlayFS.
 - Use tmpfs mount for better performance.
 - This would avoid the target specific(UNINSTALLS) and improve the parallel build performance.
-
+![Virtual Build Root](images/virtual-build-root.png)
     - \# mkdir -p BUILD
 	- \# mkdir -p BUILD
 	- \# mount -t tmpfs -o size=1G tmpfs BUILD  (optional - performace)
@@ -414,13 +410,13 @@ files/build/versions/
 ![ Docker Build Version Caching ](images/docker-build-version-caching.png)
 - 
 
-## Installer Optimization
+## Installer Image Build Optimization
 
 # Installer image generation has six stages:
-   - bootstrap generation
+   - Bootstrap generation
    - ROOTFS installation
    - SONiC packages installation
-   - SQASHFS generation
+   - SQUASHFS generation
    - DockerFS generation
    - Installer image generation
    
@@ -475,13 +471,6 @@ files/build/versions/
 	- Phase 1 - Rootfs generation as part of other package generation.
 	- Phase 2 - Docker generation in parallel.
 
-# Version freeze
-- Weekly/periodical with version migration to latest.
-
-    - Build with SONIC_VERSION_CONTROL_COMPONENTS=none to generate the new set of package versions in the target.
-    - Run ‘make freeze’ to generate and merge the version changes into the source.
-    - Check-in the new version set in the source.
-    
 # Make variables
 - The following make variable controls the version caching feature.
 
@@ -489,6 +478,14 @@ files/build/versions/
     - SONIC_VERSION_CACHE_METHOD=cache=<cache/none>. => Turn on/off version caching
     - SONIC_VERSION_CACHE_SOURCE=<cache path>        => Cache directory path
      
+# Version freeze
+- Weekly/periodical with version migration to latest.
+
+    - Build with SONIC_VERSION_CONTROL_COMPONENTS=none to generate the new set of package versions in the target.
+    - Run ‘make freeze’ to generate and merge the version changes into the source.
+    - Check-in the new version set with the source.
+    
+
 # Cache cleanup 
 
 - Recently used cache files are updated with newer timestamp. The Cache framework automatically touch the used cache files to current timestamp. 
@@ -509,14 +506,14 @@ files/build/versions/
 
 ## Build Time Compression
 
-### PoC Build
+### PoC Build( Buster )
 - Build Config:
 	- Filesystem: Local
 	- CPU core:  40 Core
 	- DPKG_CACHE: Enabled
 	- VERSION_CACHE: Enabled
 - Build Time:
-	- 5 Minutes
+	- 5 Minutes ( Bofore: 40 Minutes )
 
 ### BuildiTime Measurement
 |       **Feature**      | **Normal Build** | **Build Enhacement**              |
@@ -526,4 +523,7 @@ files/build/versions/
 | DPKG_CACHE=N <br> VERSION_CACHE=y |  \<TBD\>     |  \<TBD\>                   |
 
 ## References
-https://github.com/xumia/SONiC/blob/repd3/doc/sonic-build-system/SONiC-Reproduceable-Build.md
+
+- Ref:
+	- https://github.com/Azure/SONiC/blob/master/doc/sonic-build-system/DPKG%20caching%20framework%20.ppt
+	- https://github.com/xumia/SONiC/blob/repd3/doc/sonic-build-system/SONiC-Reproduceable-Build.md

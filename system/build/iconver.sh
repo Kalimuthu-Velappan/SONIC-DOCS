@@ -12,6 +12,8 @@ mv images/Slide6.png images/pip-version-caching.png
 mv images/Slide7.png images/python-version-caching.png
 mv images/Slide3.png images/version-caching.png
 mv images/Slide8.png images/web-version-caching.png
+mv images/Slide14.png images/binary-image-generation.png
+mv images/Slide15.png images/virtual-build-root.png
 
 chmod 777 images 
 chmod 777 images/*
