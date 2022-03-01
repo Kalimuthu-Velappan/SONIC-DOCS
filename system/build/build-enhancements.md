@@ -62,7 +62,7 @@ This document describes the Functionality and High level design of the build imp
 - The current SONiC environment uses container environment for generating the sonic packages, docker container images and installer images with rootfs.
 - On every soonic build, it downloads source code, binary packages, docker images and other tools and utilities from an external world and generates the build artifacts.
 - Inter-dependency between the targets could prevent the build parallelism and cause more delay in the overall build time.
-- Nested build container would slowdown the Hardware resource access - CPU, memory, Network and Filesystem.
+- Nested docker container would slowdown the Hardware resource access - CPU, memory, Network and Filesystem.
 
 
 This feature provides improvements in three essential areas.
@@ -156,7 +156,7 @@ This feature provides build improvements in SONIC.
     - As a workaround to address these problems using:
         - Container creation using dind docker solutions.
 	    - To use AUFS in the inner Docker, just promote /var/lib/docker to inner docker.
-	- <b>Apart from the security aspect, a lot of performace panaliteis are involved as it uses the UnionFS/OverlayFS that degrades the performace when number of lower layers are more. 
+	- Apar´t from the security aspect, a lot of performace panalities are involved as it uses the UnionFS/OverlayFS that degrades the performace when number of lower layers are more. 
     - All the child container resource usage is restricted within the paraent container usage. 
 
 - Native docker mode.
@@ -175,7 +175,7 @@ This feature provides build improvements in SONIC.
     - In a shared build servers, sonic docker creation from multiple user would give conflict as it shares the same docker image name.
 - This feature addresses:
     - Sonic docker container creation in parallel from multiple users.
-	- Since it runs as sibiliing container, it will provide better container performace. 
+	- Since it runs as sibling container, it will provide better container performace. 
 	- As it shares the host dockerd, it gives better performance as the multilevel UNIONFS/OverlayFS is not needed.
 
 #### Build Container in SONiC:
@@ -271,7 +271,7 @@ files/build/versions/
 ```
 
 
-![Package Versioning](images/package-versoning.png)
+![Package Versioning](images/package-versioning.png)
 
 ### Version Cache feature
 - The version cache feature allows the sonic build system to cache all the source, binary and its dependencies into local file system.
@@ -303,22 +303,24 @@ files/build/versions/
 
    - Debian packages are version controlled via preference file that specify each package and corresponding version as below.
 	   - iproute==1.0.23
-	- When deb package gets installed, it looks for the package version from the version control file. If matches, it installs the package with the specified version in the version control file.
-	- During the package installation, it also save the package into the below cache path.
+    
+   - When deb package gets installed, it looks for the package version from the version control file. If matches, it installs the package with the specified version in the version control file.
+   - During the package installation, it also save the package into the below cache path.
 		- /var/cache/apt/archives/		
-	- If package is already available in the cache path, then it directly installs the package without downloading from the external site.
-	- With the version cache enabled, it preloads all cached packages into deb cache folder, so that any subsequent deb installation will always use the cached path.
+   - If package is already available in the cache path, then it directly installs the package without downloading from the external site.
+   - With the version cache enabled, it preloads all cached packages into deb cache folder, so that any subsequent deb installation will always use the cached path.
  
 ![ Debian Packages ](images/dpkg-version-caching.png)
 
 #### PIP version cache
-   - PIP packages are version controlled via constraint file that specify each package and corresponding version as below.
+  - PIP packages are version controlled via constraint file that specify each package and corresponding version as below.
 	   - ipaddress==1.0.23
-	- When a pip package gets installed, it looks for the package version from the version control file. If matches, it installs the package with the specified version in the version control file.
+       - 
+  - When a pip package gets installed, it looks for the package version from the version control file. If matches, it installs the package with the specified version in the version control file.
 	- During the package installation, it also save the package into the cache path as below.
 		- pip/http/a/4/6/b/7/a46b74c1407dd55ebf9eeb7eb2c73000028b7639a6ed9edc7981950c
-	- If package is already available in the pip cache path, then it directly installs the package without downloading from the external site.
-	- With the version cache enabled, it preloads all cached packages into pip cache folder, so that any subsequent pip installation will always use the cached path.
+   - If package is already available in the pip cache path, then it directly installs the package without downloading from the external site.
+   - With the version cache enabled, it preloads all cached packages into pip cache folder, so that any subsequent pip installation will always use the cached path.
    - During pip installation, the cache path can be specified with --cache-dir option which stores the cache data in the specified directory and version constraint file is given as --constraint option.
    - Pip vcache folders are created under slave container name or sonic container name appropriately.
    
@@ -435,6 +437,8 @@ files/build/versions/
  
 
 #### Rootfs preparation
+![ Binary Image Generation ](images/binary-image-generation.png)
+
 - Rootfs files system is prepared on top of bootstrap packages.
 - It is prepared by downloading the various opensource debian packages, tools and utilities that are needed for SONiC applications and install them on top of bootstrap fs.
 - The rootfs file system is created as image file system and cached as part of version cache system.
@@ -508,12 +512,13 @@ files/build/versions/
 
 ### PoC Build( Buster )
 - Build Config:
+    - Release: Buster
 	- Filesystem: Local
 	- CPU core:  40 Core
 	- DPKG_CACHE: Enabled
 	- VERSION_CACHE: Enabled
 - Build Time:
-	- 5 Minutes ( Bofore: 40 Minutes )
+	- 5 Minutes ( Bofore: >40 Minutes )
 
 ### BuildiTime Measurement
 |       **Feature**      | **Normal Build** | **Build Enhacement**              |
@@ -521,6 +526,10 @@ files/build/versions/
 | DPKG_CACHE=N <br> VERSION_CACHE=N |  \<TBD\>     |  \<TBD\>                   |
 | DPKG_CACHE=Y <br> VERSION_CACHE=y |  \<TBD\>     |  \<TBD\>                   |
 | DPKG_CACHE=N <br> VERSION_CACHE=y |  \<TBD\>     |  \<TBD\>                   |
+
+# TODO:
+- Migration to bullseye release
+
 
 ## References
 
